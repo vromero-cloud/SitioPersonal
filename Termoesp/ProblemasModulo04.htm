@@ -1,0 +1,92 @@
+<HTML><!-- Lotus-Domino (Release 5.0.2c (Intl) - 2 February 2000 on AIX) --><HEAD><TITLE>
+Problemas resueltos para el Módulo 4
+</TITLE>
+<script type="text/javascript"
+         src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+  		MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
+</script>
+</HEAD><BODY TEXT="000000" BGCOLOR="C2FF91" >
+<p><font size="4" color="#996600"><b>M&Oacute;DULO 4: PRIMERA LEY DE LA TERMODIN&Aacute;MICA APLICADA A SISTEMAS CERRADOS</b></font></p>
+<p><b><font color="#996600" size="3">(<em>Tomado del libro de Termodin&aacute;mica de Cengel &amp; Boles, 7a edici&oacute;n, McGraw-Hill, 2012</em>)</font></b></p>
+<p><BR>
+  <B><FONT SIZE=4>Ejemplo 1</FONT></B><BR>
+  <BR>
+  <FONT SIZE=4>Una pared plana est&aacute; compuesta de 20 cm de ladrillo  ($k = 0.72 \frac{\textrm{W}}{\textrm{m K}}$, ver en tablas). La temperatura de la cara derecha del ladrillo est&aacute; a $900^\circ \textrm{C}$, y la cara izquierda est&aacute; a la temperatura de $20^\circ \textrm{C}$. Determine la raz&oacute;n de conducci&oacute;n de calor a trav&eacute;s de la pared por unidad de &aacute;rea de la pared.</FONT><BR>
+  <BR>
+  <BR>
+</p>
+<DIV ALIGN=center><IMG SRC="images/img147-3.gif" WIDTH=192 HEIGHT=150></DIV>
+<p><BR>
+<strong>Soluci&oacute;n:</strong></p>
+<p>$$\frac{\dot{Q}_{\textrm{cond}}}{A}=k\frac{\Delta T}{\Delta x}=\left(0.72\frac{\text{W}}{\textrm{m K}}\right)\frac{(900-200)\textrm{K}}{0.2\textrm{m}}=3168\frac{\textrm{W}}{\textrm{m}^2}$$<BR><BR>
+  <B><FONT SIZE=4>Ejemplo 2</FONT></B><BR><BR>
+<FONT SIZE=4>Un veh&iacute;culo se va a dejar estacionado toda la noche y alejado de edificaciones. Se desea conocer si se va a formar roc&iacute;o o hielo sobre el techo del veh&iacute;culo. Suponga lo siguiente:</FONT></p>
+<p>El coeficiente de convecci&oacute;n, $h$, del aire ambiente sobre el techo del veh&iacute;culo es <FONT SIZE=4>$6.0\displaystyle{ \frac{\textrm{W}}{\textrm{m}^2\textrm{ $^\circ$C}}}$</FONT><FONT SIZE=4>.</FONT><BR>
+  <FONT SIZE=4>	La temperatura de cielo equivalente es $ -18^\circ \textrm{C}$.</FONT><BR>
+  <FONT SIZE=4>	La emisividad del techo del veh&iacute;culo es  0.84.</FONT><BR>
+  <FONT SIZE=4>	La conducci&oacute;n desde el interior del veh&iacute;culo hacia el techo del veh&iacute;culo es despreciable.</FONT><BR><BR>
+<FONT SIZE=4>Determine la temperatura en el techo del veh&iacute;culo cuando la temperatura del aire es  $5^\circ\textrm{C}$. Determine que tipo de formaci&oacute;n ocurre (roc&iacute;o o congelamiento).</FONT></p>
+<p><BR>
+</p>
+<DIV ALIGN=center><IMG SRC="images/img147-5.gif" WIDTH=240 HEIGHT=113></DIV>
+<p><BR>
+<strong>Soluci&oacute;n:</strong></p>
+<p><FONT SIZE=4>Bajo condiciones de estado estacionario, la energ&iacute;a por convecci&oacute;n en el techo del veh&iacute;culo es igual a la energ&iacute;a por radiaci&oacute;n hacia el cielo.</FONT></p>
+<p><font size=4>$$\dot{Q}_\textrm{conv}=\dot{Q}_\textrm{rad}$$</font></p>
+<p><FONT SIZE=4>La energ&iacute;a por convecci&oacute;n desde el aire del ambiente hacia el techo del veh&iacute;culo es </FONT></p>
+<p><font size=4>$$\dot{Q}_\textrm{conv}=A_\textrm{techo} h\left( T_\textrm{aire}-T_\textrm{techo}\right)$$</font></p>
+<p><FONT SIZE=4>La energ&iacute;a radiada desde el techo hacia el cielo nocturno es </FONT></p>
+<p>
+$$\dot{Q}_\textrm{rad}=</font>\varepsilon\sigma A_\textrm{techo}\left( T_\textrm{techo}^4 - T_\textrm{cielo}^4\right)$$</p>
+<p><FONT SIZE=4>Igualando estas dos ecuaciones se tiene </FONT></p>
+<p>
+$$A_\textrm{techo} h\left( T_\textrm{aire}-T_\textrm{techo}\right)=\varepsilon\sigma A_\textrm{techo}\left( T_\textrm{techo}^4 - T_\textrm{cielo}^4\right)$$
+</p>
+<p>$$\left( 6.0 \frac{\textrm{W}}{\text{m$^2$ K}}\right)\left(\left(
+5+273.15\right)-T_\text{techo}\right)\left(\textrm{K}\right)=0.84\left(5.67\times 10^{-8}\left(\frac{\textrm{W}}{\text{m$^2$ K$^4$}}\right)\right)\left(T_\textrm{techo}^4-\left(-18+273.15\right)\right)\left(\textrm{K}^4\right)$$ </p>
+<p><FONT SIZE=4>Resolviendo la ecuaci&oacute;n y escribiendo la temperatura del techo resultante en Celsius, $\left( T\left[\textrm{K}\right]=T\left[^\circ\textrm{C}\right]+273.16\right)$, se tiene</FONT></p>
+<p>$$ T_\textrm{techo}=-3.38^\circ\textrm{C}$$</p>
+<p><FONT SIZE=4>Ya que $T_\textrm{techo}$ est&aacute; por debajo del punto triple del agua, $0.01^\circ\textrm{C}$, el vapor de agua en el aire se congelar&aacute; sobre el techo del auto.</FONT><BR><BR><BR>
+  <B><FONT SIZE=4 FACE="Times New Roman">Ejemplo 3</FONT></B><BR><BR>
+<FONT SIZE=4 FACE="Times New Roman">Tres kilogramos of  gas Nitr&oacute;geno a $27^\circ\textrm{C}$ y $0.15 \textrm{MPa}$ son comprimidos isot&eacute;rmicamente hasta $0.3 \textrm{MPa}$ en un dispositivo cilindro-&eacute;mbolo. Determine el trabajo m&iacute;nimo de compresi&oacute;n en $\textrm{kJ}$.</FONT></p>
+  <strong>Soluci&oacute;n:</strong></FONT><BR><BR>
+  <B><U><FONT SIZE=4 FACE="Times New Roman">Sistema</FONT></U><FONT SIZE=4 FACE="Times New Roman">: 
+  </FONT></B><FONT SIZE=4 FACE="Times New Roman"> Nitr&oacute;geno contenido eun dispositivo pist&oacute;n-cilindro.</FONT><BR><BR>
+  <B><U><FONT SIZE=4 FACE="Times New Roman">Proceso</FONT></U><FONT SIZE=4 FACE="Times New Roman">:</FONT></B>Temperatura constante. </p>
+<p align="center"><BR>
+  <BR>
+  <img src="images/img147-13.gif" width=261 height=146><img src="images/img147-14.gif" width=259 height=230><BR><BR>
+  </p>
+<p><B><U><FONT SIZE=4 FACE="Times New Roman">Relaci&oacute;n de propiedades</FONT></U><FONT SIZE=4 FACE="Times New Roman">: </FONT></B><FONT SIZE=4 FACE="Times New Roman"> verificar la presi&oacute;n y la temperatura reducida para el Nitr&oacute;geno.</FONT></p>
+<p>$$T_\textrm{R1}=\frac{T_1}{T_\textrm{cr}}=\frac{\left(27+273.15\right)\textrm{K}}{126.2 \textrm{K}}=2.38$$</p>
+<p>$$p_\textrm{R1}=\frac{p_1}{p_\textrm{cr}}=\frac{0.15\textrm{MPa}}{3.39 \textrm{MPa}}=0.044$$</p>
+<p>$$p_\textrm{R2}=2p_\textrm{R1}=0.088$$</p>
+<p><FONT SIZE=4 FACE="Times New Roman">Ya que $p_\textrm{R}\ll 1$ y $T&gt;2T_\textrm{cr}$, el Nitr&oacute;geno es un gas ideal, y usamos la ecuaci&oacute;n de estado de gas ideal como la relaci&oacute;n de propiedades </FONT></p>
+<p><font size="4" face="Times New Roman">$$p V = m R T$$</font></p>
+<p><B><U><FONT SIZE=4 FACE="Times New Roman">C&aacute;lculo del trabajo:</FONT></U></B></p>
+<p>$$W_\textrm{net,1-2}=W_\textrm{net,otros,1-2} +W_\textrm{b,1-2}$$</p>
+<p>$$W_\textrm{b,1-2}=\int_1^2p\,\textrm{d}V=\int_1^2\textrm{d}V=m R T \ln\frac{V_2}{V_1}$$</p>
+<p><FONT SIZE=4 FACE="Times New Roman">Para un gas ideal en un sistema cerrado (masa = constante), tenemos</FONT></p>
+<p><FONT SIZE=4 FACE="Times New Roman">$$m_1=m_2$$</FONT></p>
+<p>$$\frac{p_1 V_1}{R T_1}=\frac{p_2 V_2}{R T_2}$$</p>
+<p><FONT SIZE=4 FACE="Times New Roman">Ya que la $R$ se cancela y $T_1=T_2$ se tiene </FONT></p>
+<p>$$\frac{V_2}{V_1}=\frac{p_1}{p_2}$$</p>
+<p>$$W_\textrm{b,1-2}=m R T \ln\frac{p_1}{p_2}=\left(3\textrm{kg}\right)\left(0.2968\frac{\textrm{kJ}}{\textrm{kg K}}\right)\left(300\textrm{K}\right)\ln\frac{0.15\textrm{MPa}}{0.30\textrm{MPa}}=-184.5\textrm{kJ}$$</p>
+<p><FONT SIZE=4 FACE="Times New Roman">El trabajo neto es </FONT></p>
+<p>$$W_\textrm{net,1-2}=0+W_textrm{b,1-2}=-184.5\textrm{kJ}$$</p>
+<p><FONT SIZE=4 FACE="Times New Roman">El trabajo por unidad de masa (trabajo espec&iacute;fico), es </FONT></p>
+<p>$$w_\textrm{net,1-2}=</font>\frac{W_\textrm{net,1-2}}{m}=-61.5\frac{\textrm{kJ}}{\textrm{kg}}$$</p>
+<p><FONT SIZE=4 FACE="Times New Roman">Eljo neto es negativo porque es trabajo realizado sobre el sistema durante el proceso de compresi&oacute;n del Nitr&oacute;geno.</FONT><BR><BR><BR> 
+  <B><FONT SIZE=4 FACE="Times New Roman">Example 4</FONT></B><BR><BR>
+<FONT SIZE=4 FACE="Times New Roman">Se tiene agua en un dispositivo cilindro-pist&oacute;n a $ 20^\circ\textrm{C}$ y a $0.15\textrm{MPa}$.  Se colocan pesos sobre el pist&oacute;n para mantener una fuerza constante sobre el agua mientras se calienta hasta $ 400^\circ\textrm{C}$.  &iquest;Cu&aacute;nto trbajo efect&uacute;a el agua sobre el pist&oacute;n?</FONT></p>
+<strong>Soluci&oacute;n:</strong></FONT><BR>
+<BR>
+<B><U><FONT SIZE=4 FACE="Times New Roman"></FONT></U></B>
+<p><B><U><FONT SIZE=4 FACE="Times New Roman">Sistema</FONT></U><FONT SIZE=4 FACE="Times New Roman">:</FONT></B>Se tiene agua contenida en el sistema pist&oacute;n-cilindro.<BR><BR>
+</p>
+<DIV ALIGN=center><IMG SRC="images/img147-24.gif" WIDTH=204 HEIGHT=167></DIV><BR>
+<B><U><FONT SIZE=4 FACE="Times New Roman">Relaci&oacute;n de propiedades</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">: Tablas de vapor.</FONT><BR><BR>
+<B><U><FONT SIZE=4 FACE="Times New Roman">Proceso</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">: A presi&oacute;n constante.</FONT><BR><BR>
+<B><U><FONT SIZE=4 FACE="Times New Roman">C&aacute;lculo del trabajo</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">:</FONT><BR><BR><FONT SIZE=4 FACE="Times New Roman">Since there is no Wother  mentioned in the problem, the net work is </FONT><DIV ALIGN=center><IMG SRC="images/img147-25.gif" WIDTH=304 HEIGHT=49></DIV><BR><FONT SIZE=4 FACE="Times New Roman">Since the mass of the water is unknown, we calculate the work per unit mass.</FONT><BR><BR><DIV ALIGN=center><IMG SRC="images/img147-26.gif" WIDTH=268 HEIGHT=44></DIV><BR><BR><BR><FONT SIZE=4 FACE="Times New Roman">At T<SUB>1</SUB> = 20ºC, P sat = 2.339 kPa.  Since P<SUB>1</SUB> &gt; 2.339 kPa,  state 1 is compressed liquid.  Thus,</FONT><BR><DIV ALIGN=center><FONT SIZE=4 FACE="Times New Roman">v<SUB>1</SUB> =  v<SUB>f</SUB></FONT>  <SUB><FONT SIZE=4 FACE="Times New Roman">at  20°C</FONT></SUB><FONT SIZE=4 FACE="Times New Roman"> = 0.001002 m<SUP>3</SUP>/ kg</FONT></DIV><BR><FONT SIZE=4 FACE="Times New Roman">At P <SUB>2</SUB> = P<SUB>1</SUB> = 0.1 MPa, T<SUB>2</SUB> &gt; T<SUB>sat  at  0.1 MPa</SUB> = 99.63ºC.</FONT><BR><BR><FONT SIZE=4 FACE="Times New Roman">So, state 2 is superheated.  Using the superheated tables, </FONT><BR><DIV ALIGN=center><FONT SIZE=4 FACE="Times New Roman">v<SUB>2</SUB> = 3.103 m<S><SUP>3</SUP></S>/kg</FONT><BR><BR><IMG SRC="images/img147-27.gif" WIDTH=506 HEIGHT=48></DIV><FONT SIZE=4 FACE="Times New Roman">The water does work on the piston in the amount of 310.2 kJ.</FONT><BR><BR><BR><BR><B><FONT SIZE=4 FACE="Times New Roman">Example 5</FONT></B><BR><FONT SIZE=4 FACE="Times New Roman">One kilogram of water is contained in a piston-cylinder device at 100ºC.  The piston rests on lower stops such that the volume occupied by the water is 0.835 m<SUP>3</SUP>. The cylinder is fitted with an upper set of stops.  When the piston rests against the upper stops, the volume enclosed by the piston-cylinder device is 0.841 m<SUP>3</SUP>.  A pressure of 200 kPa is required to support the piston.  Heat is added to the water until the water exists as a saturated vapor.  How much work does the water do on the piston?</FONT><BR><BR><B><U><FONT SIZE=4 FACE="Times New Roman">System</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">:  The water contained in the piston-cylinder device</FONT><BR><BR><BR><FONT SIZE=4 FACE="Times New Roman">												?</FONT><BR><DIV ALIGN=center><IMG SRC="images/img147-28.gif" WIDTH=538 HEIGHT=240></DIV><BR><B><U><FONT SIZE=4 FACE="Times New Roman">Property Relation</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">: Steam tables</FONT><BR><BR><B><U><FONT SIZE=4 FACE="Times New Roman">Process</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">:  Combination of constant volume and constant pressure processes to be shown on the P-v diagram as the problem is solved</FONT><BR><BR><B><U><FONT SIZE=4 FACE="Times New Roman">Work Calculation</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">:</FONT><BR><BR><FONT SIZE=4 FACE="Times New Roman">The specific volume at state 1 is </FONT><DIV ALIGN=center><IMG SRC="images/img147-29.gif" WIDTH=213 HEIGHT=46></DIV><BR><BR><FONT SIZE=4 FACE="Times New Roman">At T<SUB>1 </SUB>= 100°C,</FONT><DIV ALIGN=center><IMG SRC="images/img147-30.gif" WIDTH=264 HEIGHT=46></DIV><BR><FONT SIZE=4 FACE="Times New Roman">Therefore, v<SUB>f </SUB>&lt; v<SUB>1</SUB> &lt; v<SUB>g</SUB> and state 1 is in the saturation region; so, P<SUB>1</SUB> = 101.35 kPa.</FONT><BR><BR><FONT SIZE=4 FACE="Times New Roman">Now let's consider the processes for the water</FONT><BR> <BR><FONT SIZE=4 FACE="Times New Roman">Process 1-2:  The volume stays constant until the pressure increases to 200 kPa.  Then the piston will move.</FONT><BR><BR><FONT SIZE=4 FACE="Times New Roman">Process 2-3:  Piston lifts off the bottom stops while the pressure stays constant. Does the piston hit upper stops before or  after reaching the saturated vapor state?</FONT><BR><BR><FONT SIZE=4 FACE="Times New Roman">Let's set </FONT><DIV ALIGN=center><IMG SRC="images/img147-31.gif" WIDTH=213 HEIGHT=46></DIV><IMG SRC="images/img147-32.gif" WIDTH=12 HEIGHT=21><IMG SRC="images/img147-33.gif" WIDTH=12 HEIGHT=21><BR><FONT SIZE=4 FACE="Times New Roman">At P<SUB>3</SUB> = P<SUB>2</SUB> = 200 kPa</FONT><BR><DIV ALIGN=center><IMG SRC="images/img147-34.gif" WIDTH=264 HEIGHT=46></DIV><BR><FONT SIZE=4 FACE="Times New Roman">Thus, v<SUB>f</SUB> &lt; v<SUB>3</SUB> &lt; v<SUB>g</SUB>.  So, the piston hits the upper stops before the water reaches the saturated vapor state. Now we have to consider a third process.</FONT><BR><BR><FONT SIZE=4 FACE="Times New Roman">Process 3-4:  With the piston against the upper stops, the volume remains constant during the final heating to the saturated vapor state and the pressure increases.</FONT><BR><BR><FONT SIZE=4 FACE="Times New Roman">Because the volume is constant in process 3 to 4, v<SUB>4</SUB>  = v<SUB>3</SUB>  = 0.841 m<SUP>3</SUP>/ kg and v<SUB>4</SUB> is a saturated vapor state. Interpolating in either the saturation pressure table or saturation temperature table at v<SUB>4</SUB> = v<SUB>g</SUB> gives</FONT><BR><DIV ALIGN=center><IMG SRC="images/img147-35.gif" WIDTH=201 HEIGHT=21></DIV><BR><FONT SIZE=4 FACE="Times New Roman">The net work for the heating process is (the "other" work is zero) </FONT><BR><DIV ALIGN=center><IMG SRC="images/img147-36.gif" WIDTH=488 HEIGHT=98></DIV><FONT SIZE=4 FACE="Times New Roman">Later, we will apply the conservation of energy, or first law, to this process to determine the amount of heat transfer required.</FONT><BR><BR><BR><B><FONT SIZE=4 FACE="Times New Roman">Example 6</FONT></B><BR><BR><FONT SIZE=4 FACE="Times New Roman">Air undergoes a constant pressure cooling process in which the temperature decreases by 100ºC.  What is the magnitude and direction of the work for this process?</FONT><BR><BR><B><U><FONT SIZE=4 FACE="Times New Roman">System</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">:</FONT><BR><BR><BR><BR><IMG SRC="images/img147-37.gif" WIDTH=553 HEIGHT=212><BR><BR><BR><B><U><FONT SIZE=4 FACE="Times New Roman">Property Relation</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">:  Ideal gas Law, Pv=RT</FONT><BR><BR><B><U><FONT SIZE=4 FACE="Times New Roman">Process</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">: Constant pressure</FONT><BR><BR><B><U><FONT SIZE=4 FACE="Times New Roman">Work Calculation</FONT></U></B><FONT SIZE=4 FACE="Times New Roman">: Neglecting the "other" work</FONT><BR><DIV ALIGN=center><IMG SRC="images/img147-38.gif" WIDTH=360 HEIGHT=49></DIV><BR><FONT SIZE=4 FACE="Times New Roman">The work per unit mass is</FONT><BR><BR><DIV ALIGN=center><IMG SRC="images/img147-39.gif" WIDTH=209 HEIGHT=134></DIV><BR><BR><FONT SIZE=4 FACE="Times New Roman">The work <B><U>done on</U></B> the air is 28.7 kJ/kg.</FONT><BR><BR><BR><BR><BR></BODY></HTML>

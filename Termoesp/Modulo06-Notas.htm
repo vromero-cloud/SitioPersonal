@@ -1,0 +1,247 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>6. CALORES ESPECÍFICOS</title>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
+</script>
+<style type="text/css">
+<!--
+.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
+.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
+.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
+.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
+.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
+.Resaltar {color: #FF00FF; font-size: 12pt;}
+.Estilo3 {font-size: 12pt}
+.Estilo4 {
+	color: #0000FF;
+	font-weight: bold;
+}
+.Estilo9 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.Estilo10 {color: #0000FF}
+-->
+</style>
+</head>
+<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
+  <h1 align="left" class="Estilo1 Estilo10">6. CALORES ESPECÍFICOS </h1>
+
+  <p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
+<hr />
+<p><font size="4" color="#000000"><b>Notas para la clase.</b></font></p>
+<hr />
+<p class="Seccion1"> Calores específicos, energía interna y entalpía </p>
+<p >
+Antes de poder aplicar la primera ley de la termodinámica a los sistemas, se deben determinar formas de calcular el cambio en la energía interna de la sustancia encerrada por las fronteras del sistema. Para sustancias reales como el agua, las tablas de propiedades se utilizan para encontrar el cambio de energía interna. Para los gases ideales, la energía interna se encuentra conociendo los calores específicos. La física define la cantidad de energía necesaria para elevar un grado la temperatura de una unidad de masa de una sustancia como el calor específico a volumen constante, $c_V$, para un proceso a volumen constante y el calor específico a presión constante, $c_p$, para un proceso a presión constante. Recuerda que la entalpía específica, $h$, es la suma de la energía interna específica, $u$, y el producto presión-volumen específico, $p\;v$,
+</p>
+	$$ h = u + p \; v $$
+<p >
+En termodinámica, los calores específicos se definen como
+</p>
+	$$ c_V = \left. \frac{\partial u}{\partial T} \right|_V \qquad \text{y} \qquad c_p = \left. \frac{\partial h}{\partial T} \right|_p $$
+<hr />
+<p class="Seccion1"> Sustancia simple </p>
+<p >
+El estado termodinámico de una sustancia simple y homogénea se especifica dando dos propiedades intensivas independientes cualesquiera, como se establece en el <strong>Postulado de estado</strong>. Consideremos que la energía interna es una función de $T$ y $v$ como $u = f(T,v)$, y la entalpía es una función de $T$ y $p$ como $h = g(T,p)$, entonces el diferencial total de $u$ es
+</p>
+	$$ du = \left. \frac{\partial u}{\partial T} \right|_V d T + \left. \frac{\partial u}{\partial v} \right|_T d v $$
+<p >
+o
+</p>$$ d u = c_V d T + \left. \frac{\partial u}{\partial v} \right|_T d v $$
+<p >
+y el diferencial total de $h$ es
+</p>
+	$$ d h = \left. \frac{\partial h}{\partial T} \right|_p d T + \left. \frac{\partial h}{\partial p} \right|_T d p $$
+<p >
+o
+</p>$$ d h = c_p d T + \left. \frac{\partial h}{\partial p} \right|_T d p $$
+<p >
+Usando la teoría de la relación termodinámica, podríamos evaluar las derivadas parciales restantes de $u$ y $h$ en términos de funciones de $p$, $v$ y $T$. Estas funciones dependen de la ecuación de estado de la sustancia. Dados los datos de calor específico y la ecuación de estado de la sustancia, podemos desarrollar las tablas de propiedades como las tablas de vapor.
+</p>
+<hr />
+<p class="Seccion1">Gases ideales</p>
+<p >
+Para los gases ideales, usamos la teoría de la relación de funciones termodinámicas del Capítulo 11 de Cengel y la ecuación de estado ( $P v = R T$ ) para mostrar que $u$, $h$, $c_V y $c_p$ son funciones únicamente de la temperatura. Entonces para gases ideales,
+</p>
+	$$ c_V = c_V (T) \qquad \text{con} \qquad \left. \frac{\partial u}{\partial v} \right|_T = 0 $$
+	$$ c_p = c_p (T) \qquad \text{con} \qquad \left. \frac{\partial h}{\partial p} \right|_T = 0 $$
+<p >
+Los calores específicos de los gases ideales se escriben en términos de diferenciales ordinarios como
+</p>
+	$$ c_V = \left. \frac{d u}{d T} \right|_{gas ideal} \qquad \text{y} \qquad c_p = \left. \frac{d h}{d T} \right|_{gas ideal} $$
+<p >
+La figura siguiente muestra cómo los calores específicos varían con la temperatura para gases ideales seleccionados.
+</p>
+<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch04-024.png" WIDTH=300 HEIGHT=200></DIV>
+<p >
+Los cambios diferenciales en energía interna y entalpía para gases ideales se vuelven
+</p>
+	$$ d u = c_V \; d T \qquad \text{y} \qquad d h = c_p \; d T $$
+<p >
+El cambio en la energía interna y la entalpía de los gases ideales se puede expresar como
+</p>
+	$$ \Delta u = u_2 - u_1 = \int_1^2 c_V \; d T = c_{V,prom} (T_2 - T_1) $$
+<p >
+y
+</p>
+	$$ \Delta h = h_2 - h_1 = \int_1^2 c_p \; d T = c_{p,prom} (T_2 - T_1) $$
+<p >
+donde $c_{V,prom}$ y $c_{p,prom}$,ave son valores promedio o constantes de los calores específicos en el rango de temperatura bajo estudio.
+</p>
+<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch04-092.png" WIDTH=300 HEIGHT=200></DIV>
+<p >
+En la figura anterior, un gas ideal sufre tres procesos diferentes entre las mismas dos temperaturas.
+</p>
+<ol>
+  <li>Proceso 1-2a: volumen constante </li>
+  <li>Proceso 1-2b: $p = a + b V$, una relación lineal </li>
+  <li>Proceso 1-2c: presión constante </li>
+</ol>
+<p >
+Estos procesos de gas ideal tienen el mismo cambio en energía interna y en entalpía porque los procesos ocurren entre los mismos límites de temperatura.
+</p>
+<p >
+Para encontrar $u$ y $h$, a menudo usamos valores promedio o constantes de los calores específicos. Algunas formas de determinar estos valores son las siguientes:
+</p>
+<ol>
+<li>El mejor valor promedio (el que da los resultados exactos): 
+	$$ c_{V,prom} = \frac{\int_1^2 c_V(T) \; d T}{T_2 - T_1} \qquad \text{y} \qquad
+	  c_{p,prom} = \frac{\int_1^2 c_p(T) \; d T}{T_2 - T_1} $$
+	  Consulte la <strong>Tabla A-2c</strong> de Cengel para conocer los datos específicos de las variables.
+</li>
+<li>Buenos valores promedio son: 
+	$$ c_{V,prom} = \frac{c_V(T_2) + c_V(T_1)}{2} \qquad \text{y} \qquad
+	  c_{p,prom} = \frac{c_p(T_2) + c_p(T_1)}{2} $$
+	  y 
+	  $$ c_{V,prom} = c_V(T_{\text{prom}}) \qquad \text{y} \qquad
+	  c_{p,prom} = c_p(T_{\text{prom}}) $$
+	  donde
+	  $$ T_{\text{prom}} = \frac{T_2 + T_1}{2}	$$
+</li>
+<li>A veces, los valores adecuados (y más utilizados) son los evaluados a $300 \text{ K}$: 
+	$$ c_{V,prom} = c_V(300 \text{ K}) \qquad \text{y} \qquad
+	  c_{p,prom} = c_p(300 \text{ K}) $$
+</li>
+</ol>
+<p >
+Echemos un segundo vistazo a la definición de $u$ y $h$ para gases ideales. Solo considera la entalpía por ahora.
+</p>
+	$$ \Delta h = h_2 - h_1 = \int_1^2 c_p(T) \; d T $$
+<p >
+Realicemos la integral relativa a un estado de referencia donde $h = h_\text{ref}$ en $T = T_\text{ref}$.
+</p>	
+	$$ \Delta h = h_2 - h_1 = \int_1^{ref} c_p(T') \; d T' + \int_{ref}^2 c_p(T') \; d T' $$
+<p >
+o
+</p>
+	$$ \Delta h = h_2 - h_1 = \int_{ref}^2 c_p(T') \; d T' - \int_{ref}^1 c_p(T') \; d T' = (h_2 - h_{ref}) - (h_1 - h_{ref}) $$
+<p >
+A cualquier temperatura, podemos calcular la entalpía relativa al estado de referencia como
+</p>
+	$$ h - h_{ref} = \int_{ref} c_p (T') d T' $$
+<p >
+0
+</p>
+	$$ h = h_{ref} + \int_{ref} c_p (T') d T' $$
+<p >
+De manera similar, el cambio de energía interna en relación con el estado de referencia es
+</p>
+	$$ u - u_{ref} = \int_{ref} c_V (T') d T' $$
+<p >
+0
+</p>
+	$$ u = u_{ref} + \int_{ref} c_V (T') d T' $$
+<p >
+Estas dos últimas relaciones forman la base de las tablas termodinámicas para el aire (<strong>Tabla A-17</strong> en base a la masa) y las otras tablas de gases ideales (<strong>Tablas A-18</strong> a <strong>A-25</strong> en base a moles). Cuando revise la <strong>Tabla A-17</strong>, encontrará $h$ y $u$ como funciones de $T$ en $\text{K}$. Dado que los parámetros $p_r$, $v_r$, etc., se aplican al aire en un proceso particular, llamado <strong>isentrópico</strong>, debe ignorar estos parámetros hasta que tengamos que estudiar el Capítulo 6 del Cengel. El estado de referencia para estas tablas se define como
+</p>
+	$$ u_{ref} = 0 \quad \text{y} \quad h_{ref} = 0 \quad \text{para} \quad T_{ref} = 0 \text{ K}. $$
+<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch04-025.png" WIDTH=300 HEIGHT=200></DIV>
+<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch04-026.png" WIDTH=300 HEIGHT=200></DIV>
+<p >
+En el análisis que sigue, se elimina la notación <em>prom</em>. En la mayoría de las aplicaciones para gases ideales, los valores de los calores específicos a $300 \text{ K}$ que se dan en la <strong>Tabla A-2</strong> son constantes adecuadas.
+</p>
+<hr />
+<p class="Seccion1">Relación entre $c_p$ y $c_V$ para gases ideales</p>
+<p>
+Usando la definición de entalpía ( $h = u + P v$), y escribiendo el diferencial de entalpía, la relación entre los calores específicos para gases ideales es
+</p>
+	$$ h = u + p V $$
+	$$ d h = d u +d (R T ) $$
+	$$ c_p d T = C_V d T + + R d T $$
+	$$ c_p = c_V + R $$	
+<p>
+	donde $R$ es la constante particular de los gases. La relación de calor específico, $k$, se define como
+</p>
+	$$ k = \frac{c_p}{c_V} $$
+<hr />
+<p class="Seccion1">Sólidos y Líquidos</p>
+<p>
+Tratamos a los sólidos y líquidos como sustancias incompresibles. Es decir, suponemos que la densidad o volumen específico de la sustancia es esencialmente constante durante un proceso. Podemos demostrar que los calores específicos de sustancias incompresibles son idénticos (esto se puede ver en un capítulo posterior; por ejemplo, el capítulo 11 del Cengel).
+</p>
+	$$ c_p = c_V = c \left[\frac{\text{kJ}}{\text{kg}\text{K}} \right] $$
+<p>
+Los calores específicos de las sustancias incompresibles dependen únicamente de la temperatura; por lo tanto, escribimos el cambio diferencial en la energía interna como
+</p>
+	$$ d u = c_V d T = c d T $$
+<p>
+y suponiendo calores específicos constantes, el cambio en la energía interna es
+</p>
+	$$ \Delta u = c_V \Delta T = c (T_2 - T_1) $$
+<p>
+Ahora bien, recordando que la entalpía específica se define como
+</p>
+	$$ h = u + p v $$
+<p>
+Se tiene que el diferencial de entalpía es
+</p>
+	$$ d h = d u + p d v + v d p $$
+<p>
+Para sustancias incompresibles, la entalpía diferencial se convierte en
+</p>
+	$$ d v = 0 $$
+	$$ d h = d u + p (0) + v d p $$
+	$$ d h = d u + v d p $$
+<p>
+Integrando y asumiendo calores específicos constantes
+</p>
+	$$ \Delta h = \Delta u + v \Delta p $$
+<p>
+Para los sólidos, el volumen específico es aproximadamente cero; por lo tanto,
+</p>
+	$$ \Delta h_{\text{sol}} = \Delta u_{\text{sol}} + {0} \Delta p $$
+	$$ \Delta h_{\text{sol}} = \Delta u_{\text{sol}} \approx c \delta T $$
+<p>
+Para líquidos , se encuentran dos casos especiales:
+</p>
+<ol>
+  <li><strong>Procesos a presión constante</strong>, como en calentadores ($p = \text{constante}$) 
+	
+	$$ \Delta h_{\text{liq}} = \Delta u_{\text{liq}} \approx c \delta T $$
+	
+	</li>
+  <li><strong>Procesos a temperatura constante</strong>, como en las bombas ($T = \text{constante}$)
+	  
+	$$ \Delta h_{\text{liq}} = \Delta u_{\text{liq}} + v \Delta p \approx c \delta T + v \Delta p $$
+	$$ \Delta h_{\text{liq}} = \Delta u_{\text{liq}} + v \Delta p \approx c {0} + v \Delta p $$
+	$$ \Delta h_{\text{liq}} = v \Delta p $$
+	
+	</li>
+</ol>
+<p>
+Deduciremos esta última expresión para $h$ nuevamente una vez que hayamos analizado el sistema abierto de la primera ley y la segunda ley en un tema posterior (por ejemplo, Capítulo 6 del Cengel).
+</p>
+<p>
+Los calores específicos para diferentes líquidos y sólidos seleccionados se dan en la tabla <strong>A-3</strong>.
+</p>
+<hr />
+	
+</body>
+
+</html>
+

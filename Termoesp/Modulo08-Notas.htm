@@ -1,0 +1,95 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>8. PRIMERA LEY DE LA TERMODINÁMICA APLICADA A SISTEMAS ABIERTOS CON PROCESOS TRANSITORIOS</title>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
+</script>
+<style type="text/css">
+<!--
+.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
+.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
+.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
+.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
+.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
+.Resaltar {color: #FF00FF; font-size: 12pt;}
+.Estilo3 {font-size: 12pt}
+.Estilo4 {
+	color: #0000FF;
+	font-weight: bold;
+}
+.Estilo9 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.Estilo10 {color: #0000FF}
+-->
+</style>
+</head>
+<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
+  <h1 align="left" class="Estilo1 Estilo10">8. PRIMERA LEY DE LA TERMODINÁMICA APLICADA A SISTEMAS ABIERTOS CON PROCESOS TRANSITORIOS</h1>
+
+  <p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
+<hr />
+<p><font size="4" color="#000000"><b>Notas para la clase.</b></font></p>
+<hr />
+<p class="Seccion1"> Problemas de estado uniforme y flujo uniforme </p>
+<p >
+Durante la transferencia de energía no estacionaria hacia o desde sistemas abiertos o volúmenes de control, el sistema puede tener cambios en la energía y la masa almacenadas. Varios problemas termodinámicos no estacionarios pueden tratarse como problemas de estado uniforme y flujo uniforme. Los criterios para estado uniforme y flujo uniforme son:
+</p>
+<ol>
+  <li>El proceso tiene lugar durante un período de tiempo específico. </li>
+  <li>El estado de la masa dentro del volumen de control es uniforme en cualquier instante de tiempo pero puede variar con el tiempo. </li>
+  <li>El estado de la masa que cruza la superficie de control es uniforme y estacionario. El flujo másico puede ser diferente en diferentes ubicaciones de la superficie de control. </li>
+</ol>
+<p >
+Para encontrar la cantidad de masa que cruza la superficie de control en una región determinada, integramos la tasa de flujo másico durante ese período de tiempo.
+</p>
+<p >
+Para entradas:
+</p>$$ m_e = \int_0^t \dot{m}_e d t $$
+<p >
+Para salidas:
+</p>$$ m_s = \int_0^t \dot{m}_s d t $$
+</p>
+<p >
+El cambio en la masa del volumen de control en el período de tiempo es
+</p>
+	$$ \left. (m_2 - m_1) \right|_{VC} = \int_0^t \left. \frac{d m}{d t} \right|_{VC} d t $$
+<p >
+La conservación de la masa en estado estacionario y flujo estacionario se convierte en
+</p>
+	$$ \sum \dot{m}_e \sum \dot{m}_s = \left. (m_2 - m_1) \right|_{VC} $$
+<p >
+El cambio en la energía interna para el volumen de control durante el período de tiempo es
+</p>
+	$$ \left. (m_2 u_2 - m_1 u_1) \right|_{VC} = \int_0^t \left. \frac{d U}{d t} \right|_{VC} d t $$
+<p >
+El calor transferido y el trabajo realizado en el período de tiempo son
+</p>
+	$$ Q = \int_0^t \dot{Q} dt \qquad \text{y} \qquad W = \int_0^t \dot{W} dt $$
+<p >
+La energía que cruza la superficie de control con la masa en el período de tiempo es
+</p>
+	$$ \sum m_j \theta_j = \in_0^t \dot{m}_j \left(h_j + \frac{v_j^2}{2} + g z_j \right) dt $$
+<p >
+donde $j = e$ para entradas y $j = s$ para salidas.
+</p>
+<p >
+La primera ley para estado estacionario y flujo estacionario se convierte en
+</p>
+	$$ Q - W = \sum m_e \left(h_e + \frac{v_e^2}{2} + g z_e \right) -
+	\sum m_s \left(h_s + \frac{v_s^2}{2} + g z_s \right) + (m_2 e_2 - m_1 e_1) $$
+<p >
+Cuando los cambios de energía cinética y potencial asociados con el volumen de control y las corrientes de fluido son despreciables, se simplifica a
+</p>
+	$$ Q - W = \sum m_e h_e - \sum m_s h_s + (m_2 u_2 - m_1 u_1) $$
+<hr />
+	
+</body>
+
+</html>
+
