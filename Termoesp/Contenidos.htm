@@ -1,122 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Contenidos del curso</title>
-<style type="text/css">
-body {
-    margin: 0 auto;
-    width: 1240px;
-    height: 1362px;
-    background: url(images/fondo-07.jpg);
-    background-size: 100%;
-    overflow: scroll;
-    font-family: "Times New Roman", Times, serif;
-    padding: 20px;
-}
-h1 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-table {
-    width: 80%;
-    border-collapse: collapse;
-    border: 1px solid #333;
-}
-th, td {
-    border: 1px solid #333;
-    padding: 10px;
-    vertical-align: top;
-}
-th {
-    font-size: 1.4em;
-    text-align: center;
-}
-.center-text {
-    text-align: center;
-    font-size: 1.2em;
-}
-.topic-text {
-    font-size: 1.2em;
-    text-align: left;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Contenidos del curso</title>
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            max-width: 1240px;
+            min-height: 100vh;
+            background: url(images/fondo-07.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            border: 0;
+            overflow-y: auto;
+            font-family: "Times New Roman", Times, serif;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        table {
+            width: 100%;
+            max-width: 1000px;
+            border-collapse: collapse;
+            border: 1px solid #333;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo ligero para legibilidad */
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            vertical-align: top;
+        }
+        th {
+            font-size: 1.4em;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .center-text {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .topic-text {
+            font-size: 1.1em;
+            text-align: left;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-<h1>Contenidos del Curso</h1>
-<table>
-    <thead>
-        <tr>
-            <th style="width: 10%;">Módulo</th>
-            <th style="width: 90%;">Temas y subtemas</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="center-text">1</td>
-            <td class="topic-text">Conceptos principales de Termodinámica<br>Energía y sus formas, sistemas abiertos y cerrados, características intensivas y extensivas, estado, equilibrio, proceso, ciclo, postulado de estado, presión manométrica y absoluta, presión del vacío, temperatura y las diversas escalas de la temperatura, ley cero de la termodinámica, y sistemas de unidades.</td>
-        </tr>
-        <tr>
-            <td class="center-text">2</td>
-            <td class="topic-text">Propiedades de sustancias puras: definición de sustancia pura y sus fases, procesos de cambio de fase, diagramas de procesos de cambio de fase, presión de vapor, fase de equilibrio y tablas de propiedades.</td>
-        </tr>
-        <tr>
-            <td class="center-text">3</td>
-            <td class="topic-text">Ecuaciones de estado: ecuación de estado del gas ideal, factor de compresibilidad, ecuación de Van der Waals y otras.</td>
-        </tr>
-        <tr>
-            <td class="center-text">4</td>
-            <td class="topic-text">Primera ley de la Termodinámica (sistema cerrado): transferencia de energía, trabajo y sus formas, balance de energía.</td>
-        </tr>
-        <tr>
-            <td class="center-text">5</td>
-            <td class="topic-text">Calores específicos. Energía interna, entalpía y calor específico de gases ideales.</td>
-        </tr>
-        <tr>
-            <td class="center-text">6</td>
-            <td class="topic-text">Primera ley de la Termodinámica (sistemas abiertos). Análisis termodinámico de sistemas abiertos. Casos específicos de flujo estacionario: toberas convergentes y divergentes, turbinas, compresores, válvulas de estrangulación y bombas.</td>
-        </tr>
-        <tr>
-            <td class="center-text">7</td>
-            <td class="topic-text">Primera ley de la Termodinámica (procesos transitorios): procesos de llenado y vaciado.</td>
-        </tr>
-        <tr>
-            <td class="center-text">8</td>
-            <td class="topic-text">Segunda Ley de la Termodinámica: Máquinas térmicas, refrigeradores y bombas de calor.</td>
-        </tr>
-        <tr>
-            <td class="center-text">9</td>
-            <td class="topic-text">Conceptos de depósito térmico, máquina térmica y sus eficiencias. Refrigeradores, bombas de calor y sus coeficientes de funcionamiento.</td>
-        </tr>
-        <tr>
-            <td class="center-text">10</td>
-            <td class="topic-text">Procesos reversibles e irreversibles; ciclo de Carnot, principios de Carnot; escala de temperatura absoluta; ciclo reversible de Carnot.</td>
-        </tr>
-        <tr>
-            <td class="center-text">11</td>
-            <td class="topic-text">Entropía: desigualdad de Clausius; definición de entropía; entropía como característica numérica de la Segunda Ley; el principio de incremento de la entropía; entropía como medida de desorden.</td>
-        </tr>
-        <tr>
-            <td class="center-text">12</td>
-            <td class="topic-text">Cambio en la entropía de sustancias puras: tablas de propiedades; cambio en la entropía de sustancias sólidas y líquidas; procesos isentrópicos.</td>
-        </tr>
-        <tr>
-            <td class="center-text">13</td>
-            <td class="topic-text">Cambio en la entropía de gases ideales: diagramas T-s, h-s; relaciones de Gibbs; procesos isentrópicos de gases ideales en el caso de calores específicos variables y constantes.</td>
-        </tr>
-        <tr>
-            <td class="center-text">14</td>
-            <td class="topic-text">Trabajo reversible de flujo estable. Compresión con enfriamiento.</td>
-        </tr>
-        <tr>
-            <td class="center-text">15</td>
-            <td class="topic-text">Eficiencia isentrópica: de turbinas, compresores, toberas aceleradoras y difusores.</td>
-        </tr>
-        <tr>
-            <td class="center-text">16</td>
-            <td class="topic-text">Balance de entropía general y sus aplicaciones.</td>
-        </tr>
-    </tbody>
-</table>
+    <h1>Contenidos del Curso</h1>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 10%;">Módulo</th>
+                <th style="width: 90%;">Temas y subtemas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center-text">1</td>
+                <td class="topic-text">Conceptos principales de Termodinámica: Energía y sus formas, sistemas abiertos y cerrados, características intensivas y extensivas, estado, equilibrio, proceso, ciclo, postulado de estado, presión manométrica y absoluta, presión del vacío, temperatura y las diversas escalas de la temperatura, ley cero de la termodinámica, y sistemas de unidades.</td>
+            </tr>
+            <tr>
+                <td class="center-text">2</td>
+                <td class="topic-text">Propiedades de sustancias puras: definición de sustancia pura y sus fases, procesos de cambio de fase, diagramas de procesos de cambio de fase, presión de vapor, fase de equilibrio y tablas de propiedades.</td>
+            </tr>
+            <tr>
+                <td class="center-text">3</td>
+                <td class="topic-text">Ecuaciones de estado: ecuación de estado del gas ideal, factor de compresibilidad, ecuación de Van der Waals y otras.</td>
+            </tr>
+            <tr>
+                <td class="center-text">4</td>
+                <td class="topic-text">Primera ley de la Termodinámica (sistema cerrado): transferencia de energía, trabajo y sus formas, balance de energía.</td>
+            </tr>
+            <tr>
+                <td class="center-text">5</td>
+                <td class="topic-text">Calores específicos. Energía interna, entalpía y calor específico de gases ideales.</td>
+            </tr>
+            <tr>
+                <td class="center-text">6</td>
+                <td class="topic-text">Primera ley de la Termodinámica (sistemas abiertos). Análisis termodinámico de sistemas abiertos. Casos específicos de flujo estacionario: toberas convergentes y divergentes, turbinas, compresores, válvulas de estrangulación y bombas.</td>
+            </tr>
+            <tr>
+                <td class="center-text">7</td>
+                <td class="topic-text">Primera ley de la Termodinámica (procesos transitorios): procesos de llenado y vaciado.</td>
+            </tr>
+            <tr>
+                <td class="center-text">8</td>
+                <td class="topic-text">Segunda Ley de la Termodinámica: Máquinas térmicas, refrigeradores y bombas de calor.</td>
+            </tr>
+            <tr>
+                <td class="center-text">9</td>
+                <td class="topic-text">Conceptos de depósito térmico, máquina térmica y sus eficiencias. Refrigeradores, bombas de calor y sus coeficientes de funcionamiento.</td>
+            </tr>
+            <tr>
+                <td class="center-text">10</td>
+                <td class="topic-text">Procesos reversibles e irreversibles; ciclo de Carnot, principios de Carnot; escala de temperatura absoluta; ciclo reversible de Carnot.</td>
+            </tr>
+            <tr>
+                <td class="center-text">11</td>
+                <td class="topic-text">Entropía: desigualdad de Clausius; definición de entropía; entropía como característica numérica de la Segunda Ley; el principio de incremento de la entropía; entropía como medida de desorden.</td>
+            </tr>
+            <tr>
+                <td class="center-text">12</td>
+                <td class="topic-text">Cambio en la entropía de sustancias puras: tablas de propiedades; cambio en la entropía de sustancias sólidas y líquidas; procesos isentrópicos.</td>
+            </tr>
+            <tr>
+                <td class="center-text">13</td>
+                <td class="topic-text">Cambio en la entropía de gases ideales: diagramas T-s, h-s; relaciones de Gibbs; procesos isentrópicos de gases ideales en el caso de calores específicos variables y constantes.</td>
+            </tr>
+            <tr>
+                <td class="center-text">14</td>
+                <td class="topic-text">Trabajo reversible de flujo estable. Compresión con enfriamiento.</td>
+            </tr>
+            <tr>
+                <td class="center-text">15</td>
+                <td class="topic-text">Eficiencia isentrópica: de turbinas, compresores, toberas aceleradoras y difusores.</td>
+            </tr>
+            <tr>
+                <td class="center-text">16</td>
+                <td class="topic-text">Balance de entropía general y sus aplicaciones.</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
