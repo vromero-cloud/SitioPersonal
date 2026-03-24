@@ -2,20 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades recomendadas</title>
     <style type="text/css">
         body {
             margin: 0 auto;
             max-width: 1240px;
+            /* Permite el desplazamiento vertical y asegura que el fondo cubra todo */
             min-height: 100vh;
-            background: url(images/img-0.jpg);
+            overflow-y: auto; 
+            background: url(images/img-0.jpg) no-repeat center center fixed;
             background-size: cover;
-            background-attachment: fixed;
-            overflow-y: auto;
             font-family: "Times New Roman", serif;
             padding: 40px;
             box-sizing: border-box;
             line-height: 1.6;
+            /* Permite ajuste horizontal del texto al aumentar el font-size */
+            word-wrap: break-word;
+            overflow-x: hidden;
         }
         .header-title {
             text-align: center;
@@ -68,6 +72,8 @@
             width: 100%;
             background-color: rgba(255, 255, 255, 0.9);
             margin-bottom: 40px;
+            /* Asegura que la tabla no rompa el diseño en pantallas pequeñas */
+            table-layout: auto;
         }
         th, td {
             border: 1px solid #333;
@@ -92,28 +98,29 @@
         a:hover {
             text-decoration: underline;
         }
+        /* Ajuste para dispositivos móviles o zoom alto */
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            td:first-child { width: auto; display: block; }
+            td { display: block; width: 100%; box-sizing: border-box; }
+        }
     </style>
 </head>
 <body>
     <div class="header-title">ACTIVIDADES RECOMENDADAS PARA CADA MÓDULO</div>
-    
     <div class="quote-container">
         <p class="quote">
             Ninguno llegó, penetró como un huracán interno a desencajar, a descoyuntar la Materia, a dislocarla, a retorcerla hasta el delirio... y que ella misma, ella sola, esa misma Materia en ignición en una íntima cópula trémula, substantiva y primaria, originada por una fuerza desconocida, que nadie sabe de dónde proviene –tal vez de las entrañas genéticas de la Materia misma– fuese la que modelase la forma exterior.
         </p>
         <span class="author">— León Felipe</span>
     </div>
-
     <hr>
-
     <div class="intro-text">
         <p><strong>Estimado estudiante:</strong></p>
         <p>En el mundo actual existen dos caminos diferentes de entender y adaptarse al mundo en el cual vivimos: la ciencia y el arte. Los procesos reales son muy complejos, el hombre puede perderse entre tantos fenómenos. La ciencia enseña a distinguir lo esencial de lo insignificante y enfocar nuestra atención en lo esencial: construir un modelo del proceso real.</p>
         <p>Los cálculos realizados con base en el modelo construido indican cómo controlar y aprovechar mejor las leyes de la naturaleza. Te recomiendo que sigas las recomendaciones en este documento, válidas para todos los módulos del curso. Sé responsable y persistente. Ten en cuenta que tienes que cumplir las actividades asignadas antes de la fecha acordada con el profesor. A continuación se enlistan las actividades a cumplir en cada módulo.</p>
     </div>
-
     <div class="section-title">ACTIVIDADES PARA CADA MÓDULO</div>
-
     <table>
         <tbody>
             <tr>
