@@ -1,110 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Curso de Termodinámica</title>
-<link type="text/css" href="menu.css" rel="stylesheet">
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<style type="text/css">
-* { margin: 0; padding: 0; }
-html { background: #222; }
-body {
-    margin: 0 auto;
-    height: 1362px;
-    width: 1240px;
-    background: url(images/AguaDiagFases50.png);
-    background-size: 20% 20%;
-    color: #555555;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-}
-h1, h2 { text-align: center; margin-top: 10px; }
-div#menu { margin: 0; }
-div#copyright { display: none; }
-a { color: #003399; text-decoration: none; }
-a:hover { color: #00CC00; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Termodinámica</title>
+    <link type="text/css" href="menu.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+    <style type="text/css">
+        * { margin: 0; padding: 0; }
+        html { 
+            background: #222; 
+            /* Permitir el desplazamiento vertical siempre */
+            height: 100%;
+        }
+        body {
+            margin: 0 auto;
+            /* Se cambia height fijo por min-height para permitir crecimiento */
+            min-height: 100vh;
+            width: 100%;
+            max-width: 1240px;
+            background: url(images/AguaDiagFases50.png);
+            background-size: 20% 20%;
+            color: #555555;
+            font-family: Arial, sans-serif;
+            /* Se activa el scroll vertical y se permite el ajuste horizontal */
+            overflow-y: auto;
+            overflow-x: hidden;
+            word-wrap: break-word;
+        }
+        h1, h2 { 
+            text-align: center; 
+            margin-top: 10px; 
+            padding: 0 15px;
+        }
+        div#menu { margin: 0; position: relative; z-index: 100; }
+        div#copyright { display: none; }
+        a { color: #003399; text-decoration: none; }
+        a:hover { color: #00CC00; }
+        
+        /* Asegura que el contenido sea legible si el font aumenta */
+        span { display: inline-block; max-width: 100%; }
+    </style>
 </head>
 <body>
-<h1>Curso de Termodinámica</h1>
-<h2>Dr. Víctor Manuel Romero Medina</h2>
-<div id="menu">
-    <ul class="menu">
-        <li><a href="Bienvenida.htm" class="parent" target="_blank"><span>Bienvenida</span></a></li>
-        <li><a href="#" class="parent"><span>Información general</span></a>
-            <div><ul>
-                <li><a href="CurriculumVitae.htm" target="_blank"><span>Curriculum Vitae</span></a></li>
-                <li><a href="Objetivos.htm" target="_blank"><span>Objetivos del Curso</span></a></li>
-                <li><a href="EstrategiaGlobal.htm" target="_blank"><span>Estrategia Global</span></a></li>
-                <li><a href="Contenidos.htm" target="_blank"><span>Contenidos</span></a></li>
-                <li><a href="Actividades.htm" target="_blank"><span>Actividades por módulo</span></a></li>
-            </ul></div>
-        </li>
-        <li><a href="#" class="parent"><span>Módulos</span></a>
-            <div><ul>
-                <li><a href="#" class="parent"><span>Generalidades</span></a>
-                    <div><ul>
-                        <li><a href="#" class="parent"><span>1. Conceptos básicos</span></a>
-                            <div><ul>
-                                <li><a href="res0162.pps" target="_blank"><span>Biblioteca de imágenes (pps)</span></a></li>
-                                <li><a href="#" class="parent"><span>Notas</span></a>
-                                    <div><ul>
-                                        <li><a href="Modulo01-Notas1.htm" target="_blank"><span>Apuntes I</span></a></li>
-                                        <li><a href="Modulo01-Notas2.htm" target="_blank"><span>Apuntes II</span></a></li>
-                                    </ul></div>
-                                </li>
-                                <li><a href="res00139.htm" target="_blank"><span>Problemas resueltos</span></a></li>
-                                <li><a href="modulo01-Tarea.htm" target="_blank"><span>Tarea 1</span></a></li>
-                            </ul></div>
+    <h1>Curso de Termodinámica</h1>
+    <h2>Dr. Víctor Manuel Romero Medina</h2>
+    <div id="menu">
+        <ul class="menu">
+            <li><a href="Bienvenida.htm" class="parent" target="_blank"><span>Bienvenida</span></a></li>
+            <li><a href="#" class="parent"><span>Información general</span></a>
+                <div>
+                    <ul>
+                        <li><a href="CurriculumVitae.htm" target="_blank"><span>Curriculum Vitae</span></a></li>
+                        <li><a href="Objetivos.htm" target="_blank"><span>Objetivos del Curso</span></a></li>
+                        <li><a href="EstrategiaGlobal.htm" target="_blank"><span>Estrategia Global</span></a></li>
+                        <li><a href="Contenidos.htm" target="_blank"><span>Contenidos</span></a></li>
+                        <li><a href="Actividades.htm" target="_blank"><span>Actividades por módulo</span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" class="parent"><span>Módulos</span></a>
+                <div>
+                    <ul>
+                        <li><a href="#" class="parent"><span>Generalidades</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="#" class="parent"><span>1. Conceptos básicos</span></a>
+                                        <div>
+                                            <ul>
+                                                <li><a href="res0162.pps" target="_blank"><span>Biblioteca de imágenes (pps)</span></a></li>
+                                                <li><a href="#" class="parent"><span>Notas</span></a>
+                                                    <div>
+                                                        <ul>
+                                                            <li><a href="Modulo01-Notas1.htm" target="_blank"><span>Apuntes I</span></a></li>
+                                                            <li><a href="Modulo01-Notas2.htm" target="_blank"><span>Apuntes II</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li><a href="res00139.htm" target="_blank"><span>Problemas resueltos</span></a></li>
+                                                <li><a href="modulo01-Tarea.htm" target="_blank"><span>Tarea 1</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="parent"><span>2. Propiedades de las sustancias puras</span></a>
+                                        <div>
+                                            <ul>
+                                                <li><a href="Modulo02-Notas1.htm" target="_blank"><span>Notas</span></a></li>
+                                                <li><a href="res00145.htm" target="_blank"><span>Problemas resueltos</span></a></li>
+                                                <li><a href="modulo02-Tarea.htm" target="_blank"><span>Tarea 2</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li><a href="#" class="parent"><span>2. Propiedades de las sustancias puras</span></a>
-                            <div><ul>
-                                <li><a href="Modulo02-Notas1.htm" target="_blank"><span>Notas</span></a></li>
-                                <li><a href="res00145.htm" target="_blank"><span>Problemas resueltos</span></a></li>
-                                <li><a href="modulo02-Tarea.htm" target="_blank"><span>Tarea 2</span></a></li>
-                            </ul></div>
+                        <li><a href="#" class="parent"><span>3. Ecuaciones de estado</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="Modulo03-Notas.htm" class="parent" target="_blank"><span>Notas</span></a></li>
+                                    <li><a href="res00146.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
+                                    <li><a href="modulo03-Tarea.htm" class="parent" target="_blank"><span>Tarea 3</span></a></li>
+                                </ul>
+                            </div>
                         </li>
-                    </ul></div>
-                </li>
-                <li><a href="#" class="parent"><span>Primera ley Termodinámica</span></a>
-                    <div><ul>
-                        <li><a href="#" class="parent"><span>4. Sistemas cerrados</span></a>
-                            <div><ul>
-                                <li><a href="Modulo04-Notas.htm" target="_blank"><span>Notas</span></a></li>
-                                <li><a href="res00147.htm" target="_blank"><span>Problemas resueltos</span></a></li>
-                                <li><a href="modulo04-Tarea.htm" target="_blank"><span>Tarea 4</span></a></li>
-                            </ul></div>
+                        <li><a href="#" class="parent"><span>Primera ley Termodinámica</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="#" class="parent"><span>4. Sistemas cerrados</span></a>
+                                        <div>
+                                            <ul>
+                                                <li><a href="Modulo04-Notas.htm" target="_blank"><span>Notas</span></a></li>
+                                                <li><a href="res00147.htm" target="_blank"><span>Problemas resueltos</span></a></li>
+                                                <li><a href="modulo04-Tarea.htm" target="_blank"><span>Tarea 4</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                    </ul></div>
-                </li>
-                <li><a href="#" class="parent"><span>Entropía</span></a>
-                    <div><ul>
-                        <li><a href="#" class="parent"><span>11. Definición</span></a>
-                            <div><ul>
-                                <li><a href="#" class="parent"><span>Notas</span></a>
-                                    <div><ul>
-                                        <li><a href="res00098.htm" target="_blank"><span>Notas I</span></a></li>
-                                        <li><a href="res00097.htm" target="_blank"><span>Notas II</span></a></li>
-                                    </ul></div>
-                                </li>
-                                <li><a href="res00141.htm" target="_blank"><span>Problemas resueltos</span></a></li>
-                                <li><a href="res00172.htm" target="_blank"><span>Tarea 11</span></a></li>
-                            </ul></div>
+                        <li><a href="#" class="parent"><span>Entropía</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="#" class="parent"><span>11. Definición</span></a>
+                                        <div>
+                                            <ul>
+                                                <li><a href="#" class="parent"><span>Notas</span></a>
+                                                    <div>
+                                                        <ul>
+                                                            <li><a href="res00098.htm" target="_blank"><span>Notas I</span></a></li>
+                                                            <li><a href="res00097.htm" target="_blank"><span>Notas II</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li><a href="res00141.htm" target="_blank"><span>Problemas resueltos</span></a></li>
+                                                <li><a href="res00172.htm" target="_blank"><span>Tarea 11</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                    </ul></div>
-                </li>
-            </ul></div>
-        </li>
-        <li><a href="#" class="parent"><span>Material de apoyo</span></a>
-            <div><ul>
-                <li><a href="FuentesInformacion.htm" target="_blank"><span>Fuentes de Información</span></a></li>
-                <li><a href="RecursosTecnologicos.htm" target="_blank"><span>Recursos tecnológicos</span></a></li>
-            </ul></div>
-        </li>
-        <li><a href="Evaluacion.htm" target="_blank"><span>Evaluación</span></a></li>
-        <li><a href="mailto:vromero@ucaribe.edu.mx" target="_blank"><span>¿Necesitas ayuda?</span></a></li>
-    </ul>
-</div>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" class="parent"><span>Material de apoyo</span></a>
+                <div>
+                    <ul>
+                        <li><a href="FuentesInformacion.htm" target="_blank"><span>Fuentes de Información</span></a></li>
+                        <li><a href="RecursosTecnologicos.htm" target="_blank"><span>Recursos tecnológicos</span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Evaluacion.htm" target="_blank"><span>Evaluación</span></a></li>
+            <li><a href="mailto:vromero@ucaribe.edu.mx" target="_blank"><span>¿Necesitas ayuda?</span></a></li>
+        </ul>
+    </div>
 </body>
 </html>
