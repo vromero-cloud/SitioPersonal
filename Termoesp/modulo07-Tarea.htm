@@ -1,66 +1,164 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Módulo 7. Tarea Sistemas Abiertos</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÃ³dulo 7. Tarea Sistemas Abiertos</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fdfdf5; 
+            font-family: "Times New Roman", Times, serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .header-section {
+            text-align: left;
+            border-bottom: 3px solid #0000FF;
+            margin-bottom: 25px;
+        }
+        h1 { color: #0000FF; font-size: 2.2em; margin-bottom: 5px; }
+        h2 { color: #0000FF; font-size: 1.4em; margin-top: 0; }
+        
+        .ejercicio {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 6px solid #0000FF;
+        }
+        .ejercicio-id {
+            font-weight: bold;
+            color: #0000FF;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .respuesta-final {
+            display: block;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 20px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-<p align="left" class="Titulo">Termodin&aacute;mica</p>
-<p align="left" class="Seccion2">Tarea 7. Sistemas Abiertos (12 problemas)</p>
-<p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
+<body>
+
+<div class="header-section">
+    <h1>TermodinÃ¡mica</h1>
+    <h2>Tarea 7. Primera Ley en Sistemas Abiertos (12 problemas)</h2>
+</div>
+
+<p><em>Revisa la BibliografÃ­a recomendada en la secciÃ³n <strong>Fuentes de InformaciÃ³n</strong> del curso.</em></p>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 1 (5-30)</span>
+    <p>
+        A una tobera entra aire a $300 \text{ kPa}$, $200 ^\circ \text{C}$ y $45 \text{ m/s}$, y sale a $100 \text{ kPa}$ y $180 \text{ m/s}$. El Ã¡rea de entrada es $110 \text{ cm}^2$. Determine:
+        <br>a) El flujo mÃ¡sico.
+        <br>b) La temperatura de salida.
+        <br>c) El Ã¡rea de salida.
+    </p>
+    
+    <span class="respuesta-final">Respuestas: a) $1.09 \text{ kg/s}$, b) $185 ^\circ \text{C}$, c) $79.9 \text{ cm}^2$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 2 (5-31)</span>
+    <p>Investigue el efecto del Ã¡rea de entrada ($50$ a $150 \text{ cm}^2$) sobre el flujo mÃ¡sico y las condiciones de salida del problema anterior. Trace las grÃ¡ficas correspondientes.</p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 3 (5-36E)</span>
+    <p>
+        A un difusor adiabÃ¡tico entra aire a $13 \text{ psia}$ y $50 ^\circ \text{F}$ a $600 \text{ ft/s}$. El Ã¡rea de salida es 4 veces la de entrada y la presiÃ³n final es $14.5 \text{ psia}$. Determine la temperatura y velocidad de salida.
+    </p>
+    
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 4 (5-37)</span>
+    <p>
+        Entra $CO_2$ a una tobera adiabÃ¡tica a $1 \text{ MPa}$, $500 ^\circ \text{C}$ y $6,000 \text{ kg/h}$. Sale a $100 \text{ kPa}$ y $450 \text{ m/s}$. El Ã¡rea de entrada es $40 \text{ cm}^2$. Calcule la velocidad de entrada y la temperatura de salida.
+    </p>
+    <span class="respuesta-final">Respuestas: a) $60.8 \text{ m/s}$, b) $685.8 \text{ K}$.</span>
+</div>
+
 <hr />
-<ol>
-  <li>(5-30) A una tobera entra aire constantemente a $300 \text{ kPa}$, $200 ^\circ \text{C}$ y $45 \displaystyle{\frac{\text{m}}{\text{s}}}$, y sale a $100 \text{ kPa}$ y $180 \displaystyle{\frac{\text{m}}{\text{s}}}$. El área de entrada de la tobera es $110 \text{ cm}^2$. Determine a) el flujo másico por la tobera, b) la temperatura del aire a la salida y c) el área de salida de la tobera. Respuestas : a) $1.09 \displaystyle{\frac{\text{kg}}{\text{s}}}$, b) $185 ^\circ \text{C}$, c) $79.9 \text{ cm}^2$.</li>
-<p>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 5 (5-49)</span>
+    <p>
+        Una turbina adiabÃ¡tica recibe vapor a $6 \text{ MPa}$, $400 ^\circ \text{C}$ y $80 \text{ m/s}$. Sale a $40 \text{ kPa}$ con $92\%$ de calidad y $50 \text{ m/s}$. El flujo mÃ¡sico es $20 \text{ kg/s}$. Determine:
+        <br>a) Cambio de energÃ­a cinÃ©tica.
+        <br>b) Potencia desarrollada.
+        <br>c) Ãrea de entrada.
+    </p>
+    
+    <span class="respuesta-final">Respuestas: a) $-1.95 \text{ kJ/kg}$, b) $14.6 \text{ MW}$, c) $0.0119 \text{ m}^2$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 6 (5-50)</span>
+    <p>Analice el efecto de la presiÃ³n de salida de la turbina ($10$ a $200 \text{ kPa}$) sobre la potencia producida. Grafique los resultados.</p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 7 (5-54)</span>
+    <p>ArgÃ³n a $1,600 \text{ kPa}$ y $450 ^\circ \text{C}$ entra a una turbina ($A_{ent} = 60 \text{ cm}^2$) a $55 \text{ m/s}$. Sale a $150 \text{ kPa}$ y $150 \text{ m/s}$. Si produce $90 \text{ kW}$, halle la temperatura de salida.</p>
+</div>
+
 <hr />
-  <li>(5-31) Regrese al problema 5-30. Use el programa EES (u otro) para investigar el efecto que tiene el área de entrada sobre el flujo másico, la temperatura de salida y el área de salida. Haga variar el área de entrada de $50 \text{ cm}^2$ a $150 \text{ cm}^2$. Trace la gráfica de los resultados finales en función del área de entrada y describa los resultados.</li>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 8 (5-56)</span>
+    <p>
+        Un compresor adiabÃ¡tico procesa $0.5 \text{ kg/s}$ de $CO_2$ de $100 \text{ kPa}, 300 \text{ K}$ a $600 \text{ kPa}, 450 \text{ K}$. Halle el flujo volumÃ©trico de entrada y la potencia consumida.
+    </p>
+    
+    <span class="respuesta-final">Respuestas: a) $0.28 \text{ m}^3/s$, b) $68.8 \text{ kW}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 9 (5-68)</span>
+    <p>Se estrangula R-134a de $800 \text{ kPa}$ y $25 ^\circ \text{C}$ hasta $-20 ^\circ \text{C}$. Determine la presiÃ³n y energÃ­a interna finales.</p>
+    <span class="respuesta-final">Respuestas: $133 \text{ kPa}$, $80.7 \text{ kJ/kg}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 10 (5-69)</span>
+    <p>Se estrangula vapor de agua de $8 \text{ MPa}$ y $350 ^\circ \text{C}$ hasta $2 \text{ MPa}$. Determine la temperatura final.</p>
+    <span class="respuesta-final">Respuesta: $285 ^\circ \text{C}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 11 (5-70)</span>
+    <p>Investigue el efecto de la presiÃ³n de salida ($6$ a $1 \text{ MPa}$) sobre la temperatura de salida en el proceso de estrangulaciÃ³n del problema anterior.</p>
+</div>
+
 <hr />
-  <li>(5-36E) A un difusor adiabático entra aire a $13 \text{ psia}$ y $50 ^\circ \text{F}$, con una velocidad constante de $600 \displaystyle{\frac{\text{ft}}{\text{s}}}$, y sale con una baja velocidad, a una presión de $14.5 \text{ psia}$. El área de salida del difusor es 4 veces el área de entrada. Determine a) la temperatura del aire a la salida, y b) su velocidad a la salida. </li>
-<hr />
-  <li>(5-37) A una tobera adiabática entra dióxido de carbono, de una manera estacionaria, a $1 \text{ MPa}$ y $500 ^\circ \text{C}$, a una razón de $6,000 \displaystyle{\frac{\text{kg}}{\text{h}}}$, y sale a $100 \text{ kPa}$ y $450 \displaystyle{\frac{\text{m}}{\text{s}}}$. El área de entrada a la tobera es $40 \text{ cm}^2$. Determine a) la velocidad de entrada y b) la temperatura de salida. Respuestas: a) $60.8 \displaystyle{\frac{\text{m}}{\text{s}}}$, b) $685.8 \text{ K}$. </li>
-<hr />
-  <li>(5-49) Por una turbina adiabática pasa un flujo estacionario de vapor de agua. Las condiciones iniciales del vapor son $6 \text{ MPa}$, $400 ^\circ \text{C}$ y $80 \displaystyle{\frac{\text{m}}{\text{s}}}$ en la entrada, y en la salida son $40 \text{ kPa}$, 92 por ciento de calidad y $50 \displaystyle{\frac{\text{m}}{\text{s}}}$. El flujo másico del vapor es $20 \displaystyle{\frac{\text{kg}}{\text{s}}}$. Determine a) el cambio de energía cinética, b) la potencia desarrollada por la turbina y c) el área de entrada de la turbina. Respuestas: a) $1.95 \displaystyle{\frac{\text{kJ}}{\text{kg}}}$, b) $14.6 \text{ MW}$, c) $0.0119 \text{ m}^2$.</li>
-<hr />
-  <li>(5-50) Regrese al problema 5-49. Use el programa EES (u otro) para investigar el efecto de la presión en la salida de la turbina sobre la potencia producida por ella. Haga variar la presión en la salida desde $10$ hasta $200 \text{ kPa}$. Trace la gráfica de la potencia de la turbina en función de la presión en la salida, y describa los resultados. </li>
-<hr />
-  <li>(5-54) A una turbina adiabática entra gas de argón a $1,600 \text{ kPa}$ y $450 ^\circ \text{C}$, con una velocidad constante de $55 \displaystyle{\frac{\text{m}}{\text{s}}}$, y sale a $150 \text{ kPa}$ con una velocidad de $150 \displaystyle{\frac{\text{m}}{\text{s}}}$. El área de entrada de la turbina es $60 \text{ cm}^2$. Si la potencia producida por la turbina es $90 \text{ kW}$, determine la temperatura de salida del argón. </li>
-<hr />
-  <li>(5-56) A un compresor adiabático entra dióxido de carbono a $100 \text{ kPa}$ y $300 \text{ K}$, con un flujo de $0.5 \displaystyle{\frac{\text{kg}}{\text{s}}}$, y sale a $600 \text{ kPa}$ y $450 \text{ K}$. Despreciando los cambios de energía cinética, determine a) el flujo volumétrico del dióxido de carbono en la entrada del compresor y b) la potencia consumida por el compresor. Respuestas: a) $0.28 \displaystyle{\frac{\text{m}^3}{\text{s}}}$, b) $68.8\text{ kW}$. </li>
-<hr />
-  <li>(5-68) Se estrangula el flujo de refrigerante 134a, de $800 \text{ kPa}$ y $25 ^\circ \text{C}$, hasta una temperatura de $- 20 ^\circ \text{C}$. Determine la presión y la energía interna del refrigerante en el estado final. Respuestas: $133 \text{ kPa}$, $80.7 \displaystyle{\frac{\text{kJ}}{\text{kg}}}$. </li>
-<hr />
-  <li>(5-69) Se estrangula vapor de agua a través de una válvula bien aislada, de $8 \text{ MPa}$ y $350 ^\circ \text{C}$ hasta $2 \text{ MPa}$. Determine la temperatura final del vapor. Respuesta: $285 ^\circ \text{C}$. </li>
-<hr />
-  <li>(5-70) Regrese al problema 5-69. Use el programa EES (u otro) para investigar el efecto de la presión en la salida, del vapor de agua, sobre la temperatura de salida, después de la estrangulación. Haga variar la presión de salida de $6$ a $1 \text{ MPa}$. Trace la gráfica de la temperatura de salida del vapor de agua en función de su presión a la salida, y analice los resultados. </li>
-<hr />
-  <li>5-77E Se calienta agua a $65 ^\circ \text{F}$ y $20 \text{ psia}$, en una cámara, mezclándola con vapor saturado a $20 \text{ psia}$. Si ambos flujos entran a la cámara mezcladora con el mismo flujo másico, determine la temperatura y la calidad del flujo que sale. Respuestas: $228 ^\circ \text{F}$, $0.415$. </li>
-<hr />
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 12 (5-77E)</span>
+    <p>Se mezcla agua lÃ­quida ($65 ^\circ \text{F}, 20 \text{ psia}$) con vapor saturado ($20 \text{ psia}$) en flujos mÃ¡sicos iguales. Determine la temperatura y calidad de la mezcla resultante.</p>
+    
+    <span class="respuesta-final">Respuestas: $228 ^\circ \text{F}$, $x = 0.415$.</span>
+</div>
 
 </body>
-
 </html>
-

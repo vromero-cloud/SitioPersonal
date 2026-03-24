@@ -1,152 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>7.2. PRIMERA LEY DE LA TERMODINÁMICA APLICADA A SISTEMAS ABIERTOS. PROCESOS ESTABLES</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
-.Estilo10 {color: #0000FF}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.2. Dispositivos de IngenierÃ­a de Flujo Estacionario</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 35px;
+            line-height: 1.7;
+            background-color: #fdfdf5;
+            color: #2c3e50;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h1 { color: #0000FF; border-bottom: 2px solid #0000FF; padding-bottom: 10px; }
+        h2 { color: #0000FF; font-size: 1.6em; margin-top: 30px; border-left: 6px solid #0000FF; padding-left: 15px; background: #f0f7ff; }
+        .device-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .formula-highlight {
+            text-align: center;
+            font-weight: bold;
+            color: #d35400;
+            margin: 15px 0;
+        }
+        .nota-azul { color: #0000FF; font-weight: bold; border-top: 1px solid #eee; padding-top: 10px; }
+        hr { border: 0; border-top: 1px solid #ccc; margin: 30px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-  <h1 align="left" class="Estilo1 Estilo10">7.2. PRIMERA LEY DE LA TERMODINÁMICA APLICADA A SISTEMAS ABIERTOS. PROCESOS ESTABLES </h1>
+<body>
 
-  <p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
-<hr />
-<p><font size="4" color="#000000"><b>Notas para la clase.</b></font></p>
-<hr />
-<p class="Seccion1"> Algunos dispositivos de ingeniería de flujo estacionario </p>
-<p >
-A continuación se presentan algunos dispositivos de ingeniería que funcionan esencialmente como volúmenes de control de flujo estacionario y de estado estacionario.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-024.png" WIDTH=300 HEIGHT=200></DIV>
-<hr />
-<p class="Seccion2">Boquillas y Difusores </p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-025.png" WIDTH=300 HEIGHT=200></DIV>
-<p >
-Para el flujo a través de toberas, la transferencia de calor, el trabajo y la energía potencial generalmente se desprecian y solamente tienen una entrada y una salida. La conservación de la energía se convierte en
-</p>	
-	$$ \dot{m}_1 = \dot{m}_2 $$
-	$$ \dot{m}_1 = \dot{m}_2 = \dot{m} $$
-	$$ \dot{E}_1 = \dot{E}_2 $$
-<p>
-o
-</p>
-	$$ \dot{m} (h_1 + \frac{v_1^2}{2} = \dot{m} (h_2 + \frac{v_2^2}{2}) $$
-<p >
-resolviendo para $v_2$ 
-</p>
-	$$ v_2 = \sqrt{2 (h_1 - h_2) + v_1^2} $$ 
-<hr />
-<p class="Seccion2">Turbinas </p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-026.png" WIDTH=300 HEIGHT=200></DIV>
-<p >
-Si ignoramos los cambios en las energías cinética y potencial a medida que el fluido fluye a través de una turbina adiabática que tiene una entrada y una salida, la conservación de la masa y la primera ley en estado estacionario y flujo estacionario se convierte en
-</p>
-	$$ \dot{m}_1 = \dot{m}_2 $$
-	$$ \dot{m}_1 = \dot{m}_2 = \dot{m} $$
-	$$ \dot{E}_1 = \dot{E}_2 $$
-	$$ \dot{m}_1 h_1 = \dot{m}_2 h_2 + \dot{W}_s $$
-	$$ \dot{W}_s = \dot{m} (h_1 - h_2) $$
-<p>
-<hr />
-<p class="Seccion2">Compresores y Ventiladores </p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-027.png" WIDTH=300 HEIGHT=200></DIV>
-<p >
-Los compresores y los ventiladores son esencialmente los mismos dispositivos; sin embargo, los compresores funcionan con mayores relaciones de presión que los ventiladores. Si ignoramos los cambios en las energías cinética y potencial a medida que el fluido fluye a través de un compresor adiabático que tiene una entrada y una salida, la primera ley en estado estacionario y flujo estacionario o ecuación de conservación de la energía se reduce a 	
-</p>
-<p>
-	$$ - \dot{W}_{\text{neto}} = \dot{m} (h_2 - h_1) $$
-	$$ - (- \dot{W}_{e}) = \dot{m} (h_2 - h_1) $$
-	$$\dot{W}_{e} = \dot{m} (h_2 - h_1) $$
-<hr />
-<p class="Seccion2">Dispositivos de estrangulamiento</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-030.png" WIDTH=300 HEIGHT=200></DIV>
-<p >
-Considere un fluido que fluye a través de un tapón poroso dentro de un ducto con una entrada y una salida; el fluido experimenta una caída de presión a medida que fluye a través del tapón; además, el fluido no realiza ningún trabajo neto. Suponga que el proceso es adiabático y que se desprecian las energías cinética y potencial; entonces, las ecuaciones de conservación de masa y energía se convierten en
-</p>
-	$$ \dot{m}_1 = \dot{m}_2 $$
-	$$ \dot{m}_1 = \dot{m}_2 = \dot{m} $$
-	$$ \dot{m}_1 h_1 = \dot{m}_2 h_2 $$
-	$$ h_1 = h_2 $$
-<p>
-Este proceso se denomina proceso de estrangulamiento. ¿Qué sucede cuando se estrangula un gas ideal? Se tiene que 
-</p>
-	$$ h_1 - h_2 = 0 $$
-<p >
-o bien 
-</p>
-	$$ \int_e^s c_p(T) dT = 0 $$
-<p >
-o
-</p>
-	$$ T_e = T_s $$
-<p >
-Al estrangular un gas ideal, la temperatura no cambia. Se puede ver más adelante como en el Capítulo 10 del Cengel o equivalente de los libros de texto, que el proceso de estrangulamiento es un proceso importante en el ciclo de refrigeración.
-</p>
-<hr />
-<p class="Seccion2">Cámaras de mezclado </p>
-<p >
-La mezcla de dos fluidos ocurre con frecuencia en aplicaciones de ingeniería. La sección donde tiene lugar el proceso de mezclado se denomina <strong>cámara de mezclado</strong>. La regadera ordinaria de los sanitarios en los hogares es un ejemplo de cámara de mezclado.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-033.png" WIDTH=300 HEIGHT=200></DIV>
-<hr />
-<p class="Seccion2">Intercambiadores de calor </p>
-<p >
-Los intercambiadores de calor son normalmente dispositivos bien aislados que permiten el intercambio de energía entre fluidos calientes y fríos sin mezclar los fluidos. Las bombas, ventiladores y sopladores que hacen que los fluidos fluyan a través de la superficie de control normalmente se ubican fuera de la superficie de control.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-037.png" WIDTH=300 HEIGHT=200></DIV>
-<hr />
-<p class="Seccion1"> Flujo de tuberías y ductos </p>
-<p >
-El flujo de fluidos a través de tuberías y ductos es a menudo de estado estacionario y flujo estacionario. Normalmente despreciamos las energías cinética y potencial; sin embargo, dependiendo de la situación del flujo, el trabajo y la transferencia de calor pueden o no ser cero.
-</p>
-<hr />
-<p class="Seccion1"> Bombas de líquido </p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-116.png" WIDTH=300 HEIGHT=200></DIV>
-<p >
-El trabajo requerido cuando se bombea un líquido incompresible en un proceso adiabático de estado estacionario y flujo estacionario está dado por
-</p>
-	$$ \dot{Q}_{neto} - \dot{W}_{neto} = \dot{m} (h_2 - h_1 + \frac{v_2^2}{2} - \frac{v_1^2}{2} + g z_2 - g z_1) $$
-<p>
-La diferencia de entalpía se puede escribir como
-</p>
-	$$ h_2 - h_1 = (u_2 - u_1) + [(p v)_2 - (p v)_1] $$ 
-<p>
-Para líquidos incompresibles suponemos que la densidad y el volumen específico son constantes. El proceso de bombeo de un líquido incompresible es esencialmente isotérmico y el cambio de energía interna es aproximadamente cero (se verá más claramente después de estudiar la segunda ley). Por lo tanto, la diferencia de entalpía se reduce a la diferencia en los productos de volumen específicos de la presión. Dado que $v_2 = $v_1 = v$, la entrada de trabajo a la bomba se convierte en
-</p>
-	$$  - \dot{W}_{neto} = \dot{m} (v (p_2 - p_1) + \frac{v_2^2}{2} - \frac{v_1^2}{2} + g z_2 - g z_1) $$	
-<p>
-Aquí, $\dot{W}_{neto}$ es el trabajo neto realizado por el volumen de control, y se observa que se ingresa trabajo a la bomba; entonces, $\dot{W}_{neto} = - \dot{W}_\text{e,bomba}$. Si despreciamos los cambios en las energías cinética y potencial, el trabajo de la bomba se convierte en
-</p>
-	$$  - (- \dot{W}_\text{e,bomba}) = \dot{m} [v (p_2 - p_1)] $$
-	$$  \dot{W}_\text{e,bomba} = \dot{m} [v (p_2 - p_1)] $$
-<p>
-Este resultado lo usamos, por ejemplo, para calcular el trabajo suministrado a las bombas de agua de alimentación de calderas en plantas de energía de vapor.
-</p>
-<hr />
+    <h1>7.2. DISPOSITIVOS DE INGENIERÃA DE FLUJO ESTACIONARIO</h1>
+
+    <p><em>Revisa la BibliografÃ­a recomendada en la secciÃ³n <strong>Fuentes de InformaciÃ³n</strong> del curso.</em></p>
+    
+    <hr />
+    <p>Muchos dispositivos de ingenierÃ­a funcionan bajo condiciones de flujo estacionario. A continuaciÃ³n, analizamos cÃ³mo se simplifica la Primera Ley para cada uno de ellos.</p>
+
+    <h2>1. Toberas y Difusores</h2>
+    <div class="device-box">
+        <p>Las toberas aumentan la velocidad del fluido a expensas de la presiÃ³n, mientras que los difusores hacen lo opuesto. Generalmente: $\dot{Q} \approx 0, \dot{W} = 0, \Delta ep \approx 0$.</p>
+        
+        <div class="formula-highlight">
+            $$ h_1 + \frac{V_1^2}{2} = h_2 + \frac{V_2^2}{2} $$
+            $$ V_2 = \sqrt{2(h_1 - h_2) + V_1^2} $$
+        </div>
+    </div>
+
+    <h2>2. Turbinas</h2>
+    <div class="device-box">
+        <p>Producen trabajo ($\dot{W}_s$) a medida que el fluido se expande. Se suelen considerar adiabÃ¡ticas ($\dot{Q} = 0$) y se desprecian $\Delta ec$ y $\Delta ep$.</p>
+        
+        <div class="formula-highlight">
+            $$ \dot{W}_{\text{salida}} = \dot{m}(h_1 - h_2) $$
+        </div>
+    </div>
+
+    <h2>3. Compresores, Bombas y Ventiladores</h2>
+    <div class="device-box">
+        <p>Requieren entrada de trabajo para aumentar la presiÃ³n del fluido. En compresores adiabÃ¡ticos:</p>
+        
+        <div class="formula-highlight">
+            $$ \dot{W}_{\text{entrada}} = \dot{m}(h_2 - h_1) $$
+        </div>
+        <p class="nota-azul">Para Bombas de LÃ­quidos (Incompresibles):</p>
+        $$ \dot{W}_{\text{bomba}} = \dot{m} [v(P_2 - P_1)] $$
+    </div>
+
+    <h2>4. Dispositivos de Estrangulamiento (VÃ¡lvulas)</h2>
+    <div class="device-box">
+        <p>Restringen el flujo causando una caÃ­da significativa de presiÃ³n. Son procesos adiabÃ¡ticos, sin trabajo y sin cambios de energÃ­a cinÃ©tica significativos.</p>
+        
+        <div class="formula-highlight">
+            $$ h_1 = h_2 \quad (\text{Proceso IsentÃ¡lpico}) $$
+        </div>
+        <p><em>Nota: Para un gas ideal, dado que $h=f(T)$, si $h_1=h_2$, entonces $T_1=T_2$.</em></p>
+    </div>
+
+    <h2>5. CÃ¡maras de Mezclado e Intercambiadores de Calor</h2>
+    <div class="device-box">
+        <p>En cÃ¡maras de mezclado, dos o mÃ¡s corrientes se combinan. En intercambiadores (como radiadores), los fluidos intercambian calor sin mezclarse.</p>
+        
+        <p><strong>Balance de Masa:</strong> $\sum \dot{m}_e = \sum \dot{m}_s$</p>
+        <p><strong>Balance de EnergÃ­a (AdiabÃ¡tico exterior):</strong></p>
+        <div class="formula-highlight">
+            $$ \sum \dot{m}_e h_e = \sum \dot{m}_s h_s $$
+        </div>
+    </div>
+
+    <hr />
+    <p>Este resumen constituye la base para resolver ciclos de potencia y refrigeraciÃ³n. AsegÃºrate de identificar correctamente quÃ© dispositivo estÃ¡s analizando antes de aplicar las simplificaciones.</p>
+
 </body>
-
 </html>
-

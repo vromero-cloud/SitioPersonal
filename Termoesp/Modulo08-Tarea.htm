@@ -1,47 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Módulo 8. Tarea Procesos Transitorios</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÃ³dulo 8. Tarea Procesos Transitorios</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fdfdf5; 
+            font-family: "Times New Roman", Times, serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .header-section {
+            text-align: left;
+            border-bottom: 3px solid #0000FF;
+            margin-bottom: 25px;
+        }
+        h1 { color: #0000FF; font-size: 2.2em; margin-bottom: 5px; }
+        h2 { color: #0000FF; font-size: 1.4em; margin-top: 0; }
+        
+        .ejercicio {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 6px solid #0000FF;
+        }
+        .ejercicio-id {
+            font-weight: bold;
+            color: #0000FF;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .respuesta-final {
+            display: block;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 20px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-<p align="left" class="Titulo">Termodin&aacute;mica</p>
-<p align="left" class="Seccion2">Módulo 8. Tarea Procesos Transitorios (3 problemas)</p>
-<p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
+<body>
+
+<div class="header-section">
+    <h1>TermodinÃ¡mica</h1>
+    <h2>Tarea 8. Procesos Transitorios (3 problemas)</h2>
+</div>
+
+<p><em>Revisa la BibliografÃ­a recomendada en la secciÃ³n <strong>Fuentes de InformaciÃ³n</strong> del curso.</em></p>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 1 (5-120)</span>
+    <p>
+        Una botella evacuada de $20 \text{ L}$ estÃ¡ rodeada por la atmÃ³sfera a $100 \text{ kPa}$ y $27 ^\circ \text{C}$. Se abre una vÃ¡lvula en el cuello de la botella y se deja entrar aire. 
+        El aire en la botella termina por llegar al equilibrio tÃ©rmico con la atmÃ³sfera mediante transferencia de calor por la pared. La vÃ¡lvula permanece abierta para que el interior tambiÃ©n llegue al equilibrio mecÃ¡nico con la atmÃ³sfera. 
+    </p>
+    <strong>Determine:</strong> La transferencia neta de calor ($Q$) a travÃ©s de la pared de la botella durante este proceso de llenado.
+    <span class="respuesta-final">Respuesta: $2.0 \text{ kJ}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 2 (5-133)</span>
+    <p>
+        Un recipiente rÃ­gido de $0.4 \text{ m}^3$ contiene refrigerante 134a a $14 ^\circ \text{C}$ con una calidad ($x$) del $70\%$. Se conecta mediante una vÃ¡lvula a una lÃ­nea de suministro donde fluye refrigerante a $1 \text{ MPa}$ y $100 ^\circ \text{C}$. 
+        Se abre la vÃ¡lvula hasta que la presiÃ³n en el recipiente llega a $700 \text{ kPa}$ y el refrigerante interno estÃ¡ totalmente en fase de vapor saturado.
+    </p>
+    <strong>Determine:</strong>
+    <br>a) La temperatura final en el recipiente.
+    <br>b) La masa de refrigerante que entrÃ³ al recipiente ($m_e$).
+    <br>c) La transferencia de calor ($Q$) entre el sistema y los alrededores.
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 3 (5-126E)</span>
+    <p>
+        A un hospital se suministra oxÃ­geno desde diez tanques, cada uno con $1.5 \text{ ft}^3$. Inicialmente, los tanques estÃ¡n a $1,500 \text{ psia}$ y $80 ^\circ \text{F}$. El oxÃ­geno se extrae tan lentamente que la temperatura permanece constante a $80 ^\circ \text{F}$. Al cabo de dos semanas, la presiÃ³n ha descendido a $300 \text{ psia}$.
+    </p>
+    <strong>Determine:</strong> La masa de oxÃ­geno consumida y el calor total transferido a los tanques.
+</div>
+
 <hr />
-<ol>
-  <li>(5-120) Una botella evacuada de $20 \text{ L}$ está rodeada por la atmósfera a $100 \text{ kPa}$ y $27 ^\circ \text{C}$. Entonces se abre una válvula en el cuello de la botella y se deja entrar aire en ella. El aire en la botella termina por llegar al equilibrio térmico con la atmósfera, como resultado de transferencia de calor por la pared. La válvula permanece abierta durante el proceso para que el aire en el interior también llegue al equilibrio mecánico con la atmósfera. Determine la transferencia neta de calor a través de la pared de la botella, durante este proceso de llenado. Respuesta: $2.0 \text{ kJ}$.</li>
-<hr />
-  <li>(5–133) Un recipiente rígido de $0.4 \text{ m}^3$ contiene refrigerante 134a a $14 ^\circ \text{C}$. En ese estado, el $70$ por ciento de la masa del refrigerante está en fase de vapor y el resto, en fase líquida. Se conecta ese recipiente, por medio de una válvula, a una línea de suministro donde fluye, de una manera estacionaria, refrigerante a $1 \text{ MPa}$ y $100 ^\circ \text{C}$. Entonces, se abre un poco la válvula y se deja entrar refrigerante al recipiente. Cuando la presión en el recipiente llega a $700 \text{ kPa}$, todo el refrigerante en el recipiente sólo está en fase de vapor. En ese momento se cierra la válvula. Determine a) la temperatura final en el recipiente, b) la masa del refrigerante que entró al recipiente, y c) la transferencia de calor entre el sistema y los alrededores.</li>
-<hr />
-  <li>(5-126E) A un hospital se suministra oxígeno desde diez tanques, cada uno con $1.5 \text{ ft}^3$ de oxígeno comprimido. Al principio, los tanques están a $1,500 \text{ psia}$ y $80 ^\circ \text{F}$. El oxígeno se saca de esos tanques con la lentitud suficiente como para que la temperatura en ellos permanezca en $80 ^\circ \text{F}$. A las dos semanas, la presión es $300 \text{ psia}$. Determine la masa de oxígeno usado y el calor total transferido a los tanques. </li>
-<hr />
+<p><em>Nota: Recuerde utilizar las tablas de propiedades para el R-134a y el modelo de gas ideal para el aire y el oxÃ­geno segÃºn corresponda.</em></p>
 
 </body>
-
 </html>
-

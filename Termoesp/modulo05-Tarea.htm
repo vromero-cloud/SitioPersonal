@@ -1,58 +1,133 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Módulo 5. Tarea Primera Ley, Sistemas Cerrados.</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÃ³dulo 5. Tarea Primera Ley, Sistemas Cerrados</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fdfdf5; 
+            font-family: "Times New Roman", Times, serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .header-section {
+            text-align: left;
+            border-bottom: 3px solid #0000FF;
+            margin-bottom: 25px;
+        }
+        h1 { color: #0000FF; font-size: 2.2em; margin-bottom: 5px; }
+        h2 { color: #0000FF; font-size: 1.4em; margin-top: 0; }
+        
+        .ejercicio {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 6px solid #0000FF;
+        }
+        .ejercicio-id {
+            font-weight: bold;
+            color: #0000FF;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .respuesta-final {
+            display: block;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 20px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-<p align="left" class="Titulo">Termodin&aacute;mica</p>
-<p align="left" class="Seccion2">Tarea 5. Primera Ley de la Termodinámica, Sistemas Cerrados (7 problemas) </p>
-<p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
-<hr />
-<ol>
-  <li>( 4-29E) Un sistema cerrado como el que se muestra en la figura P4-29E se opera de manera adiabática. Primero, este sistema realiza $15,000$ $\text{lb-ft}$ de trabajo. Luego se aplica trabajo al dispositivo de agitación para elevar la energía interna del fluido en $10.28$ $\text{Btu}$. Calcule el aumento neto en la energía interna de este sistema. </li>
-<hr />
-  <li>( 2-47) En un salón de clases que normalmente aloja a $40$ personas se instalarán unidades de aire acondicionado con capacidad de enfriamiento de $5$ $\text{kW}$. Se puede suponer que una persona en reposo disipa calor a una tasa de alrededor de $360$ $\displaystyle{\frac{\text{kJ}}{\text{h}}}$. Además, hay $10$ focos en el aula, cada uno de $100$ $\text{W}$, y se estima que la tasa de transferencia de calor hacia el aula a través de las paredes es de $15,000$ $\displaystyle{\frac{\text{kJ}}{\text{h}}}$. Si el aire en el aula se debe mantener a una temperatura constante de $21^\circ\text{C}$, determine el número de unidades de aire acondicionado requeridas. Respuesta: $2$ unidades</li>
-<hr />
-  <li>(4-32) Un recipiente rígido bien aislado contiene $2$ $\text{kg}$ de un vapor húmedo de agua, a $150$ $\text{kPa}$. En un principio, tres cuartos de la masa están en la fase líquida. Una resistencia eléctrica colocada en el recipiente se conecta con un suministro de voltaje de $110$ $\text{V}$, y pasa una corriente de $8$ $\text{A}$ por la resistencia, al cerrar el interruptor. Determine cuánto tiempo se necesitará para evaporar todo el líquido en el recipiente. También muestre el proceso en un diagrama $T-v$ con respecto a líneas de saturación. </li>
-<hr />
-  <li>(4-32) Un recipiente rígido bien aislado contiene $2$ $\text{kg}$ de un vapor húmedo de agua, a $150$ $\text{kPa}$. En un principio, tres cuartos de la masa están en la fase líquida. Una resistencia eléctrica colocada en el recipiente se conecta con un suministro de voltaje de $110$ $\text{V}$, y pasa una corriente de $8$ $\text{A}$ por la resistencia, al cerrar el interruptor. Determine cuánto tiempo se necesitará para evaporar todo el líquido en el recipiente. También muestre el proceso en un diagrama $T-v$ con respecto a líneas de saturación. </li>
-<hr />
-  <li>(4-33) Regrese al problema 4-32. Use el programa EES (u otro) para investigar el efecto de la masa inicial del agua sobre el tiempo requerido para evaporar por completo el líquido. Haga variar la masa inicial de $1$ a $10$ $\text{kg}$. Trace el tiempo de evaporación en función de la masa inicial, y describa los resultados. </li>
-<hr />
-  <li>(4-38) Un dispositivo aislado de cilindro-émbolo contiene $5$ $\text{L}$ de agua líquida saturada a una presión constante de $175$ $\text{kPa}$. Una rueda de paletas agita el agua, mientras que pasa una corriente de $8$ $\text{A}$ durante $45$ $\text{min}$, por una resistencia colocada en el agua. Si se evapora la mitad del líquido durante este proceso a presión constante, y el trabajo de la rueda de paletas es $400$ $\text{kJ}$, determine el voltaje de suministro. También, muestre el proceso en un diagrama $p-v$ con respecto a líneas de saturación. Respuesta: $224$ $\text{V}$. </li>
-<hr />
-  <li>(4-39) Un dispositivo de cilindro-émbolo contiene inicialmente vapor de agua a $200$ $\text{kPa}$, $200^\circ\text{C}$ y $0.4$ $\text{m}^3$. En este estado, un resorte lineal ($F \propto x$) toca el émbolo, pero no ejerce fuerza sobre él. Entonces, se transfiere calor lentamente al vapor de agua, haciendo que aumenten su presión y volumen, hasta $250$ $\text{kPa}$ y $0.6$ $\text{m}^3$, respectivamente. Represente al proceso en un diagrama $p-v$ con respecto a líneas de saturación, y determine a) la temperatura final, b) el trabajo efectuado por el vapor de agua y c) el calor total transferido. Respuestas: a) $606^\circ\text{C}$, b) $45$ $\text{kJ}$, c) $288$ $\text{kJ}$ </li>
-<hr />
-  <li>(4-40) Regrese al problema 4-39. Use el programa EES (u otro similar) para investigar el efecto de la temperatura inicial del vapor de agua sobre la temperatura final, el trabajo efectuado y el calor total transferido. Haga variar la temperatura inicial de $150$ a $250^\circ\text{C}$. Trace los resultados finales en función de la temperatura inicial y describa esos resultados. </li>
-<hr />
-</ol>
+<body>
+
+<div class="header-section">
+    <h1>TermodinÃ¡mica</h1>
+    <h2>Tarea 5. Primera Ley de la TermodinÃ¡mica, Sistemas Cerrados (7 problemas)</h2>
+</div>
+
+<p><em>Revisa la BibliografÃ­a recomendada en la secciÃ³n <strong>Fuentes de InformaciÃ³n</strong> del curso.</em></p>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 1 (4-29E)</span>
+    <p>
+        Un sistema cerrado se opera de manera <strong>adiabÃ¡tica</strong>. Primero, realiza $15,000 \text{ lb-ft}$ de trabajo. Luego, se aplica trabajo mediante un dispositivo de agitaciÃ³n para elevar la energÃ­a interna del fluido en $10.28 \text{ Btu}$. Calcule el aumento neto en la energÃ­a interna de este sistema ($\Delta U$).
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 2 (2-47)</span>
+    <p>
+        Un aula para $40$ personas requiere aire acondicionado con capacidad de $5 \text{ kW}$. Datos adicionales:
+    </p>
+    <ul>
+        <li>DisipaciÃ³n por persona: $360 \text{ kJ/h}$.</li>
+        <li>IluminaciÃ³n: $10$ focos de $100 \text{ W}$ cada uno.</li>
+        <li>Transferencia de calor por paredes: $15,000 \text{ kJ/h}$.</li>
+    </ul>
+    <p>Si la temperatura debe mantenerse constante a $21^\circ\text{C}$, determine el nÃºmero de unidades de aire acondicionado requeridas.</p>
+    <span class="respuesta-final">Respuesta: 2 unidades.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 3 (4-32)</span>
+    <p>
+        Un recipiente rÃ­gido aislado contiene $2 \text{ kg}$ de vapor hÃºmedo de agua a $150 \text{ kPa}$. Inicialmente, $3/4$ de la masa es lÃ­quido. Se conecta una resistencia ($110 \text{ V}$, $8 \text{ A}$). Determine el tiempo necesario para evaporar todo el lÃ­quido y represente el proceso en un diagrama $T-v$.
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 4 (4-33)</span>
+    <p>
+        Utilizando el problema anterior, investigue el efecto de la masa inicial del agua ($1$ a $10 \text{ kg}$) sobre el tiempo de evaporaciÃ³n. Trace la grÃ¡fica de <em>tiempo vs masa inicial</em> y describa los resultados obtenidos.
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 5 (4-38)</span>
+    <p>
+        Un cilindro-Ã©mbolo aislado contiene $5 \text{ L}$ de agua lÃ­quida saturada a $175 \text{ kPa}$. Se agita con una rueda de paletas ($W = 400 \text{ kJ}$) y se calienta con una resistencia ($8 \text{ A}$) durante $45 \text{ min}$. Si se evapora la mitad del lÃ­quido a presiÃ³n constante, determine el voltaje de suministro. Muestre el proceso en un diagrama $P-v$.
+    </p>
+    <span class="respuesta-final">Respuesta: $224 \text{ V}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 6 (4-39)</span>
+    <p>
+        Un cilindro-Ã©mbolo contiene vapor a $200 \text{ kPa}$, $200^\circ\text{C}$ y $0.4 \text{ m}^3$. Un resorte lineal toca el Ã©mbolo sin ejercer fuerza. Se transfiere calor hasta que el estado llega a $250 \text{ kPa}$ y $0.6 \text{ m}^3$. Determine:
+    </p>
+    <ol type="a">
+        <li>Temperatura final.</li>
+        <li>Trabajo efectuado por el vapor.</li>
+        <li>Calor total transferido.</li>
+    </ol>
+    <span class="respuesta-final">Respuestas: a) $606^\circ\text{C}$, b) $45 \text{ kJ}$, c) $288 \text{ kJ}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 7 (4-40)</span>
+    <p>
+        Investigue el efecto de la temperatura inicial ($150$ a $250^\circ\text{C}$) sobre los resultados del problema anterior. Trace grÃ¡ficas de la temperatura final, el trabajo y el calor en funciÃ³n de $T_{\text{inicial}}$.
+    </p>
+</div>
 
 </body>
-
 </html>
-

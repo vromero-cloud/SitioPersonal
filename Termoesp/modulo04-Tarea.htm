@@ -1,113 +1,154 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>M�dulo 4. Tarea Sistemas cerrados.</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4. Tarea Sistemas cerrados</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fdfdf5; 
+            font-family: "Times New Roman", Times, serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .header-section {
+            text-align: left;
+            border-bottom: 3px solid #0000FF;
+            margin-bottom: 25px;
+        }
+        h1 { color: #0000FF; font-size: 2.2em; margin-bottom: 5px; }
+        h2 { color: #0000FF; font-size: 1.4em; margin-top: 0; }
+        
+        .ejercicio {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 6px solid #0000FF;
+        }
+        .ejercicio-id {
+            font-weight: bold;
+            color: #0000FF;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th { background-color: #eef2ff; }
+        .respuesta-final {
+            display: block;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 20px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-<p align="left" class="Titulo">Termodin&aacute;mica</p>
-<p align="left" class="Seccion2">Tarea 4. <strong><span lang="ES-MX">Sistemas cerrados</span></strong> (6 problemas)</p>
-<p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
-<hr />
-<ol>
-  <li>(4-11) Un dispositivo de cilindro-&eacute;mbolo sin fricci&oacute;n contiene al  principio $50$ $\text{L}$ de l&iacute;quido saturado de refrigerante 134a. El &eacute;mbolo tiene libre  movimiento, y su masa es tal que mantiene una presi&oacute;n de $500$ $\text{kPa}$ sobre el  refrigerante. A continuaci&oacute;n, se calienta el refrigerante hasta que su  temperatura sube a $70^\circ\text{C}$. Calcule el trabajo efectuado durante este proceso y  dibujar dicho proceso en el diagrama de fases. Respuesta: $5,227$ $\text{kJ}$.
-    <hr />
-  </li>
-  <li>(4-12) Regrese al problema 4-11. Use el programa EES (u otro) para  investigar el efecto de la presi&oacute;n sobre el trabajo efectuado. Haga variar la  presi&oacute;n de $200$ a $1,200$ $\text{kPa}$. Trace la gr&aacute;fica del trabajo efectuado en funci&oacute;n  de la presi&oacute;n, y describa los resultados. Explique por qu&eacute; la gr&aacute;fica no es  lineal. Tambi&eacute;n trace la gr&aacute;fica del proceso descrito en el diagrama $p-V$.
-    <hr />
-  </li>
-  <li>(4-16) Durante unos procesos reales de expansi&oacute;n y compresi&oacute;n en  dispositivos de cilindro-&eacute;mbolo, se ha observado que los gases satisfacen la  relaci&oacute;n $p V^n = C$, donde $n$ y $C$ son constantes. Calcule el trabajo efectuado cuando  un gas se expande de $350$ $\text{kPa}$ y $0.03$ $\text{m}^3$, hasta un volumen final de $0.2$ $\text{m}^3$, para  el caso en que $n = 1.5$.
-    <hr />
-  </li>
-  <li>(4-24) Un dispositivo de cilindro-&eacute;mbolo contiene 0.15 kg de aire, en un  principio a 2 $\text{MPa}$ y $350^\circ\text{C}$. Primero se expande el aire isot&eacute;rmicamente hasta  500 $\text{kPa}$, y despu&eacute;s se comprime en un proceso politr&oacute;pico con un exponente politr&oacute;pico  de $1.2$, hasta la presi&oacute;n inicial; por &uacute;ltimo, se comprime a presi&oacute;n constante hasta  llegar al estado inicial. Determine el trabajo de la frontera para cada  proceso, y el trabajo neto del ciclo.
-    <hr />
-  </li>
-  <li>(4-25) $1$ $\text{kg}$ de agua que al principio est&aacute; a $90^\circ\text{C}$, con 10 por ciento de  calidad, ocupa un dispositivo de cilindro-&eacute;mbolo con carga de resorte, como el  de la figura P4-25. Entonces se calienta ese dispositivo hasta que la presi&oacute;n  sube hasta $800$ $\text{kPa}$, y la temperatura es $250^\circ\text{C}$. Calcule el trabajo total producido  durante este proceso, en kJ. Respuesta: 24.5 kJ.
-    <hr />
-  </li>
-  <li>(4-28E) Complete cada rengl&oacute;n de la siguiente tabla, con base en el  principio de conservaci&oacute;n de la energ&iacute;a para un sistema cerrado.
-  
-<center>
-  <table width="200" border="1">
-  <tr>
-    <td>$Q_{e}$ $[\text{Btu}]$</td>
-    <td>$W_{s}$ $[\text{Btu}]$</td>
-	<td>$E_{1}$ $[\text{Btu}]$</td>
-    <td>$E_{2}$ $[\text{Btu}]$</td>
-    <td>$m$ $[\text{lbm}]$</td>
-    <td>$e_{2}-e_{1}$ $\displaystyle{\left[\frac{\text{Btu}}{\text{lbm}}\right]}$</td>
-  </tr>
-  <tr>
-    <td>$350$</td>
-    <td> </td>
-    <td>$1,020$</td>
-    <td>$860$</td>
-    <td>$3$</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>$350$</td>
-    <td>$130$ </td>
-    <td>$550$</td>
-    <td> </td>
-    <td>$5$</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> $260$</td>
-    <td>$600$</td>
-    <td> </td>
-    <td>$2$</td>
-    <td> $150$</td>
-  </tr>
-  <tr>
-    <td>$-500$</td>
-    <td> </td>
-    <td>$1,400$</td>
-    <td>$900$</td>
-    <td>$7$</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> $-50$</td>
-    <td>$1,000$</td>
-    <td> </td>
-    <td>$3$</td>
-    <td>$-200$ </td>
-  </tr>
-</table>
-</center>
-  <hr />
-</li>
-</ol>
+<body>
+
+<div class="header-section">
+    <h1>Termodinámica</h1>
+    <h2>Tarea 4. Sistemas cerrados (6 problemas)</h2>
+</div>
+
+<p><em>Revisa la Bibliografía recomendada en la sección <strong>Fuentes de Información</strong> del curso.</em></p>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 1 (4-11)</span>
+    <p>
+        Un dispositivo de cilindro-émbolo sin fricción contiene al principio $50 \text{ L}$ de líquido saturado de refrigerante 134a. El émbolo tiene libre movimiento y su masa mantiene una presión constante de $500 \text{ kPa}$. Se calienta el refrigerante hasta que su temperatura sube a $70^\circ\text{C}$.
+    </p>
+    <ul>
+        <li>Calcule el trabajo efectuado durante este proceso.</li>
+        <li>Dibuje el proceso en un diagrama de fases.</li>
+    </ul>
+    <span class="respuesta-final">Respuesta: $5,227 \text{ kJ}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 2 (4-12)</span>
+    <p>
+        Regrese al problema anterior. Use software (EES o similar) para investigar el efecto de la presión sobre el trabajo efectuado, variando $P$ de $200$ a $1,200 \text{ kPa}$. Trace la gráfica de $W$ vs $P$ y explique por qué la gráfica no es lineal. Incluya el diagrama $P-V$.
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 3 (4-16)</span>
+    <p>
+        En procesos de expansión y compresión reales, se observa que los gases satisfacen la relación $P V^n = C$. Calcule el trabajo efectuado cuando un gas se expande desde $350 \text{ kPa}$ y $0.03 \text{ m}^3$ hasta un volumen final de $0.2 \text{ m}^3$, con un exponente $n = 1.5$.
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 4 (4-24)</span>
+    <p>
+        Un dispositivo de cilindro-émbolo contiene $0.15 \text{ kg}$ de aire a $2 \text{ MPa}$ y $350^\circ\text{C}$. El gas experimenta el siguiente ciclo:
+    </p>
+    <ol>
+        <li>Expansión <strong>isotérmica</strong> hasta $500 \text{ kPa}$.</li>
+        <li>Compresión <strong>politrópica</strong> ($n = 1.2$) hasta la presión inicial.</li>
+        <li>Compresión a <strong>presión constante</strong> hasta el estado inicial.</li>
+    </ol>
+    <p>Determine el trabajo de frontera para cada proceso y el trabajo neto del ciclo.</p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 5 (4-25)</span>
+    <p>
+        $1 \text{ kg}$ de agua a $90^\circ\text{C}$ con $10\%$ de calidad ocupa un cilindro-émbolo con carga de resorte. Se calienta hasta que la presión es $800 \text{ kPa}$ y la temperatura es $250^\circ\text{C}$. Calcule el trabajo total producido ($W_{\text{total}}$).
+    </p>
+    <span class="respuesta-final">Respuesta: $24.5 \text{ kJ}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 6 (4-28E) Balance de Energía</span>
+    <p>Complete la siguiente tabla aplicando el principio de conservación de la energía para un sistema cerrado ($\Delta E = Q - W$):</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>$Q_{\text{ent}}$ [Btu]</th>
+                <th>$W_{\text{sal}}$ [Btu]</th>
+                <th>$E_1$ [Btu]</th>
+                <th>$E_2$ [Btu]</th>
+                <th>$m$ [lbm]</th>
+                <th>$e_2 - e_1$ [Btu/lbm]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>350</td><td>—</td><td>1,020</td><td>860</td><td>3</td><td>—</td></tr>
+            <tr><td>350</td><td>130</td><td>550</td><td>—</td><td>5</td><td>—</td></tr>
+            <tr><td>—</td><td>260</td><td>600</td><td>—</td><td>2</td><td>150</td></tr>
+            <tr><td>-500</td><td>—</td><td>1,400</td><td>900</td><td>7</td><td>—</td></tr>
+            <tr><td>—</td><td>-50</td><td>1,000</td><td>—</td><td>3</td><td>-200</td></tr>
+        </tbody>
+    </table>
+</div>
 
 </body>
-
 </html>
-

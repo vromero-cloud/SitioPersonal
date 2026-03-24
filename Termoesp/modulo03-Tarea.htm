@@ -1,54 +1,148 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>M�dulo 3. Tarea Ecuaciones de estado.</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3. Tarea Ecuaciones de estado</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f0fdf4; 
+            font-family: "Times New Roman", Times, serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .header-section {
+            text-align: left;
+            border-bottom: 3px solid #0000FF;
+            margin-bottom: 25px;
+        }
+        h1 { color: #0000FF; font-size: 2.2em; margin-bottom: 5px; }
+        h2 { color: #0000FF; font-size: 1.4em; margin-top: 0; }
+        .breadcrumb { font-style: italic; margin-bottom: 20px; font-size: 0.95em; color: #555; }
+        
+        .ejercicio {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 6px solid #0000FF;
+        }
+        .ejercicio-id {
+            font-weight: bold;
+            color: #0000FF;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .respuesta-final {
+            display: block;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 30px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-<p align="left" class="Titulo">Termodin&aacute;mica</p>
-<p align="left" class="Seccion2">Tarea 3. Ecuaciones de estado (6 ejercicios)</p>
-<p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
+<body>
+
+<div class="header-section">
+    <h1>Termodinámica</h1>
+    <h2>Tarea 3. Ecuaciones de estado (6 ejercicios)</h2>
+</div>
+
+<p class="breadcrumb">
+    Revisa la Bibliografía recomendada en la sección 
+    <a href="../../FuenteInform.htm"><strong>Fuentes de Información</strong></a> del curso.
+</p>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Ejercicio 1 (3-83)</span>
+    <p>
+        La presión en el neumático de un automóvil depende de la temperatura del aire en su interior. Cuando la temperatura es $25^\circ\text{C}$, el manómetro lee $210 \text{ kPa}$. Si el volumen del neumático es de $0.025 \text{ m}^3$, determine:
+    </p>
+    <ul>
+        <li>a) Cuánto aumentará la presión cuando la temperatura suba a $50^\circ\text{C}$.</li>
+        <li>b) La cantidad de aire que debe descargarse a $50^\circ\text{C}$ para que la presión regrese a su valor inicial.</li>
+    </ul>
+    <p><em>Asuma una presión atmosférica de $100 \text{ kPa}$.</em></p>
+    <span class="respuesta-final">Respuesta sugerida: $0.0070 \text{ kg}$ descargados.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Ejercicio 2 (3-87)</span>
+    <p>
+        Determine el volumen específico de vapor de agua sobrecalentado a $15 \text{ MPa}$ y $350^\circ\text{C}$ mediante:
+    </p>
+    <ol type="a">
+        <li>La ecuación del gas ideal.</li>
+        <li>La carta de compresibilidad generalizada.</li>
+        <li>Las tablas de vapor.</li>
+    </ol>
+    <p>Determine también el error cometido en los dos primeros casos respecto a las tablas.</p>
+    <span class="respuesta-final">
+        Respuestas: <br>
+        a) $0.01917 \text{ m}^3/\text{kg}$ (Error: $67.0\%$); <br>
+        b) $0.01246 \text{ m}^3/\text{kg}$ (Error: $8.5\%$); <br>
+        c) $0.01148 \text{ m}^3/\text{kg}$.
+    </span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Ejercicio 3 (3-88)</span>
+    <p>
+        Resuelva el problema anterior usando un programa de software (como EES). Compare el volumen específico del agua para los tres casos a $15 \text{ MPa}$ en un intervalo de temperaturas de $350$ a $600^\circ\text{C}$ (en pasos de $25^\circ\text{C}$). Trace la gráfica del error porcentual de la aproximación del gas ideal en función de la temperatura y describa los resultados.
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Ejercicio 4 (3-92)</span>
+    <p>
+        Se calienta etileno a presión constante de $5 \text{ MPa}$ desde $20^\circ\text{C}$ hasta $200^\circ\text{C}$. Use la <strong>carta de compresibilidad</strong> para determinar el cambio en el volumen específico del etileno resultante de este proceso.
+    </p>
+    <span class="respuesta-final">Respuesta: $\Delta v = 0.0172 \text{ m}^3/\text{kg}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Ejercicio 5 (2-90E)</span>
+    <p>
+        Refrigerante-134a a $100 \text{ psia}$ tiene un volumen específico de $0.5388 \text{ ft}^3/\text{lbm}$. Determine la temperatura del refrigerante basándose en:
+    </p>
+    <ol type="a">
+        <li>La ecuación del gas ideal.</li>
+        <li>La ecuación de Van der Waals.</li>
+        <li>Las tablas del refrigerante.</li>
+    </ol>
+    <span class="respuesta-final">Respuestas: a) $512 \text{ R}$; b) $559 \text{ R}$; c) $120^\circ\text{F}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Ejercicio 6 (3-103E)</span>
+    <p>
+        El refrigerante-134a a $160 \text{ psia}$ tiene un volumen específico de $0.3479 \text{ ft}^3/\text{lbm}$. Determine la temperatura del refrigerante utilizando:
+    </p>
+    <ol type="a">
+        <li>La ecuación de gases ideales.</li>
+        <li>La ecuación de Van der Waals.</li>
+        <li>La tabla del refrigerante.</li>
+    </ol>
+</div>
+
 <hr />
-<ol>
-  <li>(3-83) La presi&oacute;n en el neum&aacute;tico de un autom&oacute;vil depende de la  temperatura del aire en el neum&aacute;tico. Cuando la temperatura del aire es $25^\circ\text{C}$,  el man&oacute;metro lee $210$ $\text{kPa}$. Si el volumen del neum&aacute;tico es de $0.025$ $\text{m}^3$, determina  qu&eacute; tanto aumentar&aacute; la presi&oacute;n en el neum&aacute;tico cuando temperatura del aire en  el neum&aacute;tico se levantar&aacute; a $50^\circ\text{C}$. Determina la cantidad de aire que debe ser  descargado a $50^\circ\text{C}$ para que la presi&oacute;n baje a su valor inicial. Asuma la presi&oacute;n  atmosf&eacute;rica de $100$ $\text{kPa}$. Respuesta: $0.0070$ $\text{kg}$.</li>
-<hr />
-  <li>(3-87) Determine el volumen espec&iacute;fico de vapor de agua sobrecalentado a  $15$ $\text{MPa}$ y $350^\circ\text{C}$, mediante a) la ecuaci&oacute;n del gas ideal, b) la carta de  compresibilidad generalizada y c) las tablas de vapor. Determine tambi&eacute;n el  error cometido en los dos primeros casos. Respuestas: a) $0.01917$ $\displaystyle{\frac{\text{m}^3}{\text{kg}}}$, $67.0$  $%$; b) $0.01246$ $\displaystyle{\frac{\text{m}^3}{\text{kg}}}$, $8.5$ $%$; c) $0.01148$ $\displaystyle{\frac{\text{m}^3}{\text{kg}}}$.</li>
-<hr />
-  <li>(3-88) Regrese al problema 3-87. Resuelva el problema usando la funci&oacute;n  de compresibilidad generalizada en el programa EES. Tambi&eacute;n use EES para  comparar el volumen espec&iacute;fico del agua para los tres casos, a $15$ $\text{MPa}$, en el  intervalo de temperaturas de $350$ a $600^\circ\text{C}$, en intervalos de $25^\circ\text{C}$. Trace la  gr&aacute;fica de error porcentual en la aproximaci&oacute;n del gas ideal en funci&oacute;n de la  temperatura, y describa los resultados.</li>
-<hr />
-  <li>(3-92) Se calienta etileno a presi&oacute;n constante, de $5$ $\text{MPa}$ y $20^\circ\text{C}$, hasta  $200^\circ\text{C}$. Use la carta de compresibilidad para determinar el cambio en el volumen  espec&iacute;fico del etileno, resultado de este calentamiento. Respuesta: $0.0172$  $\displaystyle{\frac{\text{m}^3}{\text{kg}}}$.</li>
-<hr />
-  <li>(2-90E) Refrigerante-134a a $100$ $\text{psia}$ tiene un volumen espec&iacute;fico de  $0.5388$ $\displaystyle{\frac{\text{ft}^3}{\text{lbm}}}$. Determina la temperatura del refrigerante bas&aacute;ndote en (a) la  ecuaci&oacute;n del gas ideal; (b) la ecuaci&oacute;n de van der Waals; (c) las tablas del  refrigerante. Respuesta: $512$ $\text{R}$; $559$ $\text{R}$; $120^\circ\text{F}$.</li>
-<hr />
-  <li>(3-103E) El refrigerante-134a a $160$ $\text{psia}$ tiene un volumen espec&iacute;fico de  $0.3479$ $\displaystyle{\frac{\text{ft}^3}{\text{lbm}}}$. Determine la temperatura del refrigerante utilizando a) la  ecuaci&oacute;n de gases ideales, b) la ecuaci&oacute;n de Van der Waals y c) la tabla del  refrigerante.</li>
-<hr />
-</ol>
 
 </body>
-
 </html>
-

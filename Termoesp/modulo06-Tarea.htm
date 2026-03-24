@@ -1,62 +1,150 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Módulo 6. Tarea Calores específicos (10 problemas)</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÃ³dulo 6. Tarea Calores especÃ­ficos</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fdfdf5; 
+            font-family: "Times New Roman", Times, serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .header-section {
+            text-align: left;
+            border-bottom: 3px solid #0000FF;
+            margin-bottom: 25px;
+        }
+        h1 { color: #0000FF; font-size: 2.2em; margin-bottom: 5px; }
+        h2 { color: #0000FF; font-size: 1.4em; margin-top: 0; }
+        
+        .ejercicio {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 6px solid #0000FF;
+        }
+        .ejercicio-id {
+            font-weight: bold;
+            color: #0000FF;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .respuesta-final {
+            display: block;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 20px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-<p align="left" class="Titulo">Termodin&aacute;mica</p>
-<p align="left" class="Seccion2">Tarea 6. Primera Ley de la Termodinámica, Calores específicos (10 problemas)   </p>
-<p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
-<hr />
-<ol>
-  <li>(4-55) ¿Cuál es el cambio en la entalpía, en $\displaystyle{\frac{\text{kJ}}{\text{kg}}}$, de oxígeno cuando su temperatura cambia de $150$ a $200^\circ\text{C}$? ¿Habría alguna diferencia si el cambio de temperatura fuese de $0$ a $50^\circ\text{C}$? ¿La presión al principio y al final de este proceso tiene algún efecto sobre el cambio de entalpía? </li>
-<hr />
-  <li>(4.68) Se va a calentar un recinto de $4 \text{m} \times 5 \text{m} \times 6 \text{m}$ con un calentador eléctrico colocado sobre un rodapié. Se desea que ese calentador pueda elevar la temperatura del recinto de $5$ a $25^\circ\text{C}$ en $11$ $\text{min}$. Suponiendo que no hay pérdidas de calor del recinto, y que la presión atmosférica sea $100$ $\text{kPa}$, calcule la potencia requerida en el calentador. Suponga que los calores específicos son constantes a la temperatura ambiente. Respuesta: $3.28$ $\text{kW}$.</li>
-<hr />
-  <li>(4-75) En un dispositivo de cilindro-émbolo con carga variable y con una rueda de paletas integrada al cilindro, hay aire. Al principio está a $500$ $\text{kPa}$ y $27^\circ\text{C}$. Entonces se hace girar la rueda de paletas mediante un motor eléctrico externo, hasta que se ha transferido al aire la energía de $50$ $\displaystyle{\frac{\text{kJ}}{\text{kg}}}$ en forma de trabajo. Durante este proceso se transfiere calor para mantener constante la temperatura del aire, y al mismo tiempo se triplica el volumen del gas. Calcule la cantidad requerida de transferencia de calor, en $\displaystyle{\frac{\text{kJ}}{\text{kg}}}$. Respuesta: $44.6$ $\displaystyle{\frac{\text{kJ}}{\text{kg}}}$. </li>
-<hr />
-  <li>(4-77) Un dispositivo de cilindro-émbolo contiene $1.5$ $\text{kg}$ de nitrógeno, inicialmente a $100$ $\text{kPa}$ y $17^\circ\text{C}$. Entonces se comprime lentamente el nitrógeno, en un proceso politrópico durante el cual $pV^{1.3} = \text{ constante}$, hasta que el volumen se reduce a la mitad. Determine el trabajo efectuado y la transferencia de calor para este proceso. </li>
-<hr />
-  <li>(4-78) Regrese al problema 4.77. Use el programa EES (o cualquier otro) para graficar el proceso descrito allí, en un diagrama $p-V$, e investigue el efecto del exponente politrópico $n$ sobre el trabajo de la frontera y el calor transferido. Haga variar el exponente politrópico de $1.1$ a $1.6$. Trace las gráficas de trabajo de la frontera y calor transferido, en función del exponente politrópico, y describa los resultados. </li>
-<hr />
-  <li>(4-90) Unas bolas de acero al carbón $\left( \rho = 7,833 \displaystyle{\frac{\text{kg}}{\text{m}^3}}\right.$ y $\left. c_p = 0.465 \displaystyle{\frac{\text{kJ}}{\text{kg }^\circ\text{C}}} \right)$ de $8$ $\text{mm}$ de diámetro, se recuecen calentándolas primero a $900^\circ\text{C}$ en un horno, y después dejándolas enfriar lentamente a $100^\circ\text{C}$ en aire ambiente a $35^\circ\text{C}$. Si se van a recocer $2,500$ bolas por hora, determine la tasa de transferencia total de calor, de las bolas al aire ambiente. Respuesta: $542$ $\text{W}$ </li>
-<hr />
-  <li>(4-87E) Durante un día de campo, en un cálido verano, todas las bebidas refrescantes desaparecieron con rapidez, y las únicas disponibles estaban al tiempo, a la temperatura ambiente de $75^\circ\text{F}$. Para tratar de enfriar una lata de $12$ $\text{onzas}$ de bebida, una persona la toma y comienza a agitarla en el agua helada de la caja, a $32^\circ\text{F}$. Use las propiedades del agua para modelar la bebida, y determine la masa de hielo que se fundirá para cuando la bebida se enfríe a $45^\circ\text{F}$. </li>
-<hr />
-  <li>(4-88) Considere una plancha de $1,000 \text{ W}$, cuya base es de aleación de aluminio 2024-T6 $\left( \rho = 2,770 \displaystyle{\frac{\text{kg}}{\text{m}^3}}\right.$ y $\left. c_p = 875 \displaystyle{\frac{\text{J}}{\text{kg }^\circ\text{C}}} \right)$ y de $0.5 \text{ cm}$ de espesor. Esa base tiene $0.03 \text{ m}^2$ de superficie. Primero, la plancha está en equilibrio térmico con el aire ambiente a $22^\circ\text{C}$. Suponiendo que el $90$ por ciento del calor generado en los alambres de resistencia se transfiera a la base, determine el tiempo mínimo necesario para que la plancha llegue a $200^\circ\text{C}$. </li>
-<hr />
-  <li>(4-94) Un dispositivo electrónico disipa $25 \text{ W}$. Su masa es $20 \text{ g}$ y su calor específico es $850 \displaystyle{\frac{\text{J}}{\text{kg }^\circ\text{C}}}$. Se usa poco, y está encendido durante $5 \text{ min}$ y después apagado durante varias horas, cuando se enfría a la temperatura ambiente de $25^\circ\text{C}$. Determine la temperatura máxima posible del dispositivo al final del periodo de operación de $5 \text{ min}$. ¿Cuál sería su respuesta si ese dispositivo estuviera unido con un sumidero térmico de aluminio de $0.5 \text{ kg}$? Suponga que el dispositivo y el sumidero térmico están prácticamente a la misma temperatura. </li>
-<hr />
-  <li>(4-95) Regrese al problema 4-94. Con el programa EES (u otro) investigue el efecto de la masa del sumidero térmico sobre la temperatura máxima del dispositivo. Haga variar la masa del sumidero de $0$ a $1 \text{ kg}$. Trace la gráfica de la temperatura máxima en función de la masa del sumidero térmico, y describa los resultados. </li>
-<hr />
-</ol>
+<body>
+
+<div class="header-section">
+    <h1>TermodinÃ¡mica</h1>
+    <h2>Tarea 6. Primera Ley y Calores EspecÃ­ficos (10 problemas)</h2>
+</div>
+
+<p><em>Revisa la BibliografÃ­a recomendada en la secciÃ³n <strong>Fuentes de InformaciÃ³n</strong> del curso.</em></p>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 1 (4-55)</span>
+    <p>
+        Â¿CuÃ¡l es el cambio en la entalpÃ­a ($\Delta h$), en $kJ/kg$, del oxÃ­geno cuando su temperatura cambia de $150$ a $200^\circ C$? 
+    </p>
+    <ul>
+        <li>Â¿HabrÃ­a alguna diferencia si el cambio fuese de $0$ a $50^\circ C$?</li>
+        <li>Â¿Influye la presiÃ³n inicial o final en este cambio de entalpÃ­a para un gas ideal?</li>
+    </ul>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 2 (4-68)</span>
+    <p>
+        Se desea calentar un recinto de $4 \times 5 \times 6 \text{ m}$ con un calentador elÃ©ctrico. Se requiere elevar la temperatura de $5$ a $25^\circ C$ en $11 \text{ min}$. Considerando una presiÃ³n de $100 \text{ kPa}$ y sin pÃ©rdidas de calor, calcule la potencia requerida ($kW$). 
+        <br><em>Dato: Use calores especÃ­ficos constantes a temperatura ambiente.</em>
+    </p>
+    <span class="respuesta-final">Respuesta: $3.28 \text{ kW}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 3 (4-75)</span>
+    <p>
+        Un dispositivo cilindro-Ã©mbolo contiene aire a $500 \text{ kPa}$ y $27^\circ C$. Se transfiere energÃ­a mediante una rueda de paletas equivalente a $50 \text{ kJ/kg}$. Si el volumen se triplica y la temperatura se mantiene <strong>constante</strong> mediante transferencia de calor, determine dicha transferencia ($q$) en $kJ/kg$.
+    </p>
+    <span class="respuesta-final">Respuesta: $44.6 \text{ kJ/kg}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 4 (4-77)</span>
+    <p>
+        $1.5 \text{ kg}$ de nitrÃ³geno a $100 \text{ kPa}$ y $17^\circ C$ se comprime lentamente en un proceso <strong>politrÃ³pico</strong> ($PV^{1.3} = \text{const}$) hasta que el volumen se reduce a la mitad. Determine el trabajo ($W$) y el calor ($Q$) para este proceso.
+    </p>
+    
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 5 (4-78)</span>
+    <p>
+        Utilizando el problema anterior, investigue el efecto del exponente politrÃ³pico $n$ (variÃ¡ndolo de $1.1$ a $1.6$) sobre el trabajo y el calor. Grafique los resultados y describa el comportamiento.
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 6 (4-90)</span>
+    <p>
+        Bolas de acero al carbÃ³n ($\rho = 7,833 \text{ kg/m}^3$, $c_p = 0.465 \text{ kJ/kg}\cdot^\circ C$) de $8 \text{ mm}$ de diÃ¡metro se enfrÃ­an de $900^\circ C$ a $100^\circ C$ en aire ambiente. Si se procesan $2,500$ bolas por hora, determine la tasa de transferencia de calor total ($\dot{Q}$).
+    </p>
+    <span class="respuesta-final">Respuesta: $542 \text{ W}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 7 (4-87E)</span>
+    <p>
+        Una lata de bebida de $12 \text{ oz}$ (modele como agua) a $75^\circ F$ se sumerge en agua helada a $32^\circ F$. Determine la masa de hielo que se fundirÃ¡ cuando la bebida alcance los $45^\circ F$.
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 8 (4-88)</span>
+    <p>
+        Una plancha de $1,000 \text{ W}$ tiene una base de aluminio ($\rho = 2,770 \text{ kg/m}^3$, $c_p = 875 \text{ J/kg}\cdot^\circ C$) de $0.5 \text{ cm}$ de espesor y $0.03 \text{ m}^2$ de Ã¡rea. Si el $90\%$ del calor va a la base, determine el tiempo mÃ­nimo para que pase de $22^\circ C$ a $200^\circ C$.
+    </p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 9 (4-94)</span>
+    <p>
+        Un dispositivo electrÃ³nico de $20 \text{ g}$ ($c = 850 \text{ J/kg}\cdot^\circ C$) disipa $25 \text{ W}$ durante $5 \text{ min}$. Determine la temperatura mÃ¡xima final si parte de $25^\circ C$. Â¿CuÃ¡l serÃ­a el resultado si se aÃ±ade un sumidero de aluminio de $0.5 \text{ kg}$?
+    </p>
+    
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-id">Problema 10 (4-95)</span>
+    <p>
+        Investigue el efecto de la masa del sumidero ($0$ a $1 \text{ kg}$) sobre la temperatura final del dispositivo del problema 9. Grafique $T_{\text{max}}$ vs $m_{\text{sumidero}}$.
+    </p>
+</div>
 
 </body>
-
 </html>
-

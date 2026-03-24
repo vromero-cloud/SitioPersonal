@@ -1,95 +1,113 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>8. PRIMERA LEY DE LA TERMODINÁMICA APLICADA A SISTEMAS ABIERTOS CON PROCESOS TRANSITORIOS</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
-.Estilo10 {color: #0000FF}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. Primera Ley: Procesos Transitorios</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 35px;
+            line-height: 1.7;
+            background-color: #fdfdf5;
+            color: #2c3e50;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h1 { color: #0000FF; border-bottom: 2px solid #0000FF; padding-bottom: 10px; }
+        h2 { color: #0000FF; font-size: 1.6em; margin-top: 30px; border-left: 6px solid #0000FF; padding-left: 15px; background: #f0f7ff; }
+        .formula-block {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .concept-box {
+            border: 1px solid #0000FF;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #ffffff;
+        }
+        .nota-roja { color: #FF0000; font-weight: bold; }
+        hr { border: 0; border-top: 1px solid #ccc; margin: 30px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-  <h1 align="left" class="Estilo1 Estilo10">8. PRIMERA LEY DE LA TERMODINÁMICA APLICADA A SISTEMAS ABIERTOS CON PROCESOS TRANSITORIOS</h1>
+<body>
 
-  <p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
-<hr />
-<p><font size="4" color="#000000"><b>Notas para la clase.</b></font></p>
-<hr />
-<p class="Seccion1"> Problemas de estado uniforme y flujo uniforme </p>
-<p >
-Durante la transferencia de energía no estacionaria hacia o desde sistemas abiertos o volúmenes de control, el sistema puede tener cambios en la energía y la masa almacenadas. Varios problemas termodinámicos no estacionarios pueden tratarse como problemas de estado uniforme y flujo uniforme. Los criterios para estado uniforme y flujo uniforme son:
-</p>
-<ol>
-  <li>El proceso tiene lugar durante un período de tiempo específico. </li>
-  <li>El estado de la masa dentro del volumen de control es uniforme en cualquier instante de tiempo pero puede variar con el tiempo. </li>
-  <li>El estado de la masa que cruza la superficie de control es uniforme y estacionario. El flujo másico puede ser diferente en diferentes ubicaciones de la superficie de control. </li>
-</ol>
-<p >
-Para encontrar la cantidad de masa que cruza la superficie de control en una región determinada, integramos la tasa de flujo másico durante ese período de tiempo.
-</p>
-<p >
-Para entradas:
-</p>$$ m_e = \int_0^t \dot{m}_e d t $$
-<p >
-Para salidas:
-</p>$$ m_s = \int_0^t \dot{m}_s d t $$
-</p>
-<p >
-El cambio en la masa del volumen de control en el período de tiempo es
-</p>
-	$$ \left. (m_2 - m_1) \right|_{VC} = \int_0^t \left. \frac{d m}{d t} \right|_{VC} d t $$
-<p >
-La conservación de la masa en estado estacionario y flujo estacionario se convierte en
-</p>
-	$$ \sum \dot{m}_e \sum \dot{m}_s = \left. (m_2 - m_1) \right|_{VC} $$
-<p >
-El cambio en la energía interna para el volumen de control durante el período de tiempo es
-</p>
-	$$ \left. (m_2 u_2 - m_1 u_1) \right|_{VC} = \int_0^t \left. \frac{d U}{d t} \right|_{VC} d t $$
-<p >
-El calor transferido y el trabajo realizado en el período de tiempo son
-</p>
-	$$ Q = \int_0^t \dot{Q} dt \qquad \text{y} \qquad W = \int_0^t \dot{W} dt $$
-<p >
-La energía que cruza la superficie de control con la masa en el período de tiempo es
-</p>
-	$$ \sum m_j \theta_j = \in_0^t \dot{m}_j \left(h_j + \frac{v_j^2}{2} + g z_j \right) dt $$
-<p >
-donde $j = e$ para entradas y $j = s$ para salidas.
-</p>
-<p >
-La primera ley para estado estacionario y flujo estacionario se convierte en
-</p>
-	$$ Q - W = \sum m_e \left(h_e + \frac{v_e^2}{2} + g z_e \right) -
-	\sum m_s \left(h_s + \frac{v_s^2}{2} + g z_s \right) + (m_2 e_2 - m_1 e_1) $$
-<p >
-Cuando los cambios de energía cinética y potencial asociados con el volumen de control y las corrientes de fluido son despreciables, se simplifica a
-</p>
-	$$ Q - W = \sum m_e h_e - \sum m_s h_s + (m_2 u_2 - m_1 u_1) $$
-<hr />
-	
+    <h1>8. PRIMERA LEY: SISTEMAS ABIERTOS EN PROCESOS TRANSITORIOS</h1>
+
+    <p><em>Revisa la BibliografÃ­a recomendada en la secciÃ³n <strong>Fuentes de InformaciÃ³n</strong> del curso.</em></p>
+    
+    <hr />
+    <p><strong>Notas para la clase: Flujo No Estacionario</strong></p>
+    <p>
+        A diferencia de los procesos de flujo estacionario, en los <strong>procesos transitorios</strong> las propiedades dentro del volumen de control cambian con el tiempo. El ejemplo clÃ¡sico es el llenado o vaciado de un tanque de almacenamiento.
+    </p>
+
+    <div class="concept-box">
+        <strong>Modelo de Estado Uniforme y Flujo Uniforme (USUF):</strong>
+        <p>Para simplificar el anÃ¡lisis, asumimos que:</p>
+        <ul>
+            <li>El estado de la masa dentro del volumen de control es uniforme en todo momento (aunque cambie de un instante a otro).</li>
+            <li>Las propiedades del fluido en las entradas y salidas son constantes durante el periodo del proceso.</li>
+        </ul>
+    </div>
+
+    
+
+    <hr />
+
+    <h2>1. ConservaciÃ³n de la Masa</h2>
+    <p>La masa total que entra menos la masa total que sale es igual al cambio de masa almacenada en el sistema:</p>
+    
+    <div class="formula-block">
+        $$ \sum m_e - \sum m_s = (m_2 - m_1)_{\text{VC}} $$
+    </div>
+
+    <hr />
+
+    <h2>2. ConservaciÃ³n de la EnergÃ­a</h2>
+    <p>Al integrar la ecuaciÃ³n de la primera ley sobre el intervalo de tiempo $\Delta t$, obtenemos el balance de energÃ­a para procesos transitorios:</p>
+
+    <div class="formula-block">
+        $$ Q - W = \sum m_s \theta_s - \sum m_e \theta_e + (m_2 e_2 - m_1 e_1)_{\text{VC}} $$
+    </div>
+
+    
+
+    <h3>SimplificaciÃ³n comÃºn:</h3>
+    <p>Cuando los cambios en energÃ­a cinÃ©tica y potencial son despreciables ($\Delta ec \approx 0, \Delta ep \approx 0$):</p>
+    
+    <div class="formula-block">
+        $$ Q - W = \sum m_s h_s - \sum m_e h_e + (m_2 u_2 - m_1 u_1)_{\text{VC}} $$
+    </div>
+
+    <hr />
+
+    <h2>3. Puntos Clave para la ResoluciÃ³n de Problemas</h2>
+    <ul>
+        <li><strong>Tanques VacÃ­os:</strong> Si el tanque estÃ¡ inicialmente vacÃ­o, $m_1 = 0$.</li>
+        <li><strong>Tanques RÃ­gidos:</strong> El trabajo de frontera es cero ($W = 0$).</li>
+        <li><strong>Entrada vs. Interior:</strong> Es fundamental recordar que la energÃ­a que <em>cruza</em> la frontera lo hace como <strong>entalpÃ­a ($h$)</strong>, mientras que la energÃ­a <em>almacenada</em> dentro del tanque es <strong>energÃ­a interna ($u$)</strong>.</li>
+    </ul>
+
+    <div class="formula-block">
+        <p class="nota-roja">EcuaciÃ³n crÃ­tica para el llenado de un tanque adiabÃ¡tico desde una lÃ­nea de suministro:</p>
+        $$ h_{\text{lÃ­nea}} = u_2 $$
+        <p><em>(Donde la entalpÃ­a de la lÃ­nea se convierte Ã­ntegramente en energÃ­a interna final del tanque)</em></p>
+    </div>
+
 </body>
-
 </html>
-

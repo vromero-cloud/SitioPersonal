@@ -1,454 +1,110 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-<title>Curso de Termodinámica</title>
-
-<link type="text/css" href="menu.css" rel="stylesheet" />
-
-<style type="text/css">
-
-body,td,th {
-
-	color: #555555;
-
-}
-
-</style>
-
+<meta charset="UTF-8">
+<title>Curso de TermodinÃ¡mica</title>
+<link type="text/css" href="menu.css" rel="stylesheet">
 <script type="text/javascript" src="jquery.js"></script>
-
 <script type="text/javascript" src="menu.js"></script>
-
-</head>
-
-
-
-<Body BGColor=#FFFFFF background="images/AguaDiagFases50.png" Link=#003399 VLink=#00CC00 leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-
-
-<p>
-
-  <style type="text/css">
-
-* {
-
-    margin:0px;
-
-    padding:0;
-
-}
-
-html { background:#222; }
-
+<style type="text/css">
+* { margin: 0; padding: 0; }
+html { background: #222; }
 body {
-
-    margin:0px auto;
-
-    height:1362px;
-
-    width:1240px;
-
-    background:url(images/AguaDiagFases50.png);
-	
-	background-size: 20% 20%;
-
-    border:0px solid #333;
-
-    overflow:hidden;
-
+    margin: 0 auto;
+    height: 1362px;
+    width: 1240px;
+    background: url(images/AguaDiagFases50.png);
+    background-size: 20% 20%;
+    color: #555555;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
-
-div#menu { margin:0 0 0 0; }
-
+h1, h2 { text-align: center; margin-top: 10px; }
+div#menu { margin: 0; }
 div#copyright { display: none; }
-
+a { color: #003399; text-decoration: none; }
+a:hover { color: #00CC00; }
 </style>
-
-</p>
-
-<h1 align="center">Curso de Termodin&aacute;mica</h1>
-
-<h2 align="center">Dr. V&iacute;ctor Manuel Romero Medina</h2>
-
+</head>
+<body>
+<h1>Curso de TermodinÃ¡mica</h1>
+<h2>Dr. VÃ­ctor Manuel Romero Medina</h2>
 <div id="menu">
-
-  <ul class="menu">
-
-	<li><a href="Bienvenida.htm" class="parent" target="_blank"><span >Bienvenida</span></a></li>
-
-	<li><a href="#" class="parent"><span>Información general</span></a>
-
-		<div><ul>
-
-		<li><a href="CurriculumVitae.htm" class="parent" target="_blank"><span>Curriculum Vitae</span></a></li>
-
-		<li><a href="Objetivos.htm" class="parent" target="_blank"><span>Objetivos del Curso</span></a></li>
-
-		<li><a href="EstrategiaGlobal.htm" class="parent" target="_blank"><span>Estrategia Global</span></a></li>
-
-		<li><a href="Contenidos.htm" class="parent" target="_blank"><span>Contenidos</span></a></li>
-
-		<li><a href="Actividades.htm" class="parent" target="_blank"><span>Actividades por módulo</span></a></li>
-
-		</ul></div>
-
-    </li>
-
-	<li><a href="#" class="parent"><span>Módulos</span></a>
-
-		<div><ul>
-
-        <li><a href="#" class="parent"><span>Generalidades</span></a>
-
-        	<div><ul>
-
-			<li><a href="#" class="parent"><span>1. Conceptos básicos</span></a>
-
-				<div><ul>
-
-				<li><a href="res00162.pps" class="parent" target="_blank"><span>Biblioteca de imágenes (pps)</span></a></li>
-
-				<li><a href="#" class="parent"><span>Notas</span></a>
-
-					<div><ul>
-
-					<li><a href="Modulo01-Notas1.htm" class="parent" target="_blank"><span>Apuntes I</span></a></li>
-
-					<li><a href="Modulo01-Notas2.htm" class="parent" target="_blank"><span>Apuntes II</span></a></li>
-
+    <ul class="menu">
+        <li><a href="Bienvenida.htm" class="parent" target="_blank"><span>Bienvenida</span></a></li>
+        <li><a href="#" class="parent"><span>InformaciÃ³n general</span></a>
+            <div><ul>
+                <li><a href="CurriculumVitae.htm" target="_blank"><span>Curriculum Vitae</span></a></li>
+                <li><a href="Objetivos.htm" target="_blank"><span>Objetivos del Curso</span></a></li>
+                <li><a href="EstrategiaGlobal.htm" target="_blank"><span>Estrategia Global</span></a></li>
+                <li><a href="Contenidos.htm" target="_blank"><span>Contenidos</span></a></li>
+                <li><a href="Actividades.htm" target="_blank"><span>Actividades por mÃ³dulo</span></a></li>
+            </ul></div>
+        </li>
+        <li><a href="#" class="parent"><span>MÃ³dulos</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Generalidades</span></a>
+                    <div><ul>
+                        <li><a href="#" class="parent"><span>1. Conceptos bÃ¡sicos</span></a>
+                            <div><ul>
+                                <li><a href="res0162.pps" target="_blank"><span>Biblioteca de imÃ¡genes (pps)</span></a></li>
+                                <li><a href="#" class="parent"><span>Notas</span></a>
+                                    <div><ul>
+                                        <li><a href="Modulo01-Notas1.htm" target="_blank"><span>Apuntes I</span></a></li>
+                                        <li><a href="Modulo01-Notas2.htm" target="_blank"><span>Apuntes II</span></a></li>
+                                    </ul></div>
+                                </li>
+                                <li><a href="res00139.htm" target="_blank"><span>Problemas resueltos</span></a></li>
+                                <li><a href="modulo01-Tarea.htm" target="_blank"><span>Tarea 1</span></a></li>
+                            </ul></div>
+                        </li>
+                        <li><a href="#" class="parent"><span>2. Propiedades de las sustancias puras</span></a>
+                            <div><ul>
+                                <li><a href="Modulo02-Notas1.htm" target="_blank"><span>Notas</span></a></li>
+                                <li><a href="res00145.htm" target="_blank"><span>Problemas resueltos</span></a></li>
+                                <li><a href="modulo02-Tarea.htm" target="_blank"><span>Tarea 2</span></a></li>
+                            </ul></div>
+                        </li>
                     </ul></div>
-
                 </li>
-
-				<li><a href="res00139.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="modulo01-Tarea.htm" class="parent" target="_blank"><span>Tarea 1</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>2. Propiedades de las sustancias puras</span></a>
-
-				<div><ul>
-
-				<li><a href="Modulo02-Notas1.htm" class="parent" target="_blank"><span>Notas</span></a></li>
-
-				<li><a href="res00145.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="modulo02-Tarea.htm" class="parent" target="_blank"><span>Tarea 2</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>3. Ecuaciones de estado</span></a>
-
-				<div><ul>
-
-				<li><a href="Modulo03-Notas.htm" class="parent" target="_blank"><span>Notas</span></a></li>
-
-				<li><a href="res00146.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="modulo03-Tarea.htm" class="parent" target="_blank"><span>Tarea 3</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			</ul></div>
-
-    	</li>
-
-		<li><a href="#" class="parent"><span>Primera ley Termodinámica</span></a>
-
-			<div><ul>
-
-			<li><a href="#" class="parent"><span>4. Sistemas cerrados</span></a>
-
-				<div><ul>
-
-				<li><a href="Modulo04-Notas.htm" class="parent" target="_blank"><span>Notas</span></a></li>
-
-				<li><a href="res00147.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="modulo04-Tarea.htm" class="parent" target="_blank"><span>Tarea 4</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>5. Sistemas cerrados, aplicaciones</span></a>
-
-				<div><ul>
-
-				<li><a href="Modulo05-Notas.htm" class="parent" target="_blank"><span>Notas</span></a></li>
-
-				<li><a href="modulo05-Tarea.htm" class="parent" target="_blank"><span>Tarea 5</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>6. Calores específicos</span></a>
-
-				<div><ul>
-
-				<li><a href="Modulo06-Notas.htm" class="parent" target="_blank"><span>Notas</span></a></li>
-
-				<li><a href="res00148.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="modulo06-Tarea.htm" class="parent" target="_blank"><span>Tarea 6</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-       	 	<li><a href="#" class="parent"><span>7. Sistemas abiertos estacionarios</span> </a>
-
-				<div><ul>
-
-				<li><a href="#" class="parent"><span>Notas</span></a>
-
-					<div><ul>
-
-					<li><a href="Modulo07-Notas1.htm" class="parent" target="_blank"><span>Notas I</span></a></li>
-
-					<li><a href="Modulo07-Notas2.htm" class="parent" target="_blank"><span>Notas II</span></a></li>
-
+                <li><a href="#" class="parent"><span>Primera ley TermodinÃ¡mica</span></a>
+                    <div><ul>
+                        <li><a href="#" class="parent"><span>4. Sistemas cerrados</span></a>
+                            <div><ul>
+                                <li><a href="Modulo04-Notas.htm" target="_blank"><span>Notas</span></a></li>
+                                <li><a href="res00147.htm" target="_blank"><span>Problemas resueltos</span></a></li>
+                                <li><a href="modulo04-Tarea.htm" target="_blank"><span>Tarea 4</span></a></li>
+                            </ul></div>
+                        </li>
                     </ul></div>
-
                 </li>
-
-				<li><a href="res00149.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="modulo07-Tarea.htm" class="parent" target="_blank"><span>Tarea 7</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>8. Sistemas abiertos transitorios</span></a>
-
-				<div><ul>
-
-				<li><a href="Modulo08-Notas.htm" class="parent" target="_blank"><span>Notas</span></a></li>
-
-				<li><a href="res00150.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="Modulo08-Tarea.htm" class="parent" target="_blank"><span>Tarea 8</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>9. Tarea sistemas abiertos</span></a>
-
-				<div><ul>
-
-				<li><a href="res00170.htm" class="parent" target="_blank"><span>Tarea 9</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			</ul></div>
-
-		</li>
-
-		<li><a href="#" class="parent"><span>10. Segunda ley termodinámica</span></a>
-
-			<div><ul>
-
-			<li><a href="#" class="parent"><span>Notas</span></a>
-
-				<div><ul>
-
-				<li><a href="res00096.htm" class="parent" target="_blank"><span>Notas I</span></a></li>
-
-				<li><a href="res00094.htm" class="parent" target="_blank"><span>Notas II</span></a></li>
-
-				<li><a href="res00095.htm" class="parent" target="_blank"><span>Notas III</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="res00140.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-			<li><a href="res00171.htm" class="parent" target="_blank"><span>Tarea 10</span></a></li>
-
-			</ul></div>
-
-		</li>
-
-		<li><a href="#" class="parent"><span>Entropía</span></a>
-
-			<div><ul>
-
-			<li><a href="#" class="parent"><span>11. Definición</span></a>
-
-				<div><ul>
-
-				<li><a href="#" class="parent"><span>Notas</span></a>
-
-					<div><ul>
-
-					<li><a href="res00098.htm" class="parent" target="_blank"><span>Notas I</span></a></li>
-
-					<li><a href="res00097.htm" class="parent" target="_blank"><span>Notas II</span></a></li>
-
-					<li><a href="res00099.htm" class="parent" target="_blank"><span>Notas III</span></a></li>
-
-					</ul></div>
-
-				</li>
-
-				<li><a href="res00141.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="res00172.htm" class="parent" target="_blank"><span>Tarea 11</span></a></li>
-
-				<li><a href="res00119.htm" class="parent" target="_blank"><span>La última pregunta</span></a></li>
-
-				<li><a href="res00120.htm" class="parent" target="_blank"><span>Entropía y mi cuarto</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>12. Cambios de entropía</span></a>
-
-				<div><ul>
-
-				<li><a href="#" class="parent"><span>Notas</span></a>
-
-					<div><ul>
-
-					<li><a href="res00102.htm" class="parent" target="_blank"><span>Notas I</span></a></li>
-
-					<li><a href="res00100.htm" class="parent" target="_blank"><span>Notas II</span></a></li>
-
-					<li><a href="res00101.htm" class="parent" target="_blank"><span>Notas III</span></a></li>
-
-					</ul></div>
-
-				</li>
-
-				<li><a href="res00142.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="res00173.htm" class="parent" target="_blank"><span>Tarea 12</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>13. Trabajo reversible</span></a>
-
-				<div><ul>
-
-				<li><a href="#" class="parent"><span>Notas</span></a>
-
-					<div><ul>
-
-					<li><a href="res00104.htm" class="parent" target="_blank"><span>Notas I</span></a></li>
-
-					<li><a href="res00103.htm" class="parent" target="_blank"><span>Notas II</span></a></li>
-
-					</ul></div>
-
-				</li>
-
-				<li><a href="res00143.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="res00174.htm" class="parent" target="_blank"><span>Tarea 13</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>14. Ejercicios de entropía</span></a>
-
-				<div><ul>
-
-				<li><a href="res00175.htm" class="parent" target="_blank"><span>Tarea 14</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>15. Balance general de entropía</span></a>
-
-				<div><ul>
-
-				<li><a href="res00105.htm" class="parent" target="_blank"><span>Notas</span></a></li>
-
-				<li><a href="res00144.htm" class="parent" target="_blank"><span>Problemas resueltos</span></a></li>
-
-				<li><a href="res00176.htm" class="parent" target="_blank"><span>Tarea 15</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			<li><a href="#" class="parent"><span>16. Aplicaciones</span></a>
-
-				<div><ul>
-
-				<li><a href="res00177.htm" class="parent" target="_blank"><span>Tarea 16</span></a></li>
-
-				</ul></div>
-
-			</li>
-
-			</ul></div>
-
-		</li>
-
-		</ul></div>
-
-	</li>
-
-	<li><a href="#" class="parent"><span>Material de apoyo</span></a>
-
-    	<div><ul>
-
-		<li><a href="FuentesInformacion.htm" class="parent" target="_blank"><span>Fuentes de Información</span></a></li>
-
-		<li><a href="RecursosTecnologicos.htm" class="parent" target="_blank"><span>Recursos tecnológicos</span></a></li>
-
-		</ul></div>
-
-	</li>
-
-	<li><a href="Evaluacion.htm" class="parent" target="_blank"><span>Evaluación</span></a></li>
-
-	<li><a href="#" class="parent"><span>Moralejas</span></a>
-
-    	<div><ul>
-
-		<li><a href="MoralejaI.htm" class="parent" target="_blank"><span>Moraleja I</span></a></li>
-
-		<li><a href="MoralejaII.htm" class="parent" target="_blank"><span>Moraleja II</span></a></li>
-
-		</ul></div>
-
-	</li>
-
-	<li><a href="mailto:vromero@ucaribe.edu.mx" class="parent" target="_blank"><span>¿Necesitas ayuda?</span></a></li>
-
-</li>
-
-</ul></div>
-
-<div id="copyright">Copyright &copy; 2014 <a href="http://apycom.com/">Apycom jQuery Menus</a></div>
-
+                <li><a href="#" class="parent"><span>EntropÃ­a</span></a>
+                    <div><ul>
+                        <li><a href="#" class="parent"><span>11. DefiniciÃ³n</span></a>
+                            <div><ul>
+                                <li><a href="#" class="parent"><span>Notas</span></a>
+                                    <div><ul>
+                                        <li><a href="res00098.htm" target="_blank"><span>Notas I</span></a></li>
+                                        <li><a href="res00097.htm" target="_blank"><span>Notas II</span></a></li>
+                                    </ul></div>
+                                </li>
+                                <li><a href="res00141.htm" target="_blank"><span>Problemas resueltos</span></a></li>
+                                <li><a href="res00172.htm" target="_blank"><span>Tarea 11</span></a></li>
+                            </ul></div>
+                        </li>
+                    </ul></div>
+                </li>
+            </ul></div>
+        </li>
+        <li><a href="#" class="parent"><span>Material de apoyo</span></a>
+            <div><ul>
+                <li><a href="FuentesInformacion.htm" target="_blank"><span>Fuentes de InformaciÃ³n</span></a></li>
+                <li><a href="RecursosTecnologicos.htm" target="_blank"><span>Recursos tecnolÃ³gicos</span></a></li>
+            </ul></div>
+        </li>
+        <li><a href="Evaluacion.htm" target="_blank"><span>EvaluaciÃ³n</span></a></li>
+        <li><a href="mailto:vromero@ucaribe.edu.mx" target="_blank"><span>Â¿Necesitas ayuda?</span></a></li>
+    </ul>
+</div>
 </body>
-
 </html>
-

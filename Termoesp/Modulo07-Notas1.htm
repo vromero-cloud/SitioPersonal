@@ -1,196 +1,116 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>7.1. PRIMERA LEY DE LA TERMODINÁMICA APLICADA A SISTEMAS ABIERTOS. PROCESOS ESTABLES</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
-.Estilo10 {color: #0000FF}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.1. Primera Ley: Sistemas Abiertos y Flujo Estable</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 35px;
+            line-height: 1.7;
+            background-color: #fdfdf5;
+            color: #2c3e50;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h1 { color: #0000FF; border-bottom: 2px solid #0000FF; padding-bottom: 10px; }
+        h2 { color: #0000FF; font-size: 1.6em; margin-top: 30px; border-left: 6px solid #0000FF; padding-left: 15px; background: #f0f7ff; }
+        .formula-block {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .highlight-box {
+            background-color: #eef2ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #0000FF;
+            margin: 15px 0;
+        }
+        .nota-roja { color: #FF0000; font-weight: bold; }
+        hr { border: 0; border-top: 1px solid #ccc; margin: 30px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-  <h1 align="left" class="Estilo1 Estilo10">7.1. PRIMERA LEY DE LA TERMODINÁMICA APLICADA A SISTEMAS ABIERTOS. PROCESOS ESTABLES </h1>
+<body>
 
-  <p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
-<hr />
-<p><font size="4" color="#000000"><b>Notas para la clase.</b></font></p>
-<hr />
-<p class="Seccion1"> La Primera Ley de la Termodinámica. Volúmenes de Control </p>
-<p >
-Los principios de conservación de la masa y de la energía para sistemas abiertos o volúmenes de control se aplican a sistemas cuya masa cruza la frontera del sistema o la <strong>superficie de control</strong>. Además de la transferencia de calor y el trabajo que cruzan las fronteras del sistema, la masa transporta energía cuando cruza estas fronteras; por lo tanto, el contenido de masa y energía del sistema abierto puede cambiar cuando la masa entra o sale del volumen de control, como se muestra en la figura siguiente.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-118.png" WIDTH=300 HEIGHT=200></DIV>
-<p >
-Los procesos termodinámicos que involucran volúmenes de control se pueden considerar en dos grupos: <strong>procesos de flujo estacionario</strong> y <strong>procesos de flujo no estacionario</strong>. Durante un proceso de flujo estacionario, el fluido fluye a través del volumen de control de manera constante, sin experimentar cambios con el tiempo en un punto fijo dentro del volumen de control.
-</p>
-<hr />
-<p class="Seccion2">Razón de flujo másico </p>
-<p >
-El flujo másico a través de un área de sección transversal por unidad de tiempo se denomina tasa o razón de flujo másico, $\dot{m}$, y se expresa como
-</p>
-	$$ \dot{m} = \int_A \rho\;v_n d A $$
-<p >
-donde $v_n$ es la velocidad normal al área de flujo de la sección transversal.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-003.png" WIDTH=300 HEIGHT=200></DIV>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-004.png" WIDTH=300 HEIGHT=200></DIV>
-<p >
-Si la densidad y la velocidad del fluido son constantes sobre el área de la sección transversal del flujo, la razón de flujo másico es
-</p>
-<p >
-$$ \dot{m} = \rho v_{\text{prom}} A = \frac{v_{\text{prom}} A}{\nu} $$
-</p>
-<p >
-donde $\rho$ es la densidad, $\left[ \displaystyle{\frac{\text{kg}}{\text{m}^3}}\right] $ $\left( \rho = \displaystyle{\frac{1}{\nu}} \right)$, $A$ es el área de la sección transversal, $\left[ \text{m}^2\right] $, y $v_{\text{prom}}$ es la velocidad promedio del fluido normal al área, $\left[ \displaystyle{\frac{\text{m}}{\text{s}^2}}\right] $.
-</p>
-<hr />
-<p class="Seccion2">Conservación de la masa para el volumen de control </p>
-<p >
-El principio de conservación de la masa para el sistema abierto o volumen de control se expresa como
-</p>
-	$$ \sum \dot{m}_e -\sum \dot{m}_s = \Delta \dot{m}_{sist} \qquad \left[ \frac{\text{m}}{\text{s}}\right] $$
-<hr />
-<p class="Seccion2">Conservación de energía para el volumen de control </p>
-<p >
-El principio de conservación de energía para el volumen de control o sistema abierto tiene la misma definición de palabra que la primera ley para el sistema cerrado. Expresando las transferencias de energía en base a la tasa, la primera ley para el volumen de control es
-</p>
-	$$\underbrace{\dot{E}_e - \dot{E}_s}_{\begin{array} {c} 
-	\text{Razón neta de} \\
-	\text{transferencia de energía} \\ 
-	\text{por calor, trabajo, masa} 
-	\end{array}} = \underbrace{\Delta \dot{E}_{sist}}_{ \begin{array} {c} 
-	\text{Razón de cambio} \\ 
-	\text{de energía interna,} \\
-	\text{cinética, potencial} 
-	\end{array} } \qquad \left[ \text{kW} \right] $$ 
-<p >
-Considerando que la energía fluye hacia y desde el volumen de control con la masa, la energía entra porque el calor neto se transfiere al volumen de control y la energía sale porque el volumen de control realizando un trabajo neto sobre su entorno, para el sistema abierto o volumen de control la primera ley se convierte en
-</p>
-	$$\dot{Q} - \dot{W} + \sum \underbrace{\dot{m}_e \theta_e}_{\text{para cada entrada}} - \sum \underbrace{\dot{m}_s \theta_s}_{\text{para cada salida}} = \frac{d E_{\text{VC}}}{d t} \qquad \left[ \text{kW} \right] $$
-<p >
-donde $\theta$ es la energía por unidad de masa que fluye a través de las fronteras hacia o desde el volumen de control se compone de cuatro términos, <strong>la energía interna</strong>, <strong>la energía cinética</strong>, <strong>la energía potencial</strong> y <strong>el trabajo de flujo</strong>.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch05-011.png" WIDTH=300 HEIGHT=200></DIV>
-<p >
-A medida que el fluido aguas arriba empuja la masa a través de la superficie de control, el trabajo realizado en esa unidad de masa es
-</p>
-	$$ \delta W_{flujo} = F \; dL = F\; dL \frac{A}{A} = \frac{F}{A} (A \; dL) = p dV = p v \delta m $$
-	$$ \delta w = \frac{\delta W}{\delta m} = p v $$
-<p >
-El término $p v$ se denomina <strong>trabajo de flujo</strong> realizado en la unidad de masa cuando cruza la superficie de control. La energía total transportada por una unidad de masa cuando cruza la superficie de control es
-</p>
-	$$ \theta = u + p v + \frac{v^2}{2} + g z $$
-	$$ \theta = h + \frac{v^2}{2} + g z $$
-<p >
-Aquí hemos usado la definición de entalpía, $h = u + p v$.
-</p>
-	$$\dot{Q} - \dot{W} + \sum \underbrace{\quad \dot{m}_e (h_e + \frac{v_e^2}{2} + g z_e) \quad}_{\text{para cada entrada}} - \sum \underbrace{\quad \dot{m}_s (h_s + \frac{v_s^2}{2} + g z_s) \quad}_{\text{para cada salida}} = \frac{d E_{\text{VC}}}{d t} \qquad \left[ \text{kW} \right] $$
-<p >
-donde la razón de cambio de la energía con respecto al tiempo en el volumen de control se ha escrito como $\displaystyle{\frac{d E_{\text{VC}}}{d t}}$.
-</p>
-<hr />
-<p class="Seccion2">Procesos de estado estacionario y flujo estacionario </p>
-<p >
-La mayoría de los dispositivos de conversión de energía funcionan de manera constante durante largos períodos de tiempo. Las tasas de transferencia de calor y trabajo que cruzan la superficie de control son constantes con el tiempo. Los estados de las corrientes de masa que cruzan la superficie de control o frontera son constantes en el tiempo. En estas condiciones, el contenido de masa y energía del volumen de control es constante en el tiempo.
-</p>
-	$$ \frac{d m_{VC}}{d t} = \Delta \dot{m}_{VC} = 0 $$ 
-	$$ \frac{d E_{VC}}{d t} = \Delta \dot{E}_{VC} = 0 $$ 
-<hr />
-<p class="Seccion2">Conservación de la masa en estado estacionario y flujo estacionario </p>
-<p>
-dado que la masa del volumen de control es constante con el tiempo durante el proceso de estado estacionario y flujo estacionario, el principio de conservación de la masa se convierte en
-</p>
-	$$ \sum \dot{m}_e = \sum \dot{m}_s \qquad \left[ \frac{\text{kg}}{\text{s}} \right] $$
-<hr />
-<p class="Seccion2">Conservación de la masa en estado estacionario y flujo estacionario </p>
-<p >
-Dado que la energía del volumen de control es constante con el tiempo durante el proceso de estado estacionario y flujo estacionario, el principio de conservación de la energía se convierte en
-</p>
-	$$\underbrace{\quad \dot{E}_e - \dot{E}_s \quad}_{\begin{array} {c} 
-	\text{Razón neta de} \\
-	\text{transferencia de energía} \\ 
-	\text{por calor, trabajo, masa} 
-	\end{array}} = \underbrace{\quad \Delta \dot{E}_{sist}\quad}_{ \begin{array} {c} 
-	\text{Razón de cambio} \\ 
-	\text{de energía interna,} \\
-	\text{cinética, potencial} 
-	\end{array} } = 0 \qquad \left[ \text{kW} \right]$$ 
-<p >
-o
-</p>
-	$$\underbrace{\qquad \dot{E}_e \qquad}_{\begin{array} {c} 
-	\text{Razón neta de} \\
-	\text{transferencia de energía} \\ 
-	\text{que entra por calor} \\ 
-	\text{trabajo, masa} 
-	\end{array}} = \underbrace{\qquad \dot{E}_s \qquad}_{ \begin{array} {c} 
-	\text{Razón neta de} \\
-	\text{transferencia de energía} \\ 
-	\text{que sale por calor} \\ 
-	\text{trabajo, masa} 
-	\end{array} } \qquad \left[ \text{kW} \right] $$ 
-<p >
-Considerando que la energía fluye hacia y desde el volumen de control con la masa, la energía entra porque el calor se transfiere al volumen de control y la energía sale porque el volumen de control realiza trabajo sobre su entorno, la primera ley de estado estacionario y flujo estacionario se convierte en
-</p>
-	$$ \dot{Q}_e - \dot{W}_e + \sum \underbrace{\quad \dot{m}_e (h_e + \frac{v_e^2}{2} + g z_e) \quad}_{\text{para cada entrada}} = \dot{Q}_s - \dot{W}_s + \sum \underbrace{\quad \dot{m}_s (h_s + \frac{v_s^2}{2} + g z_s) \quad}_{\text{para cada salida}} $$
-<p >
-La mayoría de las veces escribimos este resultado como
-</p>
-	$$ \dot{Q}_{neto} - \dot{W}_{neto} = \sum \underbrace{\quad \dot{m}_s (h_s + \frac{v_s^2}{2} + g z_s) \quad}_{\text{para cada salida}} - \sum \underbrace{\quad \dot{m}_e (h_e + \frac{v_e^2}{2} + g z_e) \quad}_{\text{para cada entrada}} $$
-<p >
-dónde
-</p>
-	$$ \dot{Q}_{neto} = \sum \dot{Q}_e - \sum \dot{Q}_s \qquad \text{y} \qquad \dot{W}_{neto} = \sum \dot{W}_s - \sum \dot{W}_e $$
-<hr />
-<p class="Seccion2">Estado estacionario, flujo estacionario para una entrada y una salida</p>
-<p>
-Varios dispositivos termodinámicos como bombas, ventiladores, compresores, turbinas, boquillas, difusores y calentadores funcionan con una entrada y una salida. La conservación de la masa en estado estacionario y flujo estacionario y la primera ley de la termodinámica para estos sistemas se reducen a
-</p>
-	$$ \dot{m}_1 = \dot{m}_2 $$
-	$$ \frac{1}{v_1} v_1 A_1 = \frac{1}{v_2} v_2 A_2 $$
-	$$ \dot{Q}_{neto} - \dot{W}_{neto} = \dot{m}_2 (h_2 + \frac{v_2^2}{2} + g z_2) - \dot{m}_1 (h_1 + \frac{v_1^2}{2} + g z_1) $$
-<p>
-o
-</p>
-	$$ \dot{Q}_{neto} - \dot{W}_{neto} = \dot{m} (h_2 - h_1 + \frac{v_2^2}{2} - \frac{v_1^2}{2} + g z_2 - g z_1) $$
-<p>
-donde la entrada es el estado $1$ salida es el estado $2$, y $\dot{m}$ es el flujo másico a través del dispositivo.
-</p>
-<p>
-Cuando se pueden despreciar las energías cinética y potencial, la ecuación de conservación de la energía se convierte en
-</p>
-	$$ \dot{Q}_{neto} - \dot{W}_{neto} = \dot{m} (h_2 - h_1) $$
-<p>
-A menudo escribimos este último resultado por unidad de flujo másico como
-</p>
-	$$ q - w = h_2 -h_1 $$
-<p>
-dónde 
-</p>
-	$$ q = \frac{\dot{Q}}{\dot{m}} \qquad \text{y} \qquad w = \frac{\dot{W}}{\dot{m}} $$ 
+    <h1>7.1. PRIMERA LEY: SISTEMAS ABIERTOS (VOLÃšMENES DE CONTROL)</h1>
+
+    <p><em>Revisa la BibliografÃ­a recomendada en la secciÃ³n <strong>Fuentes de InformaciÃ³n</strong> del curso.</em></p>
+    
     <hr />
+    <p><strong>Notas para la clase: ConservaciÃ³n de Masa y EnergÃ­a</strong></p>
+    <p>
+        A diferencia de los sistemas cerrados, en los <strong>volÃºmenes de control</strong> la masa cruza la frontera (superficie de control). Esta masa transporta energÃ­a consigo, lo que aÃ±ade un tÃ©rmino de flujo al balance energÃ©tico.
+    </p>
+
+    
+
+    <hr />
+
+    <h2>1. Flujo MÃ¡sico ($\dot{m}$)</h2>
+    <p>La razÃ³n de flujo mÃ¡sico es la cantidad de masa que pasa por una secciÃ³n transversal por unidad de tiempo:</p>
+    
+    <div class="formula-block">
+        $$ \dot{m} = \rho v_{\text{prom}} A = \frac{v_{\text{prom}} A}{\nu} \quad \left[ \text{kg/s} \right] $$
+    </div>
+
+    
+
+    <hr />
+
+    <h2>2. Balance General de EnergÃ­a</h2>
+    <p>Para cualquier sistema abierto, la energÃ­a entra y sale por calor ($\dot{Q}$), trabajo ($\dot{W}$) y transporte de masa ($\dot{m}\theta$):</p>
+
+    <div class="formula-block">
+        $$ \dot{Q} - \dot{W} + \sum \dot{m}_e \theta_e - \sum \dot{m}_s \theta_s = \frac{d E_{\text{VC}}}{dt} $$
+    </div>
+
+    <p>Donde la energÃ­a total por unidad de masa ($\theta$) incluye el <strong>trabajo de flujo</strong> ($Pv$), transformando la energÃ­a interna en <strong>entalpÃ­a</strong> ($h = u + Pv$):</p>
+    
+    <div class="formula-block">
+        $$ \theta = h + \frac{V^2}{2} + gz $$
+    </div>
+
+    <hr />
+
+    <h2>3. Procesos de Flujo Estacionario (Estado Estable)</h2>
+    <p>En ingenierÃ­a, la mayorÃ­a de los dispositivos (turbinas, compresores, toberas) operan de forma que sus propiedades no cambian con el tiempo dentro del volumen de control:</p>
+    
+    <div class="highlight-box">
+        <strong>Condiciones de Estado Estable:</strong>
+        <br>1. ConservaciÃ³n de Masa: $\sum \dot{m}_e = \sum \dot{m}_s$
+        <br>2. ConservaciÃ³n de EnergÃ­a: $\frac{d E_{\text{VC}}}{dt} = 0$
+    </div>
+
+    <h3>EcuaciÃ³n para una entrada (1) y una salida (2):</h3>
+    <div class="formula-block">
+        $$ \dot{Q}_{\text{neto}} - \dot{W}_{\text{neto}} = \dot{m} \left( h_2 - h_1 + \frac{V_2^2 - V_1^2}{2} + g(z_2 - z_1) \right) $$
+    </div>
+
+    <p>Si despreciamos los cambios de energÃ­a cinÃ©tica y potencial (comÃºn en intercambiadores de calor y vÃ¡lvulas):</p>
+    <div class="formula-block">
+        $$ q - w = h_2 - h_1 $$
+    </div>
+
+    
+
+    <hr />
+    <p class="nota-roja">Punto Clave:</p>
+    <p>Recuerde que en sistemas abiertos usamos <strong>EntalpÃ­a ($h$)</strong> en lugar de energÃ­a interna ($u$) porque el fluido debe realizar trabajo para "hacerse espacio" y entrar o salir del volumen de control.</p>
+
 </body>
-
 </html>
-

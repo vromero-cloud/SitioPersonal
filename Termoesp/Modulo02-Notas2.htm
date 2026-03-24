@@ -1,84 +1,109 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>2.2. PROPIEDADES DE LAS SUSTANCIAS PURAS</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
-.Estilo10 {color: #0000FF}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.2. Propiedades de las Sustancias Puras - Parte 2</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px;
+            line-height: 1.7;
+            background-color: #f8fff5;
+            color: #2c3e50;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h1 { color: #0000FF; text-align: left; border-bottom: 2px solid #0000FF; padding-bottom: 10px; }
+        h2 { color: #333; font-size: 1.3em; margin-top: 25px; }
+        h3 { color: #0056b3; font-size: 1.1em; margin-top: 20px; border-left: 4px solid #0056b3; padding-left: 10px; }
+        .breadcrumb { font-style: italic; font-size: 0.9em; margin-bottom: 20px; color: #555; }
+        .image-container { text-align: center; margin: 25px 0; background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 5px; }
+        .image-container img { max-width: 100%; height: auto; }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 30px 0; }
+        strong { color: #000; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-  <h1 align="left" class="Estilo1 Estilo10">2.2. PROPIEDADES DE LAS SUSTANCIAS PURAS </h1>
+<body>
 
-  <p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
-<hr />
-<p><font size="4" color="#000000"><b>Notas para la clase, segunda parte</b></font></p>
-<p>
-Consideremos los resultados de calentar agua líquida desde $20^\circ\text{C}$, $1 \text{ atm}$ manteniendo la presión constante. Seguiremos el proceso de presión constante. En primer lugar, el agua líquida está contenida en un dispositivo de pistón-cilindro donde se coloca un peso fijo sobre el pistón para mantener constante la presión del agua en todo momento. A medida que el agua líquida se calienta mientras la presión se mantiene constante, ocurren los siguientes eventos.
-</p>
-<p>
-<strong>Proceso 1-2:</strong>
-</p>
-<p>
-La temperatura y el volumen específico aumentarán desde el estado $1$ de líquido comprimido o líquido subenfriado hasta el estado $2$ de líquido saturado. En la región de líquido comprimido, las propiedades del líquido son aproximadamente iguales a las propiedades del estado líquido saturado a esa temperatura.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch03-006.png" WIDTH=300 HEIGHT=200></DIV>
-<p>
-<strong>Proceso 2-3:</strong>
-</p>
-<p>
-En el estado $2$, el líquido ha alcanzado la temperatura a la que comienza a hervir, llamada <strong>temperatura de saturación</strong>, y se dice que existe como <strong>líquido saturado</strong>. Las propiedades en el estado líquido saturado se indican mediante el subíndice $f$ y $v_2 = v_f$. Durante el cambio de fase, tanto la temperatura como la presión permanecen constantes (el agua hierve a $100^\circ\text{C}$ cuando la presión es de $1 \text{ atm}$ o $101,325 \text{ kPa}$). En el estado $3$, las fases de líquido y vapor están en equilibrio y cualquier punto en la línea entre los estados $2$ y $3$ tiene la misma temperatura y presión.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch03-007.png" WIDTH=300 HEIGHT=200></DIV>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch03-008.png" WIDTH=300 HEIGHT=200></DIV>
-<p>
-<strong>Proceso 3-4:</strong>
-</p>
-<p>
-En el estado $4$ existe un vapor saturado y se completa la vaporización. El subíndice $g$ siempre indicará un estado de vapor saturado. Nótese que $v_4 = v_g$.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch03-009.png" WIDTH=300 HEIGHT=200></DIV>
-<p>
-Las propiedades termodinámicas en estado líquido saturado y estado de vapor saturado se dan en la Tabla A-4 como tabla de temperatura saturada y en la Tabla A-5 como tabla de presión saturada. Estas tablas contienen la misma información. En la Tabla A-4, la temperatura de saturación es la propiedad independiente y en la Tabla A-5, la presión de saturación es la propiedad independiente. La presión de saturación es la presión a la cual ocurrirá el cambio de fase a una temperatura dada. En la región de saturación la temperatura y la presión son propiedades dependientes; si uno es conocido, entonces el otro es automáticamente conocido.
-</p>
-<p>
-<strong>Proceso 4-5:</strong>
-</p>
-<p>
-Si continúa el calentamiento a presión constante, la temperatura comenzará a aumentar por encima de la temperatura de saturación, $100^\circ\text{C}$ en este ejemplo, y el volumen también aumentará. El estado $5$ se llama estado sobrecalentado porque $T_5$ es mayor que la temperatura de saturación para la presión y el vapor no está a punto de condensarse. Las propiedades termodinámicas del agua en la región sobrecalentada se encuentran en las tablas de vapor sobrecalentado, Tabla A-6.
-</p>
-<p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch03-010.png" WIDTH=300 HEIGHT=200></DIV>
-</p>
-<p>
-Este proceso de calentamiento a presión constante se ilustra en la siguiente figura.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch03-011.png" WIDTH=300 HEIGHT=200></DIV>
-<hr />
-	
+    <h1>2.2. PROPIEDADES DE LAS SUSTANCIAS PURAS</h1>
+
+    <p class="breadcrumb">
+        Revisa la BibliografÃ­a recomendada en la secciÃ³n 
+        <a href="../../FuenteInform.htm"><strong>Fuentes de InformaciÃ³n</strong></a> del curso.
+    </p>
+
+    <hr />
+
+    <h2>Notas para la clase: Procesos de Cambio de Fase</h2>
+    
+    <p>
+        Consideremos los resultados de calentar agua lÃ­quida desde $20^\circ\text{C}$ y $1 \text{ atm}$ manteniendo la presiÃ³n constante. Utilizaremos un dispositivo de <strong>pistÃ³n-cilindro</strong> con un peso fijo para asegurar que la presiÃ³n se mantenga uniforme durante todo el trayecto. A medida que se aÃ±ade calor, ocurren los siguientes eventos:
+    </p>
+
+    <h3>Proceso 1-2: LÃ­quido Comprimido</h3>
+    <p>
+        La temperatura y el volumen especÃ­fico aumentarÃ¡n desde el <strong>estado 1</strong> (lÃ­quido comprimido o subenfriado) hasta el <strong>estado 2</strong> (lÃ­quido saturado). En esta regiÃ³n, las propiedades del lÃ­quido son muy similares a las del estado saturado a la misma temperatura.
+    </p>
+
+    <div class="image-container">
+        
+        <br><small><em>Fig. Estado de lÃ­quido comprimido (Estado 1).</em></small>
+    </div>
+
+    <h3>Proceso 2-3: RegiÃ³n de SaturaciÃ³n</h3>
+    <p>
+        En el <strong>estado 2</strong>, el lÃ­quido alcanza su <strong>temperatura de saturaciÃ³n</strong> ($100^\circ\text{C}$ a $1 \text{ atm}$) y comienza a hervir. Se dice que existe como <strong>lÃ­quido saturado</strong> ($v_2 = v_f$). Durante este cambio de fase, la temperatura y la presiÃ³n permanecen constantes mientras el lÃ­quido se transforma en vapor. En el <strong>estado 3</strong>, las fases lÃ­quida y gaseosa coexisten en equilibrio.
+    </p>
+
+    <div class="image-container">
+        
+        <br><small><em>Fig. Mezcla de lÃ­quido y vapor saturado (Estado 3).</em></small>
+    </div>
+
+    <h3>Proceso 3-4: Vapor Saturado</h3>
+    <p>
+        Al llegar al <strong>estado 4</strong>, toda la masa se ha transformado en vapor. El subÃ­ndice $g$ indica este estado de vapor saturado ($v_4 = v_g$). Cualquier pÃ©rdida de calor en este punto provocarÃ­a una condensaciÃ³n inmediata.
+    </p>
+
+    <div class="image-container">
+        
+        <br><small><em>Fig. Estado de vapor saturado (Estado 4).</em></small>
+    </div>
+
+    <p>
+        Las propiedades para estos estados se encuentran en la <strong>Tabla A-4</strong> (basada en temperatura) y la <strong>Tabla A-5</strong> (basada en presiÃ³n). En la regiÃ³n de saturaciÃ³n, la presiÃ³n y la temperatura son <strong>propiedades dependientes</strong>: conocer una define automÃ¡ticamente la otra.
+    </p>
+
+    <h3>Proceso 4-5: Vapor Sobrecalentado</h3>
+    <p>
+        Si se continÃºa calentando, la temperatura sube por encima del punto de saturaciÃ³n (ej. $T > 100^\circ\text{C}$). El <strong>estado 5</strong> es vapor sobrecalentado; el vapor ya no estÃ¡ a punto de condensarse y se comporta de forma mÃ¡s cercana a un gas. Estas propiedades se consultan en la <strong>Tabla A-6</strong>.
+    </p>
+
+    <div class="image-container">
+        
+        <br><small><em>Fig. Estado de vapor sobrecalentado (Estado 5).</em></small>
+    </div>
+
+    <p>
+        El proceso completo de calentamiento a presiÃ³n constante se visualiza tÃ­picamente en un diagrama $T-v$ (Temperatura vs. Volumen especÃ­fico).
+    </p>
+
+    <div class="image-container">
+        
+        <br><small><em>GrÃ¡fico T-v: Trayectoria de los estados 1 al 5.</em></small>
+    </div>
+
+    <hr />
+
 </body>
-
 </html>
-

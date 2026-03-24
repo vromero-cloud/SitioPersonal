@@ -1,227 +1,230 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>M�dulo 2. Tarea Propiedades de las substancias puras.</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2. Tarea Propiedades de las sustancias puras</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f0fdf4; 
+            font-family: "Times New Roman", Times, serif;
+            color: #2c3e50;
+            line-height: 1.5;
+        }
+        .header-section {
+            text-align: left;
+            border-bottom: 3px solid #0000FF;
+            margin-bottom: 20px;
+        }
+        h1 { color: #0000FF; font-size: 2.2em; margin-bottom: 5px; }
+        h2 { color: #0000FF; font-size: 1.4em; margin-top: 0; }
+        .breadcrumb { font-style: italic; margin-bottom: 20px; font-size: 0.95em; }
+        
+        .ejercicio {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 6px solid #0000FF;
+        }
+        .ejercicio-numero {
+            font-weight: bold;
+            color: #0000FF;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        table {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+        th { background-color: #eef2ff; font-weight: bold; }
+        .resaltar-fase { font-style: italic; color: #555; }
+        .respuesta-final {
+            color: #c0392b;
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+            border-top: 1px dashed #ccc;
+            padding-top: 10px;
+        }
+        hr { border: 0; border-top: 1px solid #ccc; margin: 20px 0; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-<p align="left" class="Titulo">Termodin�mica</p>
-<p align="left" class="Seccion2">Tarea 2. Propiedades de las substancias puras (12 problemas) </p>
-<p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a> del curso.</em></p>
-<hr />
-<ol>
-  <li>(3-22) Completa la tabla siguiente para el agua:
-    <center>
-      <table width="200" border="1">
-        <tr>
-          <td>$T$ [$^\circ\text{C}$]</td>
-          <td>$p$ [$\text{kPa}$]</td>
-          <td>$v$ $\left[\displaystyle{\frac{\text{m}^3}{\text{kg}}}\right]$</td>
-          <td>Descripci�n de la fase</td>
-        </tr>
-        <tr>
-          <td>$50$</td>
-          <td> </td>
-          <td>$7.72$</td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td> </td>
-          <td>$400$</td>
-          <td> </td>
-          <td>Vapor saturado</td>
-        </tr>
-        <tr>
-          <td>$250$</td>
-          <td>$500$</td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td>$110$</td>
-          <td>$350$</td>
-          <td> </td>
-          <td> </td>
-        </tr>
-  </table>
-    </center>
-  </li>
-<hr />
-  <li>(3-23) Completa la tabla siguiente para el agua:
-    <center>
-      <table width="200" border="1">
-        <tr>
-          <td>$T$ [$^\circ\text{F}$]</td>
-          <td>$p$ [$\text{psia}$]</td>
-          <td>$u$ $\left[\displaystyle{\frac{\text{Btu}^3}{\text{lbm}}}\right]$</td>
-          <td>Descripci&oacute;n de la fase</td>
-        </tr>
-        <tr>
-          <td>$300$</td>
-          <td></td>
-          <td>$782$</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>$40$</td>
-          <td></td>
-          <td>L&iacute;quido saturado</td>
-        </tr>
-        <tr>
-          <td>$500$</td>
-          <td>$120$</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>$400$</td>
-          <td>$400$</td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </center>
-  </li>
-  <hr />
-  <li>(3-27) Completa la tabla siguiente para el refrigerante 134a:
-    <center>
-      <table width="200" border="1">
-        <tr>
-          <td>$T$ [$^\circ\text{C}$]</td>
-          <td>$p$ [$\text{kPa}$]</td>
-          <td>$v$ $\left[\displaystyle{\frac{\text{m}^3}{\text{kg}}}\right]$</td>
-          <td>Descripci�n de la fase</td>
-        </tr>
-        <tr>
-          <td>$-12$</td>
-          <td>$320$ </td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td>$30$ </td>
-          <td> </td>
-          <td>$0.0065$ </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td> </td>
-          <td>$550$</td>
-          <td> </td>
-          <td> Vapor saturado </td>
-        </tr>
-        <tr>
-          <td>$60$</td>
-          <td>$600$</td>
-          <td> </td>
-          <td> </td>
-        </tr>
-  </table>
-    </center>
-  </li>
-<hr />
-  <li>(3-29) Completa la tabla siguiente para el refrigerante 134a:
-    <center>
-      <table width="200" border="1">
-        <tr>
-          <td>$T$ [$^\circ\text{F}$]</td>
-          <td>$p$ [$\text{psia}$]</td>
-          <td>$u$ $\left[\displaystyle{\frac{\text{Btu}^3}{\text{lbm}}}\right]$</td>
-          <td>$x$</td>
-          <td>Descripci&oacute;n de la fase</td>
-        </tr>
-        <tr>
-          <td> </td>
-          <td>$80$</td>
-          <td>$78$</td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td>$15$</td>
-          <td> </td>
-          <td> </td>
-          <td>$0.6$</td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td>$10$</td>
-          <td>$70$</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td> </td>
-          <td>$180$</td>
-          <td>$129.46$</td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td>$10$</td>
-          <td>$70$</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td> $110$</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td>$1.0$ </td>
-        </tr>
-      </table>
-    </center>
-  </li>
-<hr />
-  <li>(3-38E) Una libra-masa de agua llena un dispositivo cilindro&eacute;mbolo    de peso conocido de $2.4264$ $\text{ft}^3$, a una temperatura    de $600^\circ\text{F}$. El dispositivo cilindro-&eacute;mbolo se enfr&iacute;a ahora hasta    que su temperatura es $200^\circ\text{F}$. Determine la presi&oacute;n final del    agua, en $\text{psia}$, y el volumen en $\text{ft}^3$.  Respuestas: $250$ $\text{psia}$, $0.01663$ $\text{ft}^3$.</li>
-<hr />
-  <li>Mediante una estufa el&eacute;ctrica se hierve agua a $1$ $\text{atm}$ de    presi&oacute;n, en una olla de acero inoxidable con $25$ $\text{cm}$ de di&aacute;metro    interior. Se observa que el nivel del agua baja $10$ $\text{cm}$ en $45$  $\text{min}$; calcule la tasa de transferencia de calor a la olla.</li>
-<hr />
-  <li>(3-50) Se observa que hierve agua en una olla de 5 cm de    profundidad, a $98^\circ\text{C}$. &iquest;A qu&eacute; temperatura hervir&aacute; el agua en    una olla de $40$ $\text{cm}$ de profundidad? Suponga que las dos ollas  est&aacute;n llenas de agua hasta sus bordes.</li>
-<hr />
-  <li>(3-52) Un recipiente r&iacute;gido  de $1.8$ $\text{m}^3$ de volumen contiene $15$ $\text{kg}$ de un vapor h&uacute;medo de agua a $90^\circ\text{C}$.  Entonces, se calienta lentamente el agua. Determine la temperatura a la cual el  l&iacute;quido, que forma parte del vapor h&uacute;medo en el recipiente, se evapora por  completo. Tambi&eacute;n describa el proceso en un diagrama de $T-v$ con respecto a las  l&iacute;neas de saturaci&oacute;n. Respuesta: $202.9^\circ\text{C}$.</li>
-<hr />
-  <li>(3-53) Un dispositivo de  cilindro-&eacute;mbolo contiene $0.005$ $\text{m}^3$ de agua l&iacute;quida y  $0.9$ $\text{m}^3$ de vapor de agua, en  equilibrio a $600$ $\text{kPa}$. Se transmite calor a presi&oacute;n constante, hasta que la  temperatura llega a $200^\circ\text{C}$. a) &iquest;Cu&aacute;l es la temperatura inicial del agua? b)  Calcule la masa total de agua. c) Calcule el volumen final. d) Indique el  proceso en un diagrama $p-v$ con respecto a las l&iacute;neas de saturaci&oacute;n.</li>
-<hr />
-  <li>(3-54) Regrese al problema  3-53. Use el programa EES (u otro) para investigar el efecto de la presi&oacute;n sobre  la masa total de agua en el recipiente. Deje variar la presi&oacute;n de $0.1$ $\text{MPa}$ hasta  $1$ $\text{MPa}$. Represente en un diagrama la masa total de agua en funci&oacute;n de la  presi&oacute;n, y describa los resultados. Muestre tambi&eacute;n el proceso del problema  3-53 en un diagrama $p-v$ usando la funci&oacute;n de dibujar propiedades, en el EES.</li>
-<hr />
-  <li>(3-55E) Se deja enfriar vapor de agua sobrecalentado a $180$ $\text{psia}$ y $500^\circ\text{F}$, a volumen constante, hasta que la temperatura baja a $250^\circ\text{F}$. En el estado final, calcule a) la presi�n, b) la calidad y c) la entalp�a. Tambi�n muestre el proceso en un diagrama $T-v$ con respecto a las l�neas de saturaci�n. Respuestas: a) $29.84$ $\text{psia}$, b) $0.219$, c) $426.0$ $\displaystyle{\frac{\text{Btu}}{\text{lbm}}}$. 
-	</li>
-<hr />
-  <li>(3-56E) 
-	Regrese al problema 3-55E.  Use el programa EES (u otro) para investigar el efecto de la presi&oacute;n inicial  sobre la calidad del agua en el estado final. Haga que la presi&oacute;n var&iacute;e de $100$ $\text{psia}$ a $300$ $\text{psia}$. Trace la gr&aacute;fica de calidad en funci&oacute;n de la presi&oacute;n inicial y  describa los resultados. Tambi&eacute;n indique el proceso del problema 3-55E en un  diagrama $T-v$ usando la funci&oacute;n de dibujar propiedades en EES.</li>
-</ol>
-<hr />
-	
+<body>
+
+<div class="header-section">
+    <h1>Termodinámica</h1>
+    <h2>Tarea 2. Propiedades de las sustancias puras (12 problemas)</h2>
+</div>
+
+<p class="breadcrumb">
+    Revisa la Bibliografía recomendada en la sección 
+    <a href="../../FuenteInform.htm"><strong>Fuentes de Información</strong></a> del curso.
+</p>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 1 (3-22)</span>
+    <p>Complete la tabla siguiente para el <strong>agua</strong>:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>$T$ ($^\circ\text{C}$)</th>
+                <th>$P$ ($\text{kPa}$)</th>
+                <th>$v$ ($\text{m}^3/\text{kg}$)</th>
+                <th>Descripción de la fase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>50</td><td>—</td><td>7.72</td><td></td></tr>
+            <tr><td>—</td><td>400</td><td>—</td><td class="resaltar-fase">Vapor saturado</td></tr>
+            <tr><td>250</td><td>500</td><td>—</td><td></td></tr>
+            <tr><td>110</td><td>350</td><td>—</td><td></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 2 (3-23)</span>
+    <p>Complete la tabla siguiente para el <strong>agua</strong>:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>$T$ ($^\circ\text{F}$)</th>
+                <th>$P$ ($\text{psia}$)</th>
+                <th>$u$ ($\text{Btu}/\text{lbm}$)</th>
+                <th>Descripción de la fase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>300</td><td>—</td><td>782</td><td></td></tr>
+            <tr><td>—</td><td>40</td><td>—</td><td class="resaltar-fase">Líquido saturado</td></tr>
+            <tr><td>500</td><td>120</td><td>—</td><td></td></tr>
+            <tr><td>400</td><td>400</td><td>—</td><td></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 3 (3-27)</span>
+    <p>Complete la tabla siguiente para el <strong>refrigerante 134a</strong>:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>$T$ ($^\circ\text{C}$)</th>
+                <th>$P$ ($\text{kPa}$)</th>
+                <th>$v$ ($\text{m}^3/\text{kg}$)</th>
+                <th>Descripción de la fase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>-12</td><td>320</td><td>—</td><td></td></tr>
+            <tr><td>30</td><td>—</td><td>0.0065</td><td></td></tr>
+            <tr><td>—</td><td>550</td><td>—</td><td class="resaltar-fase">Vapor saturado</td></tr>
+            <tr><td>60</td><td>600</td><td>—</td><td></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 4 (3-29)</span>
+    <p>Complete la tabla siguiente para el <strong>refrigerante 134a</strong>:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>$T$ ($^\circ\text{F}$)</th>
+                <th>$P$ ($\text{psia}$)</th>
+                <th>$u$ ($\text{Btu}/\text{lbm}$)</th>
+                <th>$x$ (Calidad)</th>
+                <th>Fase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>—</td><td>80</td><td>78</td><td>—</td><td></td></tr>
+            <tr><td>15</td><td>—</td><td>—</td><td>0.6</td><td></td></tr>
+            <tr><td>10</td><td>70</td><td>—</td><td>—</td><td></td></tr>
+            <tr><td>—</td><td>180</td><td>129.46</td><td>—</td><td></td></tr>
+            <tr><td>110</td><td>—</td><td>—</td><td>1.0</td><td></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 5 (3-38E)</span>
+    <p>Una libra-masa de agua llena un dispositivo cilindro-émbolo de peso conocido de $2.4264 \text{ ft}^3$, a una temperatura de $600^\circ\text{F}$. El dispositivo se enfría hasta que su temperatura es $200^\circ\text{F}$. Determine la presión final del agua ($\text{psia}$) y el volumen final ($\text{ft}^3$).</p>
+    <span class="respuesta-final">Respuestas: $250 \text{ psia}$, $0.01663 \text{ ft}^3$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 6</span>
+    <p>Mediante una estufa eléctrica se hierve agua a $1 \text{ atm}$ en una olla de acero inoxidable con $25 \text{ cm}$ de diámetro interior. Se observa que el nivel del agua baja $10 \text{ cm}$ en $45 \text{ min}$. Calcule la tasa de transferencia de calor a la olla.</p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 7 (3-50)</span>
+    <p>Se observa que hierve agua en una olla de $5 \text{ cm}$ de profundidad a $98^\circ\text{C}$. ¿A qué temperatura hervirá el agua en una olla de $40 \text{ cm}$ de profundidad? Suponga que ambas están llenas hasta el borde.</p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 8 (3-52)</span>
+    <p>Un recipiente rígido de $1.8 \text{ m}^3$ contiene $15 \text{ kg}$ de vapor húmedo de agua a $90^\circ\text{C}$. Se calienta lentamente. Determine la temperatura a la cual el líquido se evapora por completo. Describa el proceso en un diagrama $T-v$.</p>
+    
+    <span class="respuesta-final">Respuesta: $202.9^\circ\text{C}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 9 (3-53)</span>
+    <p>Un cilindro-émbolo contiene $0.005 \text{ m}^3$ de agua líquida y $0.9 \text{ m}^3$ de vapor en equilibrio a $600 \text{ kPa}$. Se transmite calor a presión constante hasta llegar a $200^\circ\text{C}$.</p>
+    <ul>
+        <li>a) ¿Cuál es la temperatura inicial?</li>
+        <li>b) Masa total de agua.</li>
+        <li>c) Volumen final.</li>
+        <li>d) Indique el proceso en un diagrama $P-v$.</li>
+    </ul>
+    
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 10 (3-54)</span>
+    <p>Regrese al problema anterior. Use EES u otro software para investigar el efecto de la presión ($0.1$ a $1 \text{ MPa}$) sobre la masa total de agua. Grafique $m_{\text{total}}$ vs $P$.</p>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 11 (3-55E)</span>
+    <p>Se deja enfriar vapor sobrecalentado a $180 \text{ psia}$ y $500^\circ\text{F}$ a volumen constante hasta que la temperatura baja a $250^\circ\text{F}$. Calcule:</p>
+    <ul>
+        <li>a) Presión final.</li>
+        <li>b) Calidad ($x$).</li>
+        <li>c) Entalpía ($h$).</li>
+    </ul>
+    <span class="respuesta-final">Respuestas: a) $29.84 \text{ psia}$, b) $0.219$, c) $426.0 \text{ Btu/lbm}$.</span>
+</div>
+
+<div class="ejercicio">
+    <span class="ejercicio-numero">Problema 12 (3-56E)</span>
+    <p>Regrese al problema 11E. Use software para investigar el efecto de la presión inicial ($100$ a $300 \text{ psia}$) sobre la calidad final. Grafique $x_{\text{final}}$ vs $P_{\text{inicial}}$.</p>
+</div>
+
 </body>
-
 </html>
-

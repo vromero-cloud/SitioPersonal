@@ -1,186 +1,144 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>3. ECUACIONES DE ESTADO</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
-</script>
-<style type="text/css">
-<!--
-.Titulo {font-size: 24pt; font-weight: bold; color: #0000FF;}
-.Seccion1 {font-size: 18pt; font-weight: bold; color: #0000FF;}
-.Seccion2 {font-size: 14pt; font-weight: bold; color: #0000FF;}
-.Seccion3 {font-size: 12pt; font-weight: bold; color: #0000FF;}
-.Nota {font-size: 12pt; font-weight: bold; color: #FF0000;}
-.Resaltar {color: #FF00FF; font-size: 12pt;}
-.Estilo3 {font-size: 12pt}
-.Estilo4 {
-	color: #0000FF;
-	font-weight: bold;
-}
-.Estilo9 {
-	color: #FF0000;
-	font-weight: bold;
-}
-.Estilo10 {color: #0000FF}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Ecuaciones de Estado</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            line-height: 1.7;
+            background-color: #f4fdf0;
+            color: #2c3e50;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h1 { color: #0000FF; border-bottom: 2px solid #0000FF; padding-bottom: 10px; }
+        h2 { color: #0000FF; font-size: 1.5em; margin-top: 30px; border-left: 5px solid #0000FF; padding-left: 15px; }
+        .breadcrumb { font-style: italic; font-size: 0.9em; margin-bottom: 20px; color: #666; }
+        .formula-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .highlight-box {
+            background-color: #eef2ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #0000FF;
+            margin: 15px 0;
+        }
+        .image-container { text-align: center; margin: 25px 0; }
+        .image-container img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+        hr { border: 0; border-top: 1px solid #ccc; margin: 30px 0; }
+        strong { color: #000; }
+    </style>
 </head>
-<body BGColor=#D9FFCE background="" Link=#003399 VLink=#00CC00 leftmargin="24" rightmargin="0" topmargin="24" bottommargin="0" marginwidth="0" marginheight="0">
-  <h1 align="left" class="Estilo1 Estilo10">3. ECUACIONES DE ESTADO</h1>
+<body>
 
-  <p align="left" class="Estilo3"><em>Revisa la Bibliograf&iacute;a recomendada en la secci&oacute;n <a href="../../FuenteInform.htm"><strong>Fuentes de Informaci&oacute;n</strong></a>del curso.</em></p>
-<hr />
-<p><font size="4" color="#000000"><b>Notas para la clase.</b></font></p>
-<hr />
-<p><font size="4" color="#000000"><b>Ecuaciones de estado</b></font></p>
-<p>
-La relación entre las variables de estado, temperatura, presión y volumen específico, se denomina <strong>ecuación de estado</strong>. Ahora consideramos la ecuación de estado para la fase vapor o gaseosa de sustancias compresibles simples.
-</p>
-<hr />
-<p><font size="4" color="#000000"><b>Gas ideal</b></font></p>
-<p>
-Con base en nuestra experiencia en química y física, recordamos que la combinación de las <strong>leyes de Boyle</strong> y <strong>Charles</strong> para gases a baja presión da como resultado la ecuación de estado para el gas ideal como
-</p>
-	$$ p = \frac{R T}{v} $$
-<p>
-donde $R$ es la constante de proporcionalidad y se denomina <strong>constante del gas</strong> y toma un valor diferente para cada gas. Si un gas obedece a esta relación se le llama <strong>gas ideal</strong>. A menudo escribimos esta ecuación como
-</p>
-	$$ p v = R T $$
-<p>
-La constante de gas para gases ideales está relacionada con la <strong>constante universal de los gases</strong> y es válida para todas las sustancias a través de la <strong>masa molar</strong> $M$ (o <strong>peso molecular</strong>). Sea $R_u$ la constante universal de los gases, de acuerdo con la descripción anterior, se tiene
-</p>
-	$$ R = \frac{R_u}{M} $$
-<p>
-La masa, $m$, está relacionada con el número de moles, $N$, de la sustancia a través del peso molecular o masa molar, $M$, como $ m = N M$ (consulte la <strong>Tabla A-1</strong>). La masa molar es la relación entre la masa y el número de moles, y tiene el mismo valor independientemente del sistema de unidades.
-</p>
-	$$ M_{\text{aire}} = 28.97 \frac{\text{g}}{\text{gmol}} = 28.97 \frac{\text{kg}}{\text{kmol}} = 28.97 \frac{\text{lbm}}{\text{lbmol}} $$
-<p>
-dado que $1 \text{ kmol} = 1000 \text{ gmol}$, y $1 \text{ kg} = 1000 \text{ g}$, $1 \text{ kmol}$ de aire tiene una masa de $28.97 \text{ kg}$ o $28,970 \text{ g}$.
-</p>
-<p>
-La ecuación de estado de los gases ideales se puede escribir de varias maneras:
-</p>
-	$$ p v = R T $$
-	$$ p \frac{V}{m} = R T $$
-	$$ p V = m R T $$
-	$$ p V = N R_u T $$
-	$$ p \frac{V}{N} = R_u T $$
-	$$ p \overline{v} = R_u T $$
-<p>
-Aquí 
-</p>
-<p>
-$ p = \text{ presión absoluta en } \text{kPa o MPa}$.
-</p>
-<p>
-$ \overline{v} = \text{ volumen específico molar en } \displaystyle{\frac{\text{m}^3}{\text{kmol}}}$.
-</p>
-<p>
-$ T = \text{ temperatura absoluta en } \text{K}$.
-</p>
-<p>
-$ R_u = \text{ constante universal de los gases } = 8.314 \displaystyle{\frac{\text{kJ}}{\text{kmol K}}}$.
-</p>
-<p>
-Algunos valores de la constante universal de los gases, $R_u$, son:
-</p>
-<p>
-$$ 8.314 \displaystyle{\frac{\text{kJ}}{\text{kmol K}}} $$
-</p>
-<p>
-$$ 8.314 \displaystyle{\frac{\text{kPa }\text{m}^3}{\text{kmol K}}} $$
-</p>
-<p>
-$$ 1.986 \displaystyle{\frac{\text{Btu}}{\text{lbmol R}}} $$
-</p>
-<p>
-$$ 1,545 \displaystyle{\frac{\text{ft lbf}}{\text{lbmol R}}} $$
-</p>
-<p>
-$$ 10.73 \displaystyle{\frac{\text{psia }\text{ft}^3}{\text{lbmol R}}} $$
-</p>
-<p>
-La ecuación de estado del gas ideal puede derivarse de principios básicos si se supone:
-</p>
-<ol>
-  <li>Las fuerzas intermoleculares son pequeñas, y </li>
-  <li>El volumen ocupado por las partículas es pequeño. </li>
-</ol>
-<p>
-La ecuación de estado del gas ideal se usa cuando 
-</p>
-<ol>
-  <li>la presión es pequeña en comparación con la presión crítica, o </li>
-  <li>cuando la temperatura es el doble de la temperatura crítica y la presión es menor que diez veces la presión crítica. </li>
-</ol>
-<p>
-El <strong>punto crítico</strong> es ese estado donde hay un cambio instantáneo de la fase líquida a la fase de vapor de una sustancia. Los datos de puntos críticos se dan en la <strong>Tabla A-1</strong>.
-</p>
-<p>
-Para comprender los criterios anteriores y determinar cuánto se desvía la ecuación de estado del gas ideal del comportamiento real del gas, introducimos el f<strong>actor de compresibilidad</strong>, $Z$, de la siguiente manera:
-</p>
-	$$ p \overline{v} = Z R_u T $$
-<p>
-o
-</p>
-	$$ Z = \frac{p \overline{v}}{R_u T} $$
-<p>
-Para un gas ideal $Z = 1$, y la desviación de $Z$ de la unidad mide la desviación de la relación $p V T$ real de la ecuación de estado del gas ideal. El factor de compresibilidad se expresa en función de la <strong>presión reducida</strong> y la <strong>temperatura reducida</strong>. El factor $Z$ es aproximadamente el mismo para todos los gases a la misma temperatura reducida y presión reducida, que se definen como
-</p>
-	$$ p_\text{R} = \frac{p}{p_\text{cr}} \qquad \text{y} \qquad T_\text{R} = \frac{T}{T_\text{cr}} $$
-<p>
-donde $p_\text{cr}$ y $T_\text{cr}$ son la presión y la temperatura críticas, respectivamente. Los datos constantes críticos para varias sustancias se dan en la <strong>Tabla A-1</strong>. Esto se conoce como el <strong>principio de los estados correspondientes</strong>. La figura siguiente ofrece una comparación de los factores $Z$ para varios gases y apoya el principio de los estados correspondientes.
-</p>
-<DIV ALIGN=center><IMG SRC="images/Esp-Thermo7e_ch03-051.png" WIDTH=300 HEIGHT=200></DIV>
-<p>
-Cuando se desconoce $p$ o $T$, $Z$se puede determinar a partir de la tabla de compresibilidad con la ayuda del <strong>volumen específico pseudo-reducido</strong>, definido como
-</p>
-	$$ v_R = \frac{v_{\text{actual}}}{\frac{R T_{\text{cr}}}{p_{\text{cr}}}} $$
-<p>
-Estos gráficos muestran las condiciones en las que $Z \approx 1$ y el gas se comportan como un gas ideal: 
-</p>
-<ol>
-  <li>$p_R \lt 10 \text{ y } T_R \gt 2 \text{ o } p \lt 10 p_{cr} \text{ y } T \gt 2 T_{cr}$. </li>
-  <li>$p_R \ll 1 \text{ o } p \ll p_{cr}$. </li>
-</ol>	
-<hr />
-<p>
-<strong>Nota</strong>: Cuando $p_R$ es pequeña, debemos asegurarnos de que el estado no se encuentre en la región de líquido comprimido para la temperatura dada. Un estado líquido comprimido ciertamente no es un estado de gas ideal. Por ejemplo, la presión y la temperatura críticas para el oxígeno son $5.08 \text{MPa}$ y $154.8 \text{K}$, respectivamente; para temperaturas superiores a $300 \text{K}$ y presiones inferiores a $50 \text{MPa}$ (la presión de $1 \text{atm}$ es de $0.10135 \text{MPa}$), el oxígeno se considera un gas ideal.
-</p>
-<hr />
-<p><font size="4" color="#000000"><b>Relación útil del gas ideal: la ley de los gases combinados</b></font></p>
-<p>
-Al escribir la ecuación del gas ideal dos veces para una masa fija y simplificar, las propiedades de un gas ideal en dos estados diferentes están relacionadas por
-</p>
-	$$ m_1 = m_2  $$
-<p>
-o
-</p>
-	$$ \frac{p_1 V_1}{R T_1} = \frac{p_2 V_2}{R T_2} $$
-<p>
-así que 
-</p>
-	$$ \frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2} $$
-<hr />
-<p><font size="4" color="#000000"><b>Otras ecuaciones de estado</b></font></p>
-<p>
-Se han hecho muchos intentos para mantener la simplicidad de la ecuación de estado de los gases ideales, pero teniendo en cuenta las fuerzas intermoleculares y el volumen ocupado por las partículas, tres de ellos son:   . 
-</p>
-<ol>
-  <li> Van der Waals:</li>
-  <li>Beattie-Bridgeman; </li>
-  <li>Benedict-Webb-Rubin. </li>
-</ol>
-<p>
-Las constantes que aparecen en las ecuaciones de Beattie-Bridgeman y Benedict-Webb-Rubin se dan en la <strong>Tabla A-29</strong> para varias sustancias.
-</p>
-<hr />
+    <h1>3. ECUACIONES DE ESTADO</h1>
+    
+    <div class="breadcrumb">
+        Revisa la BibliografÃ­a recomendada en la secciÃ³n 
+        <a href="../../FuenteInform.htm"><strong>Fuentes de InformaciÃ³n</strong></a> del curso.
+    </div>
+
+    <hr>
+    <p><strong>Notas para la clase: IntroducciÃ³n a las Ecuaciones de Estado</strong></p>
+    <p>
+        La relaciÃ³n entre las variables de estado (presiÃ³n, temperatura y volumen especÃ­fico) se denomina <strong>ecuaciÃ³n de estado</strong>. En esta secciÃ³n, analizaremos modelos para la fase gaseosa de sustancias compresibles simples.
+    </p>
+
+    <hr>
+    <h2>3.1. El Modelo del Gas Ideal</h2>
+    <p>
+        Combinando las leyes de <strong>Boyle</strong> y <strong>Charles</strong> para gases a presiones relativamente bajas, obtenemos la ecuaciÃ³n de estado del gas ideal:
+    </p>
+
+    <div class="formula-card">
+        $$ P v = R T \quad \text{o} \quad P V = m R T $$
+    </div>
+
+    <p>Donde $R$ es la <strong>constante del gas</strong>, especÃ­fica para cada sustancia, calculada a partir de la constante universal $R_u$ y la masa molar $M$:</p>
+    
+    <div class="formula-card">
+        $$ R = \frac{R_u}{M} $$
+    </div>
+
+    <div class="highlight-box">
+        <strong>Constante Universal de los Gases ($R_u$):</strong>
+        <ul>
+            <li>$8.314 \text{ kJ/(kmol}\cdot\text{K)}$</li>
+            <li>$10.73 \text{ psia}\cdot\text{ft}^3\text{/(lbmol}\cdot\text{R)}$</li>
+            <li>$1.986 \text{ Btu/(lbmol}\cdot\text{R)}$</li>
+        </ul>
+    </div>
+
+    <p><strong>Condiciones de validez:</strong> Un gas se comporta como ideal cuando las fuerzas intermoleculares son despreciables y el volumen de las partÃ­culas es pequeÃ±o comparado con el volumen total. Esto ocurre generalmente a <strong>bajas presiones</strong> o <strong>altas temperaturas</strong> respecto al punto crÃ­tico.</p>
+
+    
+
+[Image of pressure-volume-temperature relationship for ideal gas]
+
+
+    <hr>
+    <h2>3.2. Factor de Compresibilidad ($Z$)</h2>
+    <p>
+        Para medir quÃ© tanto se desvÃ­a un gas real del comportamiento ideal, introducimos el factor $Z$:
+    </p>
+
+    <div class="formula-card">
+        $$ Z = \frac{P v}{R T} $$
+    </div>
+
+    <p>
+        Para un gas ideal, $Z = 1$. Cuanto mÃ¡s se aleje $Z$ de la unidad, mayor es la desviaciÃ³n. SegÃºn el <strong>principio de los estados correspondientes</strong>, el factor $Z$ es aproximadamente igual para todos los gases si se encuentran a la misma <strong>presiÃ³n reducida</strong> ($P_R$) y <strong>temperatura reducida</strong> ($T_R$):
+    </p>
+
+    <div class="formula-card">
+        $$ P_R = \frac{P}{P_{cr}} \quad \text{;} \quad T_R = \frac{T}{T_{cr}} $$
+    </div>
+
+    <div class="image-container">
+        
+        <br><small><em>GrÃ¡fica generalizada de compresibilidad: Compara el factor Z para diversas sustancias.</em></small>
+    </div>
+
+    <hr>
+    <h2>3.3. La Ley de los Gases Combinados</h2>
+    <p>Para una masa fija de gas ideal que cambia de un estado 1 a un estado 2, podemos usar la relaciÃ³n:</p>
+    
+    <div class="formula-card">
+        $$ \frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2} $$
+    </div>
+
+    <hr>
+    <h2>3.4. Ecuaciones de Estado para Gases Reales</h2>
+    <p>Cuando el modelo de gas ideal no es suficiente, se recurre a ecuaciones mÃ¡s complejas que consideran fuerzas intermoleculares y volÃºmenes moleculares:</p>
+    
+    <ol>
+        <li><strong>Van der Waals:</strong> Introduce correcciones por atracciÃ³n molecular y volumen ocupado.</li>
+        <li><strong>Beattie-Bridgeman:</strong> Basada en cinco constantes determinadas experimentalmente.</li>
+        <li><strong>Benedict-Webb-Rubin:</strong> Una de las mÃ¡s precisas, con ocho constantes (ver Tabla A-29).</li>
+    </ol>
+
+    
+
+    <hr>
 
 </body>
-
 </html>
-
