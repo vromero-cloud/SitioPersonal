@@ -3,146 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notas de clase - Semana 10 (Inicio)</title>
-    
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <title>Notas de clase - Segunda Ley de la Termodinámica</title>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+                svg: { fontCache: 'global' }
+        };
+    </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
     <style>
         body {
             background-color: #C0C0C0;
-            background-image: url('images/img93-0.gif');
             color: #000000;
             font-family: "Times New Roman", Times, serif;
-            line-height: 1.6;
-            margin: 20px;
-            /* Permite desplazamiento vertical y horizontal */
-            overflow: auto; 
-            /* Ajuste de texto horizontal al aumentar fuente */
-            overflow-wrap: break-word;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+            /* Permite desplazamiento vertical y horizontal en toda la página */
+            overflow: auto;
+            /* Ajuste de texto horizontal cuando aumenta la fuente */
             word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         .container {
             width: 100%;
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
+            background-color: rgba(255,255,255,0.1);
+            padding: 15px;
         }
         .header {
             text-align: center;
             color: #996600;
-        }
-        .content {
-            text-align: left;
+            border-bottom: 2px solid #996600;
+            margin-bottom: 20px;
         }
         .formula-container {
             text-align: center;
             margin: 20px 0;
-            overflow-x: auto; /* Desplazamiento horizontal para fórmulas largas */
+            padding: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            /* Desplazamiento horizontal específico para fórmulas largas */
+            overflow-x: auto;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px auto;
+        .input-window {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 2px dashed #996600;
+            border-radius: 8px;
         }
-        h1, h2, h3 {
-            color: #996600;
+        .input-window h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #333;
         }
+        textarea {
+            width: 100%;
+            height: 150px;
+            font-family: monospace;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+        h1, h2, h3, h4 { color: #996600; }
+        hr { border: 0; border-top: 1px solid #996600; }
     </style>
 </head>
 <body>
-
 <div class="container">
-    <div class="header">
+    <header class="header">
         <h1>MÓDULO 10: MÁQUINAS TÉRMICAS, REFRIGERADORES Y BOMBAS DE CALOR</h1>
-        <p><i>(Fragmentos del CD que acompaña al libro "Termodinámica" de Cengel & Boles, 3ra edición, McGraw-Hill, 1998)</i></p>
-        <h3>Notas de clase (Inicio)</h3>
+        <p><i>(Fragmentos del CD de "Termodinámica" de Cengel & Boles, 3ra edición)</i></p>
         <h2>La Segunda Ley de la Termodinámica</h2>
-    </div>
+    </header>
 
-    <div class="content">
-        <p>La segunda ley de la termodinámica establece que los procesos ocurren en una dirección determinada, no en cualquier dirección. Los procesos físicos en la naturaleza pueden proceder hacia el equilibrio de forma espontánea:</p>
-        
+    <main class="content">
+        <p>La segunda ley de la termodinámica establece que los procesos ocurren en una dirección determinada. Los procesos físicos en la naturaleza pueden proceder hacia el equilibrio de forma espontánea:</p>
         <ul>
             <li>El agua fluye hacia abajo en una cascada.</li>
             <li>Los gases se expanden desde una alta presión a una baja presión.</li>
             <li>El calor fluye de una temperatura alta a una temperatura baja.</li>
         </ul>
-
-        <p>Una vez que ha tenido lugar, un proceso espontáneo puede invertirse; pero no se invertirá espontáneamente por sí solo. Se deben invertir algunos aportes externos, energía, para revertir el proceso. Al caer por la cascada, el agua puede ser recogida en una rueda hidráulica, hacer girar un eje, enrollar una cuerda en el eje y levantar un peso. Así, la energía del agua que cae se captura como un aumento de energía potencial en el peso, y se satisface la primera ley de la termodinámica. Sin embargo, existen pérdidas asociadas con este proceso (fricción). Permitir que el peso caiga, haciendo que el eje gire en la dirección opuesta, no bombeará toda el agua de regreso a la cascada. Los procesos espontáneos pueden proceder solo en una dirección particular.</p>
-
-        <p>La primera ley de la termodinámica no da información sobre la dirección; solo establece que cuando una forma de energía se convierte en otra, se involucran cantidades idénticas de energía independientemente de la viabilidad del proceso. Sabemos por experiencia que el calor fluye espontáneamente de una temperatura alta a una temperatura baja. Pero, el calor que fluye de una temperatura baja a una temperatura más alta sin gasto de energía para que el proceso se lleve a cabo no violaría la primera ley.</p>
-
-        <p>La primera ley se ocupa de la conversión de energía de una forma a otra. Los experimentos de Joule demostraron que la energía en forma de calor no podía convertirse completamente en trabajo; sin embargo, la energía de trabajo puede convertirse completamente en energía térmica. Evidentemente, el calor y el trabajo no son formas de energía completamente intercambiables. Además, cuando la energía se transfiere de una forma a otra, a menudo hay una degradación de la energía suministrada a una forma menos "útil". Veremos que es la segunda ley de la termodinámica la que controla la dirección que pueden tomar los procesos y cuánto calor se convierte en trabajo. Un proceso no ocurrirá a menos que satisfaga tanto la primera como la segunda ley de la termodinámica.</p>
+        <p>Un proceso espontáneo no se invertirá por sí solo; requiere aporte de energía externa. La primera ley solo establece la conservación de la energía, pero no la viabilidad o dirección del proceso. Es la segunda ley la que controla la dirección y la eficiencia de la conversión de calor en trabajo.</p>
 
         <hr>
-        <h3>Algunas Definiciones</h3>
-        <p>Para expresar la segunda ley en una forma manejable, necesitamos las siguientes definiciones:</p>
-
+        <h3>Definiciones Fundamentales</h3>
+        
         <h4>Depósito de Calor (Térmico)</h4>
-        <p>Un depósito de calor es un sistema lo suficientemente grande en equilibrio estable al cual y desde el cual se pueden transferir cantidades finitas de calor sin ningún cambio en su temperatura.</p>
-        <p>Un depósito de calor de alta temperatura desde el cual se trasfiere calor a veces se denomina <b>fuente de calor</b>. Un depósito de calor de baja temperatura al cual se transfiere calor a veces se denomina <b>sumidero de calor</b>.</p>
-
-        <h4>Depósito de Trabajo</h4>
-        <p>Un depósito de trabajo es un sistema lo suficientemente grande en equilibrio estable al cual y desde el cual se pueden transferir cantidades finitas de trabajo adiabáticamente sin ningún cambio en su presión.</p>
+        <p>Sistema capaz de transferir calor sin cambiar su temperatura. Se denomina <b>fuente</b> (entrega calor) o <b>sumidero</b> (recibe calor).</p>
 
         <h4>Ciclo Termodinámico</h4>
-        <p>Un sistema ha completado un ciclo termodinámico cuando el sistema se somete a una serie de procesos y luego regresa a su estado original, de modo que las propiedades del sistema al final del ciclo son las mismas que al principio.</p>
-
-        <p>Por lo tanto, para números enteros de ciclos:</p>
+        <p>Para un ciclo completo, las propiedades regresan a su estado inicial, cumpliéndose:</p>
         <div class="formula-container">
             $$\oint dQ = \oint dW$$
-            <img src="images/img96-3.gif" alt="Fórmula de Ciclo">
         </div>
 
-        <h4>Máquina Térmica</h4>
-        <p>Una máquina térmica es un sistema termodinámico que opera en un ciclo termodinámico al cual se transfiere calor neto y del cual se entrega trabajo neto.</p>
-        <p>El sistema, o fluido de trabajo, se somete a una serie de procesos que constituyen el ciclo de la máquina térmica.</p>
-        <p>La siguiente figura ilustra una planta de energía de vapor como una máquina térmica que opera en un ciclo termodinámico.</p>
-        <img src="images/img96-4.gif" alt="Planta de energía de vapor">
-
-        <h4>Eficiencia Térmica, $\eta$</h4>
-        <p>La eficiencia térmica es el índice de rendimiento de un dispositivo que produce trabajo o una máquina térmica y se define por la relación entre la salida de trabajo neto (el resultado deseado) y la entrada de calor (los costos para obtener el resultado deseado).</p>
+        <h4>Eficiencia Térmica ($\eta$)</h4>
+        <p>Relación entre el trabajo neto de salida y el calor de entrada:</p>
         <div class="formula-container">
             $$\eta_{ter} = \frac{W_{neto, salida}}{Q_{entrada}}$$
-            <img src="images/img96-6.gif" alt="Eficiencia Térmica">
         </div>
-
-        <p>Para una máquina térmica, el resultado deseado es el trabajo neto realizado y la entrada es el calor suministrado para que el ciclo funcione. La eficiencia térmica es siempre menor que 1 o menor que 100%.</p>
-        
-        <p>Aplicando la primera ley a la máquina térmica cíclica:</p>
+        <p>Aplicando la primera ley al ciclo:</p>
         <div class="formula-container">
             $$W_{neto, salida} = Q_{H} - Q_{L}$$
-            <img src="images/img96-9.gif" alt="Primera Ley Ciclo">
-        </div>
-
-        <p>La eficiencia térmica del ciclo se puede escribir como:</p>
-        <div class="formula-container">
             $$\eta_{ter} = 1 - \frac{Q_{L}}{Q_{H}}$$
         </div>
 
-        <h4>Bomba de Calor y Refrigerador</h4>
-        <p>Una bomba de calor es un sistema termodinámico que opera en un ciclo termodinámico que extrae calor de un cuerpo de baja temperatura y entrega calor a un cuerpo de alta temperatura. Para lograr esta transferencia de energía, la bomba de calor recibe energía externa en forma de trabajo o calor de los alrededores.</p>
-        
-        <p>Utilizamos los términos "refrigerador" y "bomba de calor" para referirnos a dispositivos particulares. Aquí, un refrigerador es un dispositivo que extrae calor de medios de baja temperatura. La bomba de calor rechaza calor hacia medios de alta temperatura.</p>
-
-        <h4>Coeficiente de Rendimiento, $COP$</h4>
-        <p>Para el refrigerador, el resultado deseado es el calor suministrado a baja temperatura ($Q_{L}$) y la entrada es el trabajo neto ($W_{neto, entrada}$):</p>
+        <h4>Refrigeradores y Bombas de Calor</h4>
+        <p>Dispositivos que mueven calor de baja a alta temperatura mediante trabajo externo. El rendimiento se mide con el Coeficiente de Rendimiento (COP):</p>
         <div class="formula-container">
-            $$COP_{R} = \frac{Q_{L}}{W_{neto, entrada}} = \frac{Q_{L}}{Q_{H} - Q_{L}}$$
-        </div>
-
-        <p>Para la bomba de calor, la función principal es la transferencia de calor al sistema de alta temperatura ($Q_{H}$):</p>
-        <div class="formula-container">
-            $$COP_{HP} = \frac{Q_{H}}{W_{neto, entrada}} = \frac{Q_{H}}{Q_{H} - Q_{L}}$$
-        </div>
-
-        <p>Note que, bajo las mismas condiciones de operación, el $COP_{HP}$ y el $COP_{R}$ están relacionados por:</p>
-        <div class="formula-container">
+            $$COP_{R} = \frac{Q_{L}}{Q_{H} - Q_{L}}$$
+            $$COP_{HP} = \frac{Q_{H}}{Q_{H} - Q_{L}}$$
             $$COP_{HP} = COP_{R} + 1$$
         </div>
-    </div>
-</div>
+    </main>
 
+    <section class="input-window">
+        <h2>Inserta el contenido de tu código HTML en esta ventana</h2>
+        <textarea placeholder="Pega tu código aquí..."></textarea>
+        <button style="margin-top:10px; padding:10px; cursor:pointer;">Procesar código</button>
+    </section>
+</div>
 </body>
 </html>
