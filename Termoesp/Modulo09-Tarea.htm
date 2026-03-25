@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework assignment 9</title>
+    
+    <style>
+        /* 2. Permitir desplazamiento vertical y ajuste de texto */
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #88FFAE;
+            background-image: url('images/fondo-08.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: sans-serif;
+            color: #000000;
+            line-height: 1.6;
+            /* Asegura que el contenido sea desplazable verticalmente */
+            overflow-y: auto; 
+            /* Permite que el texto se ajuste al contenedor al ampliar fuente */
+            overflow-wrap: break-word;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2); /* Fondo ligero para legibilidad */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 1.25rem; /* Equivalente a font size 4 */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            text-align: justify;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Tarea del módulo 9 (Primera ley de la termodinámica: sistemas abiertos: aplicaciones): 7 problemas.</h1>
+
+    <p>1. (4-57E) Aire entra al evaporador de un aire acondicionado a \( 14.7 \text{ psia} \) y \( 90^\circ\text{F} \) con el flujo volumétrico de \( 200 \dfrac{\text{ft}^3}{\text{min} \). El refrigerante-134a a \( 20 \text{ psia} \) y con una calidad de \( 30\% \) entra al evaporador a una razón de \( 4 \dfrac{\text{lbm}}{\text{min}} \) y sale como vapor saturado a la misma presión. Determina (a) la temperatura del aire a la salida, y (b) la razón de transferencia de calor del aire al refrigerante. Respuesta: \( 16.7^\circ\text{F} \); \( 253 \dfrac{\text{Btu}}{\text{min}} \).</p>
+
+    <p>2. (4-61) El vapor debe ser condensado en un condensador de una planta de vapor a una temperatura de \( 50^\circ\text{C} \) [\( h_{fg} = 2305 \dfrac{\text{kJ}}{\text{kg}} \)] usando agua fría [ \( C_p = 4.20 \dfrac{\text{kJ}}{\text{kg} \cdot ^\circ\text{C}} \) ] de un lago vecino, que entra a los tubos del condensador a \( 18^\circ\text{C} \) a una razón de \( 101 \dfrac{\text{kg}}{\text{s}} \) y sale a \( 27^\circ\text{C} \). Determina la razón de condensación del vapor en el condensador. Respuesta: \( 1.65 \dfrac{\text{kg}}{\text{s}} \).</p>
+
+    <p>3. (4-69) Una computadora de escritorio se enfría mediante un ventilador. Los componentes electrónicos de la computadora consumen \( 60 \text{ W} \) de potencia bajo las condiciones de carga completa. La computadora se diseña para operar en unos ambientes a las temperaturas hasta \( 45^\circ\text{C} \) y a unas elevaciones hasta \( 3400 \text{ m} \) donde la presión atmosférica promedio es de \( 66.63 \text{ kPa} \). La temperatura de salida del aire no tiene que exceder \( 60^\circ\text{C} \) por los requisitos de la confiabilidad. La velocidad promedio del aire no debe exceder \( 110 \dfrac{\text{m}}{\text{min}} \) a la salida de la caja de la computadora donde el ventilador se instala para que el nivel de ruido sea menor. Determina el flujo volumétrico del ventilador que debe ser instalado, en \( \dfrac{\text{m}^3}{\text{min}} \), y su diámetro, en \( \text{cm} \). Respuesta: \( 0.0343 \dfrac{\text{m}^3}{\text{min}} \); \( 6.3 \text{ cm} \).</p>
+    
+    <p>4. (4-74) Una placa larga de \(2 \text{ m} \) de anchura y de \( 0.5 \text{ cm} \) de espesor, de acero al manganeso [ \( \rho = 785 \dfrac{\text{kg}}{\text{m}^3} \) y \( C_p = 0.454 \dfrac{\text{kJ}}{\text{kg} \cdot ^\circ\text{C}} \) ] que sale de un horno a \( 820^\circ\text{C} \), debe ser enfriada en un baño de aceite de \( 45^\circ\text{C} \) a una temperatura de \( 51.1^\circ\text{C} \). Si la placa se está moviendo a una velocidad constante de \( 10 \dfrac{\text{m}}{\text{min}} \), determina la razón a la cual el calor debe ser retirado del aceite para mantener su temperatura constante de \( 45^\circ\text{C} \). Respuesta: \( 37 \text{ kW} \).</p>
+
+    <p>5. (4-78) Considera una tarjeta de circuito impresa rectangular, de \( 12 \text{ cm} \) de anchura y \( 18 \text{ cm} \) de largo, disipando \( 20 \text{ W} \) de calor. En su interior, la tarjeta tiene un canal para que pase el aire de ventilación. La altura de la entrada a este canal es de \( 0.25 \text{ cm} \) (el espesor de la tarjeta es mayor de \( 0.25 \text{ cm} \)). Si el aire frío entra a la tarjeta por el lado de \( 12 \text{ cm} \) de longitud a una temperatura de \( 32^\circ\text{C} \) a una razón de \( 0.8 \dfrac{\text{L}}{\text{s}} \), determina la temperatura promedia a la cual el aire sale del canal de ventilación. Respuesta: \( 53.7^\circ\text{C} \).</p>
+
+    <p>6. (4-84) Los ductos de un sistema de calefacción de aire atraviesan una región fría. En resultado de pérdidas de calor, la temperatura del aire en los ductos cae en \( 4^\circ\text{C} \). Si el flujo de masa de aire es de \( 120 \dfrac{\text{kg}}{\text{min}} \), determina la razón de pérdidas de calor hacia el ambiente frío. Respuesta: \( 482 \dfrac{\text{kJ}}{\text{min}} \).</p>
+
+    <p>7. (4-87) El agua debe ser bombeada del pozo al techo de un edificio de \( 200 \text{ m} \) de altura. Hay una bomba disponible de \( 15 \text{ kW} \) de potencia. La bomba se encuentra a la altura de la base del edificio (en la superficie terrestre), mientras que el nivel de la superficie del agua en el pozo está \( 40 \text{ m} \) más bajo de la superficie terrestre. Despreciando la transferencia de calor y fricción, determina el flujo de masa de agua máximo posible que puede bombearse por esta bomba. Respuesta: \( 6.38 \dfrac{\text{kg}}{\text{s}} \).</p>
+</div>
+
+</body>
+</html>
