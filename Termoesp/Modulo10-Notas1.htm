@@ -130,6 +130,7 @@
     <img src="images/img96-11.gif" alt="Diagrama de depósitos">
 
     <p>La eficiencia térmica del dispositivo anterior se convierte en:</p>
+    $$ \eta_T = 1 - \frac{Q_{out}}{Q_{in}} = 1 - \frac{T_L}{T_H} $$
     <div class="formula-container">
         <img src="images/img96-12.gif" alt="Eficiencia TH TL">
     </div>
@@ -144,7 +145,7 @@
 
     <h4>Coeficiente de Rendimiento, <i>COP</i></h4>
     <p>El índice de rendimiento de un refrigerador o bomba de calor se expresa en términos del coeficiente de rendimiento, COP, la relación entre el resultado deseado y la entrada. Esta medida de rendimiento puede ser mayor que 1 y queremos que el COP sea lo más grande posible.</p>
-    
+    $$ COP = \frac{\text{Resultado deseado}}{\text{Entrada requerida}} $$
     <div class="formula-container">
         <img src="images/img96-14.gif" alt="Fórmula COP">
     </div>
@@ -153,26 +154,32 @@
     <img src="images/img96-15.gif" alt="Diagrama flujo calor">
 
     <p>Para el refrigerador, el resultado deseado es el calor suministrado a baja temperatura y la entrada es el trabajo neto en el dispositivo para que el ciclo funcione.</p>
+    $$ COP_R = \frac{Q_L}{W_{net,in}} $$
     <div class="formula-container">
         <img src="images/img96-16.gif" alt="COP_R">
     </div>
 
     <p>Ahora aplique la primera ley al refrigerador cíclico.</p>
+    $$ \begin{align} ( Q_L - Q_H ) - ( 0 - W_{in} ) & = \Delta U_{ciclo} \\
+    W_{in} & = W_{net,in} & = Q_{H} - Q_{L} & = Q_{net,in} \end{align}
     <div class="formula-container">
         <img src="images/img96-17.gif" alt="Primera ley refrigerador">
     </div>
 
     <p>Y el coeficiente de rendimiento se convierte en:</p>
+    $$ COP_R = \frac{Q_L}{W_{net,in}} = \frac{Q_L}{Q_H - Q_L} $$
     <div class="formula-container">
         <img src="images/img96-18.gif" alt="COP_R fórmula final">
     </div>
 
     <p>Para el dispositivo que actúa como una "bomba de calor", la función principal del dispositivo es la transferencia de calor al sistema de alta temperatura. El coeficiente de rendimiento para una bomba de calor es:</p>
+    $$ COP_{HP} = \frac{Q_H}{W_{net,in}}= \frac{Q_H}{Q_H - Q_L} $$
     <div class="formula-container">
         <img src="images/img96-19.gif" alt="COP_HP">
     </div>
 
     <p>Nota: bajo las mismas condiciones de operación, el $COP_{HP}$ y el $COP_R$ están relacionados por:</p>
+    $$ COP_{HP} = 1 + COP_R $$
     <div class="formula-container">
         <img src="images/img96-20.gif" alt="Relación COP">
     </div>
